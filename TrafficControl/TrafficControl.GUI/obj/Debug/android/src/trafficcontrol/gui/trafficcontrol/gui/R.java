@@ -37,17 +37,17 @@ public final class R {
         public static final int tclogoyellow=0x7f020007;
     }
     public static final class id {
+        public static final int About=0x7f07000e;
         public static final int AllCasesListing=0x7f070005;
         public static final int CaseIcon=0x7f070000;
         public static final int EmailInput=0x7f070008;
         public static final int LogInErrorMsg=0x7f07000b;
         public static final int LoginLogo=0x7f070007;
-        public static final int MenuItem1=0x7f07000c;
-        public static final int MenuItem2=0x7f07000d;
-        public static final int MenuItem3=0x7f07000e;
         public static final int MyButton=0x7f07000a;
         public static final int MyCasesListing=0x7f070004;
+        public static final int Options=0x7f07000d;
         public static final int PasswordInput=0x7f070009;
+        public static final int Profile=0x7f07000c;
         public static final int case_id=0x7f070002;
         public static final int case_name=0x7f070001;
         public static final int main_content=0x7f070006;
@@ -57,6 +57,7 @@ public final class R {
         public static final int caseitem=0x7f030000;
         public static final int home=0x7f030001;
         public static final int login=0x7f030002;
+        public static final int options=0x7f030003;
     }
     public static final class menu {
         public static final int main_menu=0x7f060000;

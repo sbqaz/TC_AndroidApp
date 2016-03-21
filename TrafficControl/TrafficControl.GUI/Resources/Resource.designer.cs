@@ -138,6 +138,9 @@ namespace TrafficControl.GUI
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f07000e
+			public const int About = 2131165198;
+			
 			// aapt resource value: 0x7f070005
 			public const int AllCasesListing = 2131165189;
 			
@@ -153,23 +156,20 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f070007
 			public const int LoginLogo = 2131165191;
 			
-			// aapt resource value: 0x7f07000c
-			public const int MenuItem1 = 2131165196;
-			
-			// aapt resource value: 0x7f07000d
-			public const int MenuItem2 = 2131165197;
-			
-			// aapt resource value: 0x7f07000e
-			public const int MenuItem3 = 2131165198;
-			
 			// aapt resource value: 0x7f07000a
 			public const int MyButton = 2131165194;
 			
 			// aapt resource value: 0x7f070004
 			public const int MyCasesListing = 2131165188;
 			
+			// aapt resource value: 0x7f07000d
+			public const int Options = 2131165197;
+			
 			// aapt resource value: 0x7f070009
 			public const int PasswordInput = 2131165193;
+			
+			// aapt resource value: 0x7f07000c
+			public const int Profile = 2131165196;
 			
 			// aapt resource value: 0x7f070002
 			public const int case_id = 2131165186;
@@ -204,6 +204,9 @@ namespace TrafficControl.GUI
 			
 			// aapt resource value: 0x7f030002
 			public const int LogIn = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Options = 2130903043;
 			
 			static Layout()
 			{

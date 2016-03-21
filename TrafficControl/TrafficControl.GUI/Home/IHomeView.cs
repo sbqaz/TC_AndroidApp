@@ -5,6 +5,7 @@ namespace TrafficControl.GUI.Home
 {
     public interface IHomeView
     {
-        void AddCase(Case newCase);
+        void UpdateCaseView();
+        void NavigateToOptions();
     }
 }

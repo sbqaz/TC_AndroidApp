@@ -7,12 +7,17 @@ namespace TrafficControl.BLL.Home
 {
     public class HomeModel : Subject<IHomeModel>, IHomeModel
     {
+        private long _caseCounter = 0;
+        private readonly List<Case> _cases;
+
         public Case NewCase { get; set; }
 
         //Fjern cases fra View'et (HomeActivity)
-        private List<Case> _cases;
+        public List<Case> Cases
+        {
+            get { return _cases; }
+        }
 
-        private long _caseCounter = 0;
         public HomeModel() : base()
         {
             _cases = new List<Case>();
@@ -27,7 +32,7 @@ namespace TrafficControl.BLL.Home
                 _caseCounter++;
                 string tmp = string.Format("Case {0}", _caseCounter);
                 NewCase = new Case(tmp, _caseCounter, (Case.States)(i%3));
-                _cases.Add(NewCase);
+                Cases.Add(new Case(tmp, _caseCounter, (Case.States)(i % 3)));
                 Notify(this);
             }
         }

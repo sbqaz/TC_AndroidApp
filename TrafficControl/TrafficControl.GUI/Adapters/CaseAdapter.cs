@@ -39,19 +39,21 @@ namespace TrafficControl.GUI.Adapters
             var caseIcon = view.FindViewById<ImageView>(Resource.Id.CaseIcon);
             caseName.Text = _cases[position].Name;
             caseId.Text = _cases[position].Id.ToString();
-            
+            caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.ForeGround));
+            caseId.SetTextColor(_activity.Resources.GetColor(Resource.Color.ForeGround));
+
             switch (_cases[position].State)
             {
                 case Case.States.Closed:
-                    caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseClosed));
+                    //caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseClosed));
                     caseIcon.SetImageResource(Resource.Drawable.TCLogoGreen);
                     break;
                 case Case.States.Open:
-                    caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseOpen));
+                    //caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseOpen));
                     caseIcon.SetImageResource(Resource.Drawable.TCLogoRed);
                     break;
                 case Case.States.Taken:
-                    caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseTaken));
+                    //caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseTaken));
                     caseIcon.SetImageResource(Resource.Drawable.TCLogoYellow);
                     break;
             }

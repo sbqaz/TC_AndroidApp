@@ -1,4 +1,9 @@
-﻿using TrafficControl.BLL.Home;
+﻿using System.Collections.Generic;
+using Android.App;
+using Android.Views;
+using Android.Widget;
+using TrafficControl.BLL;
+using TrafficControl.BLL.Home;
 using TrafficControl.BLL.Observer;
 
 namespace TrafficControl.GUI.Home
@@ -21,10 +26,26 @@ namespace TrafficControl.GUI.Home
             _homeView = null;
         }
 
+        public List<Case> GetCases()
+        {
+            return _homeModel.Cases;
+        }
+
+        public void CaseItemClicked(Activity activity, object sender, AdapterView.ItemClickEventArgs e)
+        {
+            string text = string.Format("Casename: {0}\n" +
+                                        "Case Id: {1}", GetCases()[e.Position].Name, GetCases()[e.Position].Id);
+
+            new AlertDialog.Builder(activity).SetPositiveButton("Ok", (msender, args) => { })
+                                                            .SetMessage(text)
+                                                            .SetTitle("Case")
+                                                            .Show();
+        }
+
         public void Update(IHomeModel subject)
         {
             if (_homeView != null)
-                _homeView.AddCase(subject.NewCase);
+                _homeView.UpdateCaseView();
         }
     }
 }

@@ -34,7 +34,7 @@ namespace TrafficControl.GUI
             _password = FindViewById<EditText>(Resource.Id.PasswordInput);
             _logInBtn = FindViewById<Button>(Resource.Id.MyButton);
             _logInErrorMsg = FindViewById<TextView>(Resource.Id.LogInErrorMsg);
-            _presenter = new LogInPresenter(this, new ModelFactory().CreateLogInModel());
+            _presenter = new LogInPresenter(this, ModelFactory.Instance.CreateLogInModel());
 
             _logInBtn.Click += OnLogInBtnClicked;
 
@@ -43,22 +43,6 @@ namespace TrafficControl.GUI
         private void OnLogInBtnClicked(object sender, EventArgs e)
         {
             _presenter.LogInCredentials(_email.Text, _password.Text);
-        }
-
-        //Skal i presenter??
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.main_menu, menu);
-            return true;
-        }
-
-        //Skal i presenter??
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            var id = item.ItemId;
-            if (id == Resource.Id.MenuItem1)
-                return true;
-            return base.OnOptionsItemSelected(item);
         }
 
         protected override void OnDestroy()

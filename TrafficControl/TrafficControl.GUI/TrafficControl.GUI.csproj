@@ -67,6 +67,12 @@
     <Compile Include="LogIn\LogInPresenter.cs" />
     <Compile Include="LogIn\ILogInPresenter.cs" />
     <Compile Include="LogIn\ILogInView.cs" />
+    <Compile Include="Menu\IMenuPresenter.cs" />
+    <Compile Include="Menu\MenuPresenter.cs" />
+    <Compile Include="OptionsActivity.cs" />
+    <Compile Include="Options\IOptionsPresenter.cs" />
+    <Compile Include="Options\IOptionsView.cs" />
+    <Compile Include="Options\OptionsPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
   </ItemGroup>
@@ -83,6 +89,9 @@
     </AndroidResource>
     <AndroidResource Include="Resources\menu\main_menu.axml" />
     <AndroidResource Include="Resources\layout\CaseItem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Options.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -6,6 +6,10 @@ TrafficControl.GUI.HomeActivity, TrafficControl.GUI;md56b3a59ca03fc5e073370dc85b
 TrafficControl.GUI.HomeActivity, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56b3a59ca03fc5e073370dc85bbbcd31e.HomeActivity
 TrafficControl.GUI.HomeActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.HomeActivity
 trafficcontrol.gui.HomeActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.HomeActivity
+TrafficControl.GUI.OptionsActivity, TrafficControl.GUI;md56b3a59ca03fc5e073370dc85bbbcd31e.OptionsActivity
+TrafficControl.GUI.OptionsActivity, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56b3a59ca03fc5e073370dc85bbbcd31e.OptionsActivity
+TrafficControl.GUI.OptionsActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.OptionsActivity
+trafficcontrol.gui.OptionsActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.OptionsActivity
 TrafficControl.GUI.Adapters.CaseAdapter, TrafficControl.GUI;md5a6bfb5449d3e1765a3a283db63184fd7.CaseAdapter
 TrafficControl.GUI.Adapters.CaseAdapter, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a6bfb5449d3e1765a3a283db63184fd7.CaseAdapter
 TrafficControl.GUI.Adapters.CaseAdapter;md5a6bfb5449d3e1765a3a283db63184fd7.CaseAdapter
