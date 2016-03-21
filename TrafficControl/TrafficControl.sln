@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficControl.GUI", "TrafficControl.GUI\TrafficControl.GUI.csproj", "{753600BC-04C5-4CA0-89D8-D593B5377403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficControl.BLL", "TrafficControl.BLL\TrafficControl.BLL.csproj", "{19E30977-2B8C-4C24-87BB-DFEA0E19B483}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficControl.DAL", "D:\PRJ4 Repo\TC_DAL\TrafficControl.DAL\TrafficControl.DAL.csproj", "{4396C852-8EC9-4A9C-BB5D-8E5C45407C51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{753600BC-04C5-4CA0-89D8-D593B5377403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753600BC-04C5-4CA0-89D8-D593B5377403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753600BC-04C5-4CA0-89D8-D593B5377403}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{753600BC-04C5-4CA0-89D8-D593B5377403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753600BC-04C5-4CA0-89D8-D593B5377403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753600BC-04C5-4CA0-89D8-D593B5377403}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{19E30977-2B8C-4C24-87BB-DFEA0E19B483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E30977-2B8C-4C24-87BB-DFEA0E19B483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E30977-2B8C-4C24-87BB-DFEA0E19B483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E30977-2B8C-4C24-87BB-DFEA0E19B483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4396C852-8EC9-4A9C-BB5D-8E5C45407C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4396C852-8EC9-4A9C-BB5D-8E5C45407C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4396C852-8EC9-4A9C-BB5D-8E5C45407C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4396C852-8EC9-4A9C-BB5D-8E5C45407C51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
