@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficControl.GUI", "Traff
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficControl.BLL", "TrafficControl.BLL\TrafficControl.BLL.csproj", "{19E30977-2B8C-4C24-87BB-DFEA0E19B483}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficControl.DAL", "D:\PRJ4 Repo\TC_DAL\TrafficControl.DAL\TrafficControl.DAL.csproj", "{4396C852-8EC9-4A9C-BB5D-8E5C45407C51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficControl.DAL", "..\..\TC_DAL\TrafficControl.DAL\TrafficControl.DAL.csproj", "{4396C852-8EC9-4A9C-BB5D-8E5C45407C51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

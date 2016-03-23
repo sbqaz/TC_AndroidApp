@@ -81,6 +81,7 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"TrafficControl.GUI.dll",
 		"TrafficControl.BLL.dll",
+		"Xamarin.Android.Support.v4.dll",
 		"System.Collections.Concurrent.dll",
 		"System.Collections.dll",
 		"System.ComponentModel.Annotations.dll",

@@ -29,7 +29,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/EmailInput"
-            android:textColor="@color/ForeGround" />
+            android:textColor="@color/ForeGround"
+            android:textCursorDrawable="@null" />
         <TextView
             android:text="Kodeord"
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -41,7 +42,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/PasswordInput"
-            android:textColor="@color/ForeGround" />
+            android:textColor="@color/ForeGround"
+            android:textCursorDrawable="@null" />
         <Button
             android:id="@+id/MyButton"
             android:layout_width="fill_parent"
