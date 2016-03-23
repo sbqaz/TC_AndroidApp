@@ -35,7 +35,7 @@ namespace TrafficControl.GUI.LogIn
             if (!error)
             {
                 //Validate email aswell??
-                if (_logInModel.ValidateLogIn(email, _logInModel.EncryptPassword(password)))
+                if (_logInModel.ValidateLogIn(email, password))
                 {
                     _logInView.NavigateToHome();
                     _logInView.HideLogInErrorMsg();

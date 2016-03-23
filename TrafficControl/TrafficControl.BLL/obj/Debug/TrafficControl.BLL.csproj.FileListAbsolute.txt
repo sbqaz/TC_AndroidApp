@@ -41,14 +41,5 @@ D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\android\b
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\res\values\strings.xml
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\R.cs.flag
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\uploadflags.txt
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.DAL.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb

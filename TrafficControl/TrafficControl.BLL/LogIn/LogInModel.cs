@@ -25,10 +25,5 @@ namespace TrafficControl.BLL.LogIn
         {
             return _tcApi.LogIn(email, password);
         }
-
-        public string EncryptPassword(string password)
-        {
-            return password;
-        }
     }
 }
