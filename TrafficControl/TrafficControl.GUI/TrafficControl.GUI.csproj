@@ -99,6 +99,9 @@
     <AndroidResource Include="Resources\layout\Options.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\SideMenuItem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />

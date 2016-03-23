@@ -122,6 +122,7 @@ public final class R {
         public static final int home=0x7f030001;
         public static final int login=0x7f030002;
         public static final int options=0x7f030003;
+        public static final int sidemenuitem=0x7f030004;
     }
     public static final class menu {
         public static final int main_menu=0x7f070000;
@@ -139,8 +140,6 @@ public final class R {
         public static final int DropDownNav_Trafficcontrol=0x7f060006;
         public static final int PopupMenu_Trafficcontrol=0x7f060003;
         public static final int ProgressBar_Trafficcontrol=0x7f060007;
-        /** parent="@android:style/Theme.Holo"
-         */
         public static final int Theme_Trafficcontrol=0x7f060000;
         /**  this style is only referenced in a Light.DarkActionBar based theme 
          */

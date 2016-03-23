@@ -50,6 +50,7 @@
             android:layout_height="wrap_content"
             android:text="Log Ind"
             android:background="@color/ColorStrHansen3"
+            android:textColor="@color/WhiteStrHansen"
             android:layout_margin="16dp" />
         <TextView
             android:text="Forkert email eller kodeord."

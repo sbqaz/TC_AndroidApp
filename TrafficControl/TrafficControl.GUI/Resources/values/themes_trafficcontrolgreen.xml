@@ -5,7 +5,7 @@
 
   <style name="TrafficControlGreen" parent="@style/_TrafficControlGreen"/>
 
-  <style name="_TrafficControlGreen" parent="android:Theme.Holo">
+  <style name="_TrafficControlGreen" parent="android:Theme.Holo.Light">
 
     <item name="android:editTextBackground">@drawable/trafficcontrolgreen_edit_text_holo_light</item>
 

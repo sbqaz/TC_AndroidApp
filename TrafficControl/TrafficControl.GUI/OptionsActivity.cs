@@ -40,7 +40,7 @@ namespace TrafficControl.GUI
             _leftItems.Add("First");
             _leftItems.Add("Second");
             _leftItems.Add("Third");
-            _leftAdapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, _leftItems);
+            _leftAdapter = new ArrayAdapter(this, Resource.Layout.SideMenuItem, _leftItems);
             _leftDrawer.Adapter = _leftAdapter;
 
 

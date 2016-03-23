@@ -18,8 +18,8 @@
 -->
 
 <resources>
-  <!--parent="@android:style/Theme.Holo"-->
-  <style name="Theme.Trafficcontrol" parent="@style/TrafficControlGreen">
+
+    <style name="Theme.Trafficcontrol" parent="@android:style/Theme.Holo">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_trafficcontrol</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Trafficcontrol</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Trafficcontrol</item>
@@ -29,6 +29,9 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_trafficcontrol</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_trafficcontrol</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Trafficcontrol</item>
+      <item name="android:editTextBackground">@drawable/trafficcontrolgreen_edit_text_holo_light</item>
+      <item name="android:listChoiceIndicatorMultiple">@drawable/trafficcontrolgreen_btn_check_holo_light</item>
+      <item name="android:listChoiceIndicatorSingle">@drawable/trafficcontrolgreen_btn_radio_holo_light</item>
         
         
     </style>
