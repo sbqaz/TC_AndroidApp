@@ -10,6 +10,7 @@ namespace TrafficControl.GUI.Settings
     public class SettingsFragment : PreferenceFragment, ISharedPreferencesOnSharedPreferenceChangeListener, ISettingsView
     {
         private ISettingsPresenter _presenter;
+        private Preference _createUserPreference;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -17,6 +18,14 @@ namespace TrafficControl.GUI.Settings
             AddPreferencesFromResource(Resource.Layout.SettingsFragment);
 
             _presenter = new SettingsPresenter(this, ModelFactory.Instance.CreateSettingsModel());
+            _createUserPreference = FindPreference(GetString(Resource.String.settings_create_user));
+            _createUserPreference.PreferenceClick += OnCreateUserClicked;
+        }
+
+        private void OnCreateUserClicked(object sender, Preference.PreferenceClickEventArgs e)
+        {
+            Toast.MakeText(Activity, "_CreateUser_", ToastLength.Long).Show();
+            _presenter.CreateUser(); //This function does nothing right now!
         }
 
         public override void OnResume()

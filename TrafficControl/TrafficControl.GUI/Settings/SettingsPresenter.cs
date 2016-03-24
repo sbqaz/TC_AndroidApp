@@ -12,5 +12,10 @@ namespace TrafficControl.GUI.Settings
             _settingsView = settingsView;
             _settingsModel = settingsModel;
         }
+
+        public void CreateUser()
+        {
+            //Empty
+        }
     }
 }

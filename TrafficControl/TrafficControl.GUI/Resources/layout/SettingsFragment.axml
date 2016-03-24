@@ -13,6 +13,10 @@
             android:title="Title"
             android:summary="Summary"
             android:defaultValue="true" />
+        <TrafficControl.GUI.Settings.SettingsPreference
+            android:key="@string/settings_create_user"
+            android:title="Opret ny bruger"
+            android:summary="Administrator, Montør, osv..." />
     </TrafficControl.GUI.Settings.SettingsPreferenceCategory>
     <TrafficControl.GUI.Settings.SettingsPreferenceCategory
         android:title="Sager"
@@ -24,6 +28,30 @@
             android:defaultValue="true" />
         <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
             android:key="second_case_preference"
+            android:title="Title"
+            android:summary="Summary"
+            android:defaultValue="true" />
+        <TrafficControl.GUI.Settings.SettingsPreference
+            android:key="third_case_preference"
+            android:title="Title"
+            android:summary="Summary"
+            android:defaultValue="true" />
+    </TrafficControl.GUI.Settings.SettingsPreferenceCategory>
+    <TrafficControl.GUI.Settings.SettingsPreferenceCategory
+        android:title="Notifikationer"
+        android:key="category_notifications">
+        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
+            android:key="first_notifications_preference"
+            android:title="Title"
+            android:summary="Summary"
+            android:defaultValue="true" />
+        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
+            android:key="second_notifications_preference"
+            android:title="Title"
+            android:summary="Summary"
+            android:defaultValue="true" />
+        <TrafficControl.GUI.Settings.SettingsPreference
+            android:key="third_notifications_preference"
             android:title="Title"
             android:summary="Summary"
             android:defaultValue="true" />
