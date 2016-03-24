@@ -52,8 +52,8 @@
     <Compile Include="Observer\IObserver.cs" />
     <Compile Include="Observer\ISubject.cs" />
     <Compile Include="Observer\Subject.cs" />
-    <Compile Include="Options\IOptionsModel.cs" />
-    <Compile Include="Options\OptionsModel.cs" />
+    <Compile Include="Settings\ISettingsModel.cs" />
+    <Compile Include="Settings\SettingsModel.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

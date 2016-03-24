@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.Support.V4.Widget;
 using Android.Views;
 using Android.Widget;
@@ -13,6 +14,7 @@ namespace TrafficControl.GUI.Menu
         private string[] _leftItems = { "Hjem", "First", "Second", "Indstillinger" };
         private ArrayAdapter _leftAdapter;
         private ListView _leftDrawer;
+        private bool _leftDrawerShown = false;
 
         public MenuPresenter(Activity contextActivity)
         {
@@ -51,7 +53,9 @@ namespace TrafficControl.GUI.Menu
         {
             if (_contextActivity.GetType() != typeof(HomeActivity))
             {
-                _contextActivity.StartActivity(typeof(HomeActivity));
+                var nextActivity = new Intent(_contextActivity, typeof(HomeActivity));
+                nextActivity.AddFlags(ActivityFlags.ReorderToFront);
+                _contextActivity.StartActivity(nextActivity);
             }
         }
 
@@ -82,7 +86,17 @@ namespace TrafficControl.GUI.Menu
 
         private bool OnDrawerBtnClicked()
         {
-            _drawerLayout.OpenDrawer(_contextActivity.FindViewById<ListView>(Resource.Id.LeftListView));
+            if (!_leftDrawerShown)
+            {
+                _drawerLayout.OpenDrawer(_contextActivity.FindViewById<ListView>(Resource.Id.LeftListView));
+                _leftDrawerShown = true;
+            }
+            else
+            {
+                _drawerLayout.CloseDrawer(_contextActivity.FindViewById<ListView>(Resource.Id.LeftListView));
+                _leftDrawerShown = false;
+
+            }
             return true;
         }
 
@@ -95,9 +109,11 @@ namespace TrafficControl.GUI.Menu
 
         private bool OnOptionsClicked()
         {
-            if (_contextActivity.GetType() != typeof (OptionsActivity))
+            if (_contextActivity.GetType() != typeof (SettingsActivity))
             {
-                _contextActivity.StartActivity(typeof(OptionsActivity));
+                var nextActivity = new Intent(_contextActivity, typeof(SettingsActivity));
+                nextActivity.AddFlags(ActivityFlags.ReorderToFront);
+                _contextActivity.StartActivity(nextActivity);
                 return true;
             }
             return false;

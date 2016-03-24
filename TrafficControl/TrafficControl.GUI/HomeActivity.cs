@@ -47,11 +47,6 @@ namespace TrafficControl.GUI
             _allCasesList.ItemClick += CaseItemClicked;
         }
 
-        protected override void OnPause()
-        {
-            base.OnPause();
-        }
-
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             return _menuPresenter.OnCreateOptionsMenu(new MenuInflater(this),menu);
@@ -81,7 +76,7 @@ namespace TrafficControl.GUI
 
         public void NavigateToOptions()
         {
-            StartActivity(typeof(OptionsActivity));
+            StartActivity(typeof(SettingsActivity));
         }
     }
 }

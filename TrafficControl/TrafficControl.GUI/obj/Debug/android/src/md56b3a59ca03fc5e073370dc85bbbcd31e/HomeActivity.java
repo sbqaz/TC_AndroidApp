@@ -10,7 +10,6 @@ public class HomeActivity
 	static {
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
-			"n_onPause:()V:GetOnPauseHandler\n" +
 			"n_onCreateOptionsMenu:(Landroid/view/Menu;)Z:GetOnCreateOptionsMenu_Landroid_view_Menu_Handler\n" +
 			"n_onOptionsItemSelected:(Landroid/view/MenuItem;)Z:GetOnOptionsItemSelected_Landroid_view_MenuItem_Handler\n" +
 			"n_onDestroy:()V:GetOnDestroyHandler\n" +
@@ -33,14 +32,6 @@ public class HomeActivity
 	}
 
 	private native void n_onCreate (android.os.Bundle p0);
-
-
-	public void onPause ()
-	{
-		n_onPause ();
-	}
-
-	private native void n_onPause ();
 
 
 	public boolean onCreateOptionsMenu (android.view.Menu p0)

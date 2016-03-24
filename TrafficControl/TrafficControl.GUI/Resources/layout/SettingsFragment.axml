@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <TrafficControl.GUI.Settings.SettingsPreferenceCategory
+        android:title="Brugere"
+        android:key="category_users">
+        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
+            android:key="switch_preference"
+            android:title="Title"
+            android:summary="Summary"
+            android:defaultValue="true" />
+        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
+            android:key="checkbox_preference"
+            android:title="Title"
+            android:summary="Summary"
+            android:defaultValue="true" />
+    </TrafficControl.GUI.Settings.SettingsPreferenceCategory>
+    <TrafficControl.GUI.Settings.SettingsPreferenceCategory
+        android:title="Sager"
+        android:key="category_cases">
+        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
+            android:key="first_case_preference"
+            android:title="Title"
+            android:summary="Summary"
+            android:defaultValue="true" />
+        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
+            android:key="second_case_preference"
+            android:title="Title"
+            android:summary="Summary"
+            android:defaultValue="true" />
+    </TrafficControl.GUI.Settings.SettingsPreferenceCategory>
+</PreferenceScreen>

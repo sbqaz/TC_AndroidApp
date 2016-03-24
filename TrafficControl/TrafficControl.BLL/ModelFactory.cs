@@ -1,7 +1,7 @@
 ﻿using System;
 using TrafficControl.BLL.Home;
 using TrafficControl.BLL.LogIn;
-using TrafficControl.BLL.Options;
+using TrafficControl.BLL.Settings;
 using TrafficControl.DAL;
 
 namespace TrafficControl.BLL
@@ -44,9 +44,9 @@ namespace TrafficControl.BLL
             return new HomeModel();
         }
 
-        public IOptionsModel CreateOptionsModel()
+        public ISettingsModel CreateSettingsModel()
         {
-            return new OptionsModel();
+            return new SettingsModel();
         }
          
     }
