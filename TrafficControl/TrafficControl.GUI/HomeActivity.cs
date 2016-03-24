@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using Android.App;
 using Android.OS;
 using Android.Views;
@@ -15,7 +16,7 @@ using Object = Java.Lang.Object;
 
 namespace TrafficControl.GUI
 {
-    [Activity(Label = "Home")]
+    [Activity(Label = "Hjem")]
     public class HomeActivity : Activity, IHomeView
     {
         private IHomePresenter _presenter;
@@ -36,7 +37,7 @@ namespace TrafficControl.GUI
             _allCasesList = FindViewById<ListView>(Resource.Id.AllCasesListing);
             _menuPresenter = new MenuPresenter(this);
             _presenter = new HomePresenter(this, ModelFactory.Instance.CreateHomeModel());
-
+            
             _myCaseAdapter = new CaseAdapter(this, _presenter.GetCases());
             _myCasesList.Adapter = _myCaseAdapter;
             _myCasesList.ItemClick += CaseItemClicked;
@@ -44,6 +45,11 @@ namespace TrafficControl.GUI
             _allCaseAdapter = new CaseAdapter(this, _presenter.GetCases());
             _allCasesList.Adapter = _allCaseAdapter;
             _allCasesList.ItemClick += CaseItemClicked;
+        }
+
+        protected override void OnPause()
+        {
+            base.OnPause();
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

@@ -41,7 +41,7 @@ namespace TrafficControl.GUI.Adapters
             caseId.Text = _cases[position].Id.ToString();
             caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.ForeGround));
             caseId.SetTextColor(_activity.Resources.GetColor(Resource.Color.ForeGround));
-
+            
             switch (_cases[position].State)
             {
                 case Case.States.Closed:

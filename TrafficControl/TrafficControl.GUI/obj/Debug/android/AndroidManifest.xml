@@ -9,7 +9,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="Home" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.HomeActivity" />
+    <activity android:label="Hjem" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.HomeActivity" />
     <activity android:label="Indstillinger" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.OptionsActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="TrafficControl.GUI.TrafficControl.GUI.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->

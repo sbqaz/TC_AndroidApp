@@ -4,7 +4,7 @@
     android:padding="5sp"
     android:textAppearance="?android:attr/textAppearanceLarge"
     android:layout_width="fill_parent"
-    android:background="@color/WhiteStrHansen"
+    android:background="@drawable/SideMenuItemSelector"
     android:singleLine="true"
     android:gravity="left"
     android:layout_height="fill_parent" />
