@@ -360,44 +360,44 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f080000
 			public const int CaseIcon = 2131230720;
 			
-			// aapt resource value: 0x7f080003
-			public const int CaseListing = 2131230723;
-			
-			// aapt resource value: 0x7f080009
-			public const int EmailInput = 2131230729;
-			
-			// aapt resource value: 0x7f080005
-			public const int HomeContentFrame = 2131230725;
-			
-			// aapt resource value: 0x7f080006
-			public const int LeftListView = 2131230726;
-			
-			// aapt resource value: 0x7f08000c
-			public const int LogInErrorMsg = 2131230732;
-			
-			// aapt resource value: 0x7f080008
-			public const int LoginLogo = 2131230728;
-			
-			// aapt resource value: 0x7f080010
-			public const int Menu_About = 2131230736;
-			
-			// aapt resource value: 0x7f080011
-			public const int Menu_LogOut = 2131230737;
-			
-			// aapt resource value: 0x7f08000f
-			public const int Menu_Options = 2131230735;
-			
-			// aapt resource value: 0x7f08000b
-			public const int MyButton = 2131230731;
-			
-			// aapt resource value: 0x7f08000d
-			public const int OptionsContentFrame = 2131230733;
-			
 			// aapt resource value: 0x7f080004
-			public const int OptionsDrawer = 2131230724;
+			public const int CaseListing = 2131230724;
 			
 			// aapt resource value: 0x7f08000a
-			public const int PasswordInput = 2131230730;
+			public const int EmailInput = 2131230730;
+			
+			// aapt resource value: 0x7f080006
+			public const int HomeContentFrame = 2131230726;
+			
+			// aapt resource value: 0x7f080007
+			public const int LeftListView = 2131230727;
+			
+			// aapt resource value: 0x7f08000d
+			public const int LogInErrorMsg = 2131230733;
+			
+			// aapt resource value: 0x7f080009
+			public const int LoginLogo = 2131230729;
+			
+			// aapt resource value: 0x7f080011
+			public const int Menu_About = 2131230737;
+			
+			// aapt resource value: 0x7f080012
+			public const int Menu_LogOut = 2131230738;
+			
+			// aapt resource value: 0x7f080010
+			public const int Menu_Options = 2131230736;
+			
+			// aapt resource value: 0x7f08000c
+			public const int MyButton = 2131230732;
+			
+			// aapt resource value: 0x7f08000e
+			public const int OptionsContentFrame = 2131230734;
+			
+			// aapt resource value: 0x7f080005
+			public const int OptionsDrawer = 2131230725;
+			
+			// aapt resource value: 0x7f08000b
+			public const int PasswordInput = 2131230731;
 			
 			// aapt resource value: 0x7f080002
 			public const int case_id = 2131230722;
@@ -405,11 +405,14 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f080001
 			public const int case_name = 2131230721;
 			
-			// aapt resource value: 0x7f08000e
-			public const int fragment_settings = 2131230734;
+			// aapt resource value: 0x7f080003
+			public const int case_time = 2131230723;
 			
-			// aapt resource value: 0x7f080007
-			public const int main_content = 2131230727;
+			// aapt resource value: 0x7f08000f
+			public const int fragment_settings = 2131230735;
+			
+			// aapt resource value: 0x7f080008
+			public const int main_content = 2131230728;
 			
 			static Id()
 			{

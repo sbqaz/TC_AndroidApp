@@ -6,5 +6,6 @@ namespace TrafficControl.GUI.Menu
     {
         bool OnCreateOptionsMenu(MenuInflater menuInflater, IMenu menu);
         bool OnOptionsItemSelected(IMenuItem item);
+        void HideLeftMenu();
     }
 }

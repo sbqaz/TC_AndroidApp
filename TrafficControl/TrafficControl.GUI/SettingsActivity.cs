@@ -39,5 +39,11 @@ namespace TrafficControl.GUI
         {
             return _menuPresenter.OnOptionsItemSelected(item);
         }
+
+        protected override void OnStop()
+        {
+            base.OnStop();
+            _menuPresenter.HideLeftMenu();
+        }
     }
 }

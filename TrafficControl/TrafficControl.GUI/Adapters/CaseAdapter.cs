@@ -14,6 +14,8 @@ namespace TrafficControl.GUI.Adapters
     public class CaseAdapter : BaseAdapter
     {
         private Activity _activity;
+
+        //From model instead??
         private List<Case> _cases; 
         public CaseAdapter(Activity activity, List<Case> cases)
         {
@@ -36,12 +38,15 @@ namespace TrafficControl.GUI.Adapters
             var view = convertView ?? _activity.LayoutInflater.Inflate(Resource.Layout.CaseItem, parent, false);
             var caseName = view.FindViewById<TextView>(Resource.Id.case_name);
             var caseId = view.FindViewById<TextView>(Resource.Id.case_id);
+            var caseTime = view.FindViewById<TextView>(Resource.Id.case_time);
             var caseIcon = view.FindViewById<ImageView>(Resource.Id.CaseIcon);
             caseName.Text = _cases[position].Name;
-            caseId.Text = _cases[position].Id.ToString();
+            caseId.Text = string.Format("ID: {0}", _cases[position].Id);
+            caseTime.Text = "Oprettet: " + _cases[position].TimeStamp.ToString("dd-MMM-yyyy ddd");
             caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.ForeGround));
-            caseId.SetTextColor(_activity.Resources.GetColor(Resource.Color.ForeGround));
-            
+            caseId.SetTextColor(_activity.Resources.GetColor(Android.Resource.Color.DarkerGray));
+            caseTime.SetTextColor(_activity.Resources.GetColor(Android.Resource.Color.DarkerGray));
+
             switch (_cases[position].State)
             {
                 case Case.States.Closed:

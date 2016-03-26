@@ -1,4 +1,6 @@
-﻿namespace TrafficControl.BLL
+﻿using System;
+
+namespace TrafficControl.BLL
 {
     public class Case
     {
@@ -9,15 +11,17 @@
             Taken
         }
 
-        public Case(string name, long id, States state)
+        public Case(string name, long id, DateTime timeStamp, States state)
         {
             Name = name;
             Id = id;
             State = state;
+            TimeStamp = timeStamp;
         }
 
         public string Name { get; }
         public long Id { get; }
+        public DateTime TimeStamp { get; }
         public States State { get; }
     }
 }

@@ -14,7 +14,6 @@ namespace TrafficControl.GUI.Menu
         private string[] _leftItems = { "Hjem", "First", "Second", "Indstillinger" };
         private ArrayAdapter _leftAdapter;
         private ListView _leftDrawer;
-        private bool _leftDrawerShown = false;
 
         public MenuPresenter(Activity contextActivity)
         {
@@ -47,8 +46,7 @@ namespace TrafficControl.GUI.Menu
                     break;
             }
         }
-
-        //Duplicated activities
+        
         private void OnHomeClicked()
         {
             if (_contextActivity.GetType() != typeof(HomeActivity))
@@ -84,17 +82,23 @@ namespace TrafficControl.GUI.Menu
             return false;
         }
 
+        public void HideLeftMenu()
+        {
+            if (_leftDrawer.IsShown)
+            {
+                _drawerLayout.CloseDrawer(_contextActivity.FindViewById<ListView>(Resource.Id.LeftListView));
+            }
+        }
+
         private bool OnDrawerBtnClicked()
         {
-            if (!_leftDrawerShown)
+            if (!_leftDrawer.IsShown)
             {
                 _drawerLayout.OpenDrawer(_contextActivity.FindViewById<ListView>(Resource.Id.LeftListView));
-                _leftDrawerShown = true;
             }
             else
             {
                 _drawerLayout.CloseDrawer(_contextActivity.FindViewById<ListView>(Resource.Id.LeftListView));
-                _leftDrawerShown = false;
 
             }
             return true;

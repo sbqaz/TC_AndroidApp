@@ -31,8 +31,7 @@ namespace TrafficControl.GUI
             SetContentView(Resource.Layout.Home);
 
             this.ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
-            AddTab("Nyheder", new Fragment());
-
+            
              _menuPresenter = new MenuPresenter(this);
             _presenter = new HomePresenter(this, ModelFactory.Instance.CreateHomeModel());
             
@@ -71,6 +70,12 @@ namespace TrafficControl.GUI
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             return _menuPresenter.OnOptionsItemSelected(item);
+        }
+
+        protected override void OnStop()
+        {
+            base.OnStop();
+            _menuPresenter.HideLeftMenu();
         }
 
         protected override void OnDestroy()
