@@ -357,50 +357,47 @@ namespace TrafficControl.GUI
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080007
-			public const int AllCasesListing = 2131230727;
-			
 			// aapt resource value: 0x7f080000
 			public const int CaseIcon = 2131230720;
 			
-			// aapt resource value: 0x7f08000b
-			public const int EmailInput = 2131230731;
+			// aapt resource value: 0x7f080003
+			public const int CaseListing = 2131230723;
 			
-			// aapt resource value: 0x7f080004
-			public const int HomeContentFrame = 2131230724;
+			// aapt resource value: 0x7f080009
+			public const int EmailInput = 2131230729;
 			
-			// aapt resource value: 0x7f080008
-			public const int LeftListView = 2131230728;
-			
-			// aapt resource value: 0x7f08000e
-			public const int LogInErrorMsg = 2131230734;
-			
-			// aapt resource value: 0x7f08000a
-			public const int LoginLogo = 2131230730;
-			
-			// aapt resource value: 0x7f080012
-			public const int Menu_About = 2131230738;
-			
-			// aapt resource value: 0x7f080013
-			public const int Menu_LogOut = 2131230739;
-			
-			// aapt resource value: 0x7f080011
-			public const int Menu_Options = 2131230737;
-			
-			// aapt resource value: 0x7f08000d
-			public const int MyButton = 2131230733;
+			// aapt resource value: 0x7f080005
+			public const int HomeContentFrame = 2131230725;
 			
 			// aapt resource value: 0x7f080006
-			public const int MyCasesListing = 2131230726;
-			
-			// aapt resource value: 0x7f08000f
-			public const int OptionsContentFrame = 2131230735;
-			
-			// aapt resource value: 0x7f080003
-			public const int OptionsDrawer = 2131230723;
+			public const int LeftListView = 2131230726;
 			
 			// aapt resource value: 0x7f08000c
-			public const int PasswordInput = 2131230732;
+			public const int LogInErrorMsg = 2131230732;
+			
+			// aapt resource value: 0x7f080008
+			public const int LoginLogo = 2131230728;
+			
+			// aapt resource value: 0x7f080010
+			public const int Menu_About = 2131230736;
+			
+			// aapt resource value: 0x7f080011
+			public const int Menu_LogOut = 2131230737;
+			
+			// aapt resource value: 0x7f08000f
+			public const int Menu_Options = 2131230735;
+			
+			// aapt resource value: 0x7f08000b
+			public const int MyButton = 2131230731;
+			
+			// aapt resource value: 0x7f08000d
+			public const int OptionsContentFrame = 2131230733;
+			
+			// aapt resource value: 0x7f080004
+			public const int OptionsDrawer = 2131230724;
+			
+			// aapt resource value: 0x7f08000a
+			public const int PasswordInput = 2131230730;
 			
 			// aapt resource value: 0x7f080002
 			public const int case_id = 2131230722;
@@ -408,14 +405,11 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f080001
 			public const int case_name = 2131230721;
 			
-			// aapt resource value: 0x7f080010
-			public const int fragment_settings = 2131230736;
+			// aapt resource value: 0x7f08000e
+			public const int fragment_settings = 2131230734;
 			
-			// aapt resource value: 0x7f080009
-			public const int main_content = 2131230729;
-			
-			// aapt resource value: 0x7f080005
-			public const int textView1 = 2131230725;
+			// aapt resource value: 0x7f080007
+			public const int main_content = 2131230727;
 			
 			static Id()
 			{
@@ -434,19 +428,22 @@ namespace TrafficControl.GUI
 			public const int CaseItem = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Home = 2130903041;
+			public const int CasesFragment = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int LogIn = 2130903042;
+			public const int Home = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Settings = 2130903043;
+			public const int LogIn = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int SettingsFragment = 2130903044;
+			public const int Settings = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int SideMenuItem = 2130903045;
+			public const int SettingsFragment = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int SideMenuItem = 2130903046;
 			
 			static Layout()
 			{

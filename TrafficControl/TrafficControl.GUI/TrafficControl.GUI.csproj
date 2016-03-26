@@ -66,6 +66,7 @@
     <Compile Include="Home\HomePresenter.cs" />
     <Compile Include="Home\IHomePresenter.cs" />
     <Compile Include="Home\IHomeView.cs" />
+    <Compile Include="Home\CasesFragment.cs" />
     <Compile Include="LogInActivity.cs" />
     <Compile Include="HomeActivity.cs" />
     <Compile Include="LogIn\LogInPresenter.cs" />
@@ -107,6 +108,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SettingsFragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CasesFragment.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

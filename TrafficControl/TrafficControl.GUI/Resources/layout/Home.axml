@@ -7,41 +7,7 @@
     <FrameLayout
         android:id="@+id/HomeContentFrame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/WhiteStrHansen">
-            <TextView
-                android:id="@+id/textView1"
-                android:text="Mine sager:"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/ForeGround" />
-            <ListView
-                android:id="@+id/MyCasesListing"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:divider="@color/ForeGround"
-                android:dividerHeight="1dp" />
-            <TextView
-                android:text="Alle sager:"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/ForeGround" />
-            <ListView
-                android:id="@+id/AllCasesListing"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:divider="@color/ForeGround"
-                android:dividerHeight="1dp" />
-        </LinearLayout>
-    </FrameLayout>
+        android:layout_height="match_parent" />
 <!--Left navigation drawer-->
     <ListView
         android:id="@+id/LeftListView"
@@ -51,5 +17,5 @@
         android:choiceMode="singleChoice"
         android:divider="#D2D2D2"
         android:dividerHeight="1dp"
-        android:background="#F2F2F2" />
+        android:background="@color/WhiteStrHansen" />
 </android.support.v4.widget.DrawerLayout>

@@ -35,7 +35,7 @@ namespace TrafficControl.GUI.Home
         {
             string text = string.Format("Casename: {0}\n" +
                                         "Case Id: {1}", GetCases()[e.Position].Name, GetCases()[e.Position].Id);
-
+            
             new AlertDialog.Builder(activity).SetPositiveButton("Ok", (msender, args) => { })
                                                             .SetMessage(text)
                                                             .SetTitle("Case")
