@@ -10,6 +10,7 @@ namespace TrafficControl.GUI.Home
     {
         void OnDestroy();
         List<Case> GetCases();
+        List<Case> GetMyCases(); 
         void CaseItemClicked(Activity activity, object sender, AdapterView.ItemClickEventArgs e);
     }
 }

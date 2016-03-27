@@ -6,5 +6,6 @@ namespace TrafficControl.BLL.Home
     public interface IHomeModel : ISubject<IHomeModel>
     {
         List<Case> Cases { get; } 
+        List<Case> MyCases { get; } 
     }
 }

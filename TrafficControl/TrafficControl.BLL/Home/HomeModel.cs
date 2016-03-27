@@ -9,15 +9,22 @@ namespace TrafficControl.BLL.Home
     public class HomeModel : Subject<IHomeModel>, IHomeModel
     {
         private readonly List<Case> _cases;
-        
+        private readonly List<Case> _myCases;
+
         public List<Case> Cases
         {
             get { return _cases; }
         }
 
+        public List<Case> MyCases
+        {
+            get { return _myCases; }
+        }
+
         public HomeModel() : base()
         {
             _cases = new List<Case>();
+            _myCases = new List<Case>();
             ThreadPool.QueueUserWorkItem(o => SlowMethod());
         }
 
@@ -28,7 +35,10 @@ namespace TrafficControl.BLL.Home
                 Thread.Sleep(1000);
                 string tmp = RandomString(3) + " - " + RandomString(3);
                 var tmpID = random.Next(1000) + 2500;
-                Cases.Add(new Case(tmp, tmpID, RandomDay(), (Case.States)(i % 3)));
+                var newCase = new Case(tmp, tmpID, RandomDay(), (Case.States) (i%3));
+                Cases.Add(newCase);
+                if(newCase.Id % 2 == 0)
+                    MyCases.Add(newCase);
                 Notify(this);
             }
         }
@@ -50,6 +60,7 @@ namespace TrafficControl.BLL.Home
 
         //RANDOM DateTime generator for TESTING
         private Random gen = new Random();
+
         DateTime RandomDay()
         {
             DateTime start = new DateTime(1995, 1, 1);

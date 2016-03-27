@@ -35,7 +35,7 @@ namespace TrafficControl.GUI
              _menuPresenter = new MenuPresenter(this);
             _presenter = new HomePresenter(this, ModelFactory.Instance.CreateHomeModel());
             
-            _myCaseAdapter = new CaseAdapter(this, _presenter.GetCases());
+            _myCaseAdapter = new CaseAdapter(this, _presenter.GetMyCases());
             _allCaseAdapter = new CaseAdapter(this, _presenter.GetCases());
             
             AddTab("Mine sager", new CasesFragment(_myCaseAdapter, _presenter));
