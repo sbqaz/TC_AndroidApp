@@ -6,6 +6,10 @@ TrafficControl.GUI.HomeActivity, TrafficControl.GUI;md56b3a59ca03fc5e073370dc85b
 TrafficControl.GUI.HomeActivity, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56b3a59ca03fc5e073370dc85bbbcd31e.HomeActivity
 TrafficControl.GUI.HomeActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.HomeActivity
 trafficcontrol.gui.HomeActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.HomeActivity
+TrafficControl.GUI.MenuActivity, TrafficControl.GUI;md56b3a59ca03fc5e073370dc85bbbcd31e.MenuActivity
+TrafficControl.GUI.MenuActivity, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56b3a59ca03fc5e073370dc85bbbcd31e.MenuActivity
+TrafficControl.GUI.MenuActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.MenuActivity
+trafficcontrol.gui.MenuActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.MenuActivity
 TrafficControl.GUI.SettingsActivity, TrafficControl.GUI;md56b3a59ca03fc5e073370dc85bbbcd31e.SettingsActivity
 TrafficControl.GUI.SettingsActivity, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56b3a59ca03fc5e073370dc85bbbcd31e.SettingsActivity
 TrafficControl.GUI.SettingsActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.SettingsActivity
@@ -26,10 +30,18 @@ TrafficControl.GUI.Settings.SettingsPreferenceCategory, TrafficControl.GUI;md54f
 TrafficControl.GUI.Settings.SettingsPreferenceCategory, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54ff001bdaa26daa5b62ee6c321656401.SettingsPreferenceCategory
 TrafficControl.GUI.Settings.SettingsPreferenceCategory;md54ff001bdaa26daa5b62ee6c321656401.SettingsPreferenceCategory
 trafficcontrol.gui.settings.SettingsPreferenceCategory;md54ff001bdaa26daa5b62ee6c321656401.SettingsPreferenceCategory
+TrafficControl.GUI.Home.AllCasesFragment, TrafficControl.GUI;md57350f1c1a6234699e0a9d98db95dda19.AllCasesFragment
+TrafficControl.GUI.Home.AllCasesFragment, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57350f1c1a6234699e0a9d98db95dda19.AllCasesFragment
+TrafficControl.GUI.Home.AllCasesFragment;md57350f1c1a6234699e0a9d98db95dda19.AllCasesFragment
+trafficcontrol.gui.home.AllCasesFragment;md57350f1c1a6234699e0a9d98db95dda19.AllCasesFragment
 TrafficControl.GUI.Home.CasesFragment, TrafficControl.GUI;md57350f1c1a6234699e0a9d98db95dda19.CasesFragment
 TrafficControl.GUI.Home.CasesFragment, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57350f1c1a6234699e0a9d98db95dda19.CasesFragment
 TrafficControl.GUI.Home.CasesFragment;md57350f1c1a6234699e0a9d98db95dda19.CasesFragment
 trafficcontrol.gui.home.CasesFragment;md57350f1c1a6234699e0a9d98db95dda19.CasesFragment
+TrafficControl.GUI.Home.MyCasesFragment, TrafficControl.GUI;md57350f1c1a6234699e0a9d98db95dda19.MyCasesFragment
+TrafficControl.GUI.Home.MyCasesFragment, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57350f1c1a6234699e0a9d98db95dda19.MyCasesFragment
+TrafficControl.GUI.Home.MyCasesFragment;md57350f1c1a6234699e0a9d98db95dda19.MyCasesFragment
+trafficcontrol.gui.home.MyCasesFragment;md57350f1c1a6234699e0a9d98db95dda19.MyCasesFragment
 TrafficControl.GUI.Adapters.CaseAdapter, TrafficControl.GUI;md5a6bfb5449d3e1765a3a283db63184fd7.CaseAdapter
 TrafficControl.GUI.Adapters.CaseAdapter, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a6bfb5449d3e1765a3a283db63184fd7.CaseAdapter
 TrafficControl.GUI.Adapters.CaseAdapter;md5a6bfb5449d3e1765a3a283db63184fd7.CaseAdapter

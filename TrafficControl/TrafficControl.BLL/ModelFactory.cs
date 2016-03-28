@@ -8,45 +8,52 @@ namespace TrafficControl.BLL
 {
     public class ModelFactory
     {
-        private static volatile ModelFactory instance;
-        private static object syncRoot = new Object();
+        private static volatile ModelFactory _instance;
+        private static readonly object SyncRoot = new Object();
 
-        private ITCApi _tcApi;
-        private ModelFactory(ITCApi tcApi)
+        private readonly ITCApi _tcApi;
+        private readonly ILogInModel _logInModel;
+        private readonly IHomeModel _homeModel;
+        private readonly ISettingsModel _settingsModel;
+
+        private ModelFactory()
         {
-            _tcApi = tcApi;
+            _tcApi = new TCApi();
+            _logInModel = new LogInModel(_tcApi);
+            _homeModel = new HomeModel();
+            _settingsModel = new SettingsModel();
         }
 
         public static ModelFactory Instance
         {
             get
             {
-                if (instance == null)
+                if (_instance == null)
                 {
-                    lock (syncRoot)
+                    lock (SyncRoot)
                     {
-                        if (instance == null)
-                            instance = new ModelFactory(new TCApi());
+                        if (_instance == null)
+                            _instance = new ModelFactory();
                     }
                 }
 
-                return instance;
+                return _instance;
             }
         }
 
         public ILogInModel CreateLogInModel()
         {
-            return new LogInModel(_tcApi);
+            return _logInModel;
         }
 
         public IHomeModel CreateHomeModel()
         {
-            return new HomeModel();
+            return _homeModel;
         }
 
         public ISettingsModel CreateSettingsModel()
         {
-            return new SettingsModel();
+            return _settingsModel;
         }
          
     }

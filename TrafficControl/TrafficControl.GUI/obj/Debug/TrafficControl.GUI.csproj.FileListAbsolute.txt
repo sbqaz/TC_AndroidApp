@@ -372,7 +372,6 @@ D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficCo
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.TrafficControl-Signed.apk
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\Xamarin.Android.Support.v4.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\android\bin\TrafficControl.TrafficControl.apk
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\settings.xml
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\sidemenuitem.xml
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\settingsfragment.xml
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable\ab_background_textured_trafficcontrol.xml
@@ -625,6 +624,6 @@ D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawa
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xxhdpi\trafficcontrolgreen_switch_thumb_pressed_holo_light.9.png
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.dll.mdb
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\casesfragment.xml
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.dll.mdb
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\menuactivitylayout.xml
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll.mdb
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.mdb

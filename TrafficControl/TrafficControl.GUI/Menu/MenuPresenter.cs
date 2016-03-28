@@ -8,53 +8,39 @@ namespace TrafficControl.GUI.Menu
 {
     public class MenuPresenter : IMenuPresenter
     {
-        private Activity _contextActivity;
+        private readonly IMenuView _view;
+        private readonly string[] _leftMenuItems = { "Hjem", "First", "Second", "Indstillinger" };
 
-        private DrawerLayout _drawerLayout;
-        private string[] _leftItems = { "Hjem", "First", "Second", "Indstillinger" };
-        private ArrayAdapter _leftAdapter;
-        private ListView _leftDrawer;
-
-        public MenuPresenter(Activity contextActivity)
+        public MenuPresenter(IMenuView view)
         {
-            _contextActivity = contextActivity;
-
-            _drawerLayout = _contextActivity.FindViewById<DrawerLayout>(Resource.Id.OptionsDrawer);
-            _leftDrawer = _contextActivity.FindViewById<ListView>(Resource.Id.LeftListView);
-
-            _leftAdapter = new ArrayAdapter(_contextActivity, Resource.Layout.SideMenuItem, _leftItems);
-            _leftDrawer.Adapter = _leftAdapter;
-            _leftDrawer.ItemClick += LeftDrawerItemClicked;
-
-            _contextActivity.ActionBar.SetDisplayHomeAsUpEnabled(false);
-            _contextActivity.ActionBar.SetHomeButtonEnabled(true);
+            _view = view;
         }
 
-        private void LeftDrawerItemClicked(object sender, AdapterView.ItemClickEventArgs e)
+        public string[] GetMenuItems()
         {
-            switch (_leftItems[e.Position])
+            return _leftMenuItems;
+        }
+        
+        public void LeftMenuItemClicked(int position)
+        {
+            switch (_leftMenuItems[position])
             {
                 case "Hjem":
-                    OnHomeClicked();
+                    _view.OnHomeClicked();
                     break;
                 case "First":
                     break;
                 case "Second":
                     break;
                 case "Indstillinger":
-                    OnOptionsClicked();
+                    _view.OnSettingsClicked();
                     break;
             }
         }
-        
-        private void OnHomeClicked()
+
+        public void OnStop()
         {
-            if (_contextActivity.GetType() != typeof(HomeActivity))
-            {
-                var nextActivity = new Intent(_contextActivity, typeof(HomeActivity));
-                nextActivity.AddFlags(ActivityFlags.ReorderToFront);
-                _contextActivity.StartActivity(nextActivity);
-            }
+            _view.HideLeftDrawer();
         }
 
         public bool OnCreateOptionsMenu(MenuInflater menuInflater, IMenu menu)
@@ -69,63 +55,15 @@ namespace TrafficControl.GUI.Menu
             switch (id)
             {
                 case Android.Resource.Id.Home:
-                    return OnDrawerBtnClicked();
+                    return _view.OnDrawerBtnClicked();
                 case Resource.Id.Menu_Options:
-                    return OnOptionsClicked();
+                    return _view.OnSettingsClicked();
                 case Resource.Id.Menu_About:
-                    return OnAboutClicked();
+                    return _view.OnAboutClicked();
                 case Resource.Id.Menu_LogOut:
-                    return OnLogOutClicked();
-
-            }
-
-            return false;
-        }
-
-        public void HideLeftMenu()
-        {
-            if (_leftDrawer.IsShown)
-            {
-                _drawerLayout.CloseDrawer(_contextActivity.FindViewById<ListView>(Resource.Id.LeftListView));
-            }
-        }
-
-        private bool OnDrawerBtnClicked()
-        {
-            if (!_leftDrawer.IsShown)
-            {
-                _drawerLayout.OpenDrawer(_contextActivity.FindViewById<ListView>(Resource.Id.LeftListView));
-            }
-            else
-            {
-                _drawerLayout.CloseDrawer(_contextActivity.FindViewById<ListView>(Resource.Id.LeftListView));
-
-            }
-            return true;
-        }
-
-        private bool OnLogOutClicked()
-        {
-            _contextActivity.StartActivity(typeof(LogInActivity));
-            _contextActivity.FinishAffinity();
-            return true;
-        }
-
-        private bool OnOptionsClicked()
-        {
-            if (_contextActivity.GetType() != typeof (SettingsActivity))
-            {
-                var nextActivity = new Intent(_contextActivity, typeof(SettingsActivity));
-                nextActivity.AddFlags(ActivityFlags.ReorderToFront);
-                _contextActivity.StartActivity(nextActivity);
-                return true;
+                    return _view.OnLogOutClicked();
             }
             return false;
-        }
-
-        private bool OnAboutClicked()
-        {
-            return true;
         }
     }
 }

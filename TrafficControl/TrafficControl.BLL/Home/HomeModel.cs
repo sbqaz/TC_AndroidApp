@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading;
 using TrafficControl.BLL.Observer;
@@ -28,23 +29,24 @@ namespace TrafficControl.BLL.Home
             ThreadPool.QueueUserWorkItem(o => SlowMethod());
         }
 
+        //For TESTING
         private void SlowMethod()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 50; i++)
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(3000);
                 string tmp = RandomString(3) + " - " + RandomString(3);
                 var tmpID = random.Next(1000) + 2500;
                 var newCase = new Case(tmp, tmpID, RandomDay(), (Case.States) (i%3));
                 Cases.Add(newCase);
-                if(newCase.Id % 2 == 0)
+                if(i == 0 || newCase.Id % 2 == 0 && newCase.State == Case.States.Open)
                     MyCases.Add(newCase);
                 Notify(this);
             }
         }
 
         //RANDOM string generator for TESTING
-        private static Random random = new Random((int)DateTime.Now.Ticks);//thanks to McAden
+        private static Random random = new Random((int)DateTime.Now.Ticks);
         private string RandomString(int size)
         {
             StringBuilder builder = new StringBuilder();
@@ -59,13 +61,11 @@ namespace TrafficControl.BLL.Home
         }
 
         //RANDOM DateTime generator for TESTING
-        private Random gen = new Random();
-
-        DateTime RandomDay()
+        private DateTime RandomDay()
         {
             DateTime start = new DateTime(1995, 1, 1);
             int range = (DateTime.Today - start).Days;
-            return start.AddDays(gen.Next(range));
+            return start.AddDays(random.Next(range));
         }
 
     }

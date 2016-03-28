@@ -1,4 +1,5 @@
 ﻿using Android.Views;
+using Android.Widget;
 
 namespace TrafficControl.GUI.Menu
 {
@@ -6,6 +7,10 @@ namespace TrafficControl.GUI.Menu
     {
         bool OnCreateOptionsMenu(MenuInflater menuInflater, IMenu menu);
         bool OnOptionsItemSelected(IMenuItem item);
-        void HideLeftMenu();
+        //void HideLeftMenu();
+
+        string[] GetMenuItems();
+        void LeftMenuItemClicked(int position);
+        void OnStop();
     }
 }

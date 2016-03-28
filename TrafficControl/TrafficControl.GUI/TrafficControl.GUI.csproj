@@ -63,16 +63,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\CaseAdapter.cs" />
+    <Compile Include="Home\AllCasesFragment.cs" />
     <Compile Include="Home\HomePresenter.cs" />
     <Compile Include="Home\IHomePresenter.cs" />
     <Compile Include="Home\IHomeView.cs" />
     <Compile Include="Home\CasesFragment.cs" />
+    <Compile Include="Home\MyCasesFragment.cs" />
     <Compile Include="LogInActivity.cs" />
     <Compile Include="HomeActivity.cs" />
     <Compile Include="LogIn\LogInPresenter.cs" />
     <Compile Include="LogIn\ILogInPresenter.cs" />
     <Compile Include="LogIn\ILogInView.cs" />
+    <Compile Include="MenuActivity.cs" />
     <Compile Include="Menu\IMenuPresenter.cs" />
+    <Compile Include="Menu\IMenuView.cs" />
     <Compile Include="Menu\MenuPresenter.cs" />
     <Compile Include="SettingsActivity.cs" />
     <Compile Include="Settings\ISettingsPresenter.cs" />
@@ -101,7 +105,7 @@
     <AndroidResource Include="Resources\layout\CaseItem.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\Settings.axml">
+    <AndroidResource Include="Resources\layout\MenuActivityLayout.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SideMenuItem.axml">
