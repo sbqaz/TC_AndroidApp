@@ -15,7 +15,7 @@ namespace TrafficControl.GUI.Settings
 
         public void CreateUser()
         {
-            //Empty
+            _settingsView.NavigateToCreateUser();
         }
     }
 }

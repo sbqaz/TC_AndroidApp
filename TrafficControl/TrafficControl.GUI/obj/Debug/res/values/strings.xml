@@ -1,1 +1,1 @@
-<resources><string name="ApplicationName">Traffic Control</string><string name="settings_create_user">CreateUser</string></resources>
+<resources><string name="ApplicationName">Traffic Control</string><string name="settings_create_user">CreateUser</string><string name="CreateUserType">Vælg bruger type</string><string-array name="UserTypes"><item>Administrator</item><item>Montør</item><item>Randers Kommune</item></string-array></resources>

@@ -30,6 +30,22 @@ namespace TrafficControl.GUI
 			global::TrafficControl.BLL.Resource.String.Hello = global::TrafficControl.GUI.Resource.String.Hello;
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int UserTypes = 2131099648;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -357,59 +373,68 @@ namespace TrafficControl.GUI
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080000
-			public const int CaseIcon = 2131230720;
+			// aapt resource value: 0x7f090000
+			public const int CaseIcon = 2131296256;
 			
-			// aapt resource value: 0x7f080004
-			public const int CaseListing = 2131230724;
+			// aapt resource value: 0x7f090004
+			public const int CaseListing = 2131296260;
 			
-			// aapt resource value: 0x7f08000e
-			public const int ContentFrame = 2131230734;
+			// aapt resource value: 0x7f090010
+			public const int ContentFrame = 2131296272;
 			
-			// aapt resource value: 0x7f08000a
-			public const int EmailInput = 2131230730;
+			// aapt resource value: 0x7f090005
+			public const int CreateEmailInput = 2131296261;
 			
-			// aapt resource value: 0x7f080006
-			public const int HomeContentFrame = 2131230726;
+			// aapt resource value: 0x7f09000c
+			public const int EmailInput = 2131296268;
 			
-			// aapt resource value: 0x7f080007
-			public const int LeftListView = 2131230727;
+			// aapt resource value: 0x7f090008
+			public const int HomeContentFrame = 2131296264;
 			
-			// aapt resource value: 0x7f08000d
-			public const int LogInErrorMsg = 2131230733;
+			// aapt resource value: 0x7f090009
+			public const int LeftListView = 2131296265;
 			
-			// aapt resource value: 0x7f080009
-			public const int LoginLogo = 2131230729;
+			// aapt resource value: 0x7f09000f
+			public const int LogInErrorMsg = 2131296271;
 			
-			// aapt resource value: 0x7f080010
-			public const int Menu_About = 2131230736;
+			// aapt resource value: 0x7f09000b
+			public const int LoginLogo = 2131296267;
 			
-			// aapt resource value: 0x7f080011
-			public const int Menu_LogOut = 2131230737;
+			// aapt resource value: 0x7f090013
+			public const int Menu_About = 2131296275;
 			
-			// aapt resource value: 0x7f08000f
-			public const int Menu_Options = 2131230735;
+			// aapt resource value: 0x7f090014
+			public const int Menu_LogOut = 2131296276;
 			
-			// aapt resource value: 0x7f08000c
-			public const int MyButton = 2131230732;
+			// aapt resource value: 0x7f090012
+			public const int Menu_Options = 2131296274;
 			
-			// aapt resource value: 0x7f080005
-			public const int OptionsDrawer = 2131230725;
+			// aapt resource value: 0x7f09000e
+			public const int MyButton = 2131296270;
 			
-			// aapt resource value: 0x7f08000b
-			public const int PasswordInput = 2131230731;
+			// aapt resource value: 0x7f090007
+			public const int OptionsDrawer = 2131296263;
 			
-			// aapt resource value: 0x7f080002
-			public const int case_id = 2131230722;
+			// aapt resource value: 0x7f09000d
+			public const int PasswordInput = 2131296269;
 			
-			// aapt resource value: 0x7f080001
-			public const int case_name = 2131230721;
+			// aapt resource value: 0x7f090011
+			public const int SettingsContentFrame = 2131296273;
 			
-			// aapt resource value: 0x7f080003
-			public const int case_time = 2131230723;
+			// aapt resource value: 0x7f090006
+			public const int UserTypeSpinner = 2131296262;
 			
-			// aapt resource value: 0x7f080008
-			public const int main_content = 2131230728;
+			// aapt resource value: 0x7f090002
+			public const int case_id = 2131296258;
+			
+			// aapt resource value: 0x7f090001
+			public const int case_name = 2131296257;
+			
+			// aapt resource value: 0x7f090003
+			public const int case_time = 2131296259;
+			
+			// aapt resource value: 0x7f09000a
+			public const int main_content = 2131296266;
 			
 			static Id()
 			{
@@ -431,19 +456,25 @@ namespace TrafficControl.GUI
 			public const int CasesFragment = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Home = 2130903042;
+			public const int CreateUser = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int LogIn = 2130903043;
+			public const int Home = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int MenuActivityLayout = 2130903044;
+			public const int LogIn = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int SettingsFragment = 2130903045;
+			public const int MenuActivityLayout = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int SideMenuItem = 2130903046;
+			public const int Settings = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int SettingsFragment = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int SideMenuItem = 2130903048;
 			
 			static Layout()
 			{
@@ -458,8 +489,8 @@ namespace TrafficControl.GUI
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f070000
-			public const int main_menu = 2131165184;
+			// aapt resource value: 0x7f080000
+			public const int main_menu = 2131230720;
 			
 			static Menu()
 			{
@@ -476,6 +507,9 @@ namespace TrafficControl.GUI
 			
 			// aapt resource value: 0x7f040001
 			public const int ApplicationName = 2130968577;
+			
+			// aapt resource value: 0x7f040003
+			public const int CreateUserType = 2130968579;
 			
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
@@ -496,41 +530,41 @@ namespace TrafficControl.GUI
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int ActionBar_Solid_Trafficcontrol = 2131099649;
+			// aapt resource value: 0x7f070001
+			public const int ActionBar_Solid_Trafficcontrol = 2131165185;
 			
-			// aapt resource value: 0x7f060002
-			public const int ActionBar_Transparent_Trafficcontrol = 2131099650;
+			// aapt resource value: 0x7f070002
+			public const int ActionBar_Transparent_Trafficcontrol = 2131165186;
 			
-			// aapt resource value: 0x7f060005
-			public const int ActionBarTabStyle_Trafficcontrol = 2131099653;
+			// aapt resource value: 0x7f070005
+			public const int ActionBarTabStyle_Trafficcontrol = 2131165189;
 			
-			// aapt resource value: 0x7f060008
-			public const int ActionButton_CloseMode_Trafficcontrol = 2131099656;
+			// aapt resource value: 0x7f070008
+			public const int ActionButton_CloseMode_Trafficcontrol = 2131165192;
 			
-			// aapt resource value: 0x7f060004
-			public const int DropDownListView_Trafficcontrol = 2131099652;
+			// aapt resource value: 0x7f070004
+			public const int DropDownListView_Trafficcontrol = 2131165188;
 			
-			// aapt resource value: 0x7f060006
-			public const int DropDownNav_Trafficcontrol = 2131099654;
+			// aapt resource value: 0x7f070006
+			public const int DropDownNav_Trafficcontrol = 2131165190;
 			
-			// aapt resource value: 0x7f060003
-			public const int PopupMenu_Trafficcontrol = 2131099651;
+			// aapt resource value: 0x7f070003
+			public const int PopupMenu_Trafficcontrol = 2131165187;
 			
-			// aapt resource value: 0x7f060007
-			public const int ProgressBar_Trafficcontrol = 2131099655;
+			// aapt resource value: 0x7f070007
+			public const int ProgressBar_Trafficcontrol = 2131165191;
 			
-			// aapt resource value: 0x7f060000
-			public const int Theme_Trafficcontrol = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int Theme_Trafficcontrol = 2131165184;
 			
-			// aapt resource value: 0x7f060009
-			public const int Theme_Trafficcontrol_Widget = 2131099657;
+			// aapt resource value: 0x7f070009
+			public const int Theme_Trafficcontrol_Widget = 2131165193;
 			
-			// aapt resource value: 0x7f06000a
-			public const int TrafficControlGreen = 2131099658;
+			// aapt resource value: 0x7f07000a
+			public const int TrafficControlGreen = 2131165194;
 			
-			// aapt resource value: 0x7f06000b
-			public const int _TrafficControlGreen = 2131099659;
+			// aapt resource value: 0x7f07000b
+			public const int _TrafficControlGreen = 2131165195;
 			
 			static Style()
 			{

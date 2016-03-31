@@ -1,3 +1,7 @@
+TrafficControl.GUI.CreateUserActivity, TrafficControl.GUI;md56b3a59ca03fc5e073370dc85bbbcd31e.CreateUserActivity
+TrafficControl.GUI.CreateUserActivity, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56b3a59ca03fc5e073370dc85bbbcd31e.CreateUserActivity
+TrafficControl.GUI.CreateUserActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.CreateUserActivity
+trafficcontrol.gui.CreateUserActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.CreateUserActivity
 TrafficControl.GUI.LogInActivity, TrafficControl.GUI;md56b3a59ca03fc5e073370dc85bbbcd31e.LogInActivity
 TrafficControl.GUI.LogInActivity, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56b3a59ca03fc5e073370dc85bbbcd31e.LogInActivity
 TrafficControl.GUI.LogInActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.LogInActivity

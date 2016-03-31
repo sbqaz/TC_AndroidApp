@@ -24,8 +24,7 @@ namespace TrafficControl.GUI.Settings
 
         private void OnCreateUserClicked(object sender, Preference.PreferenceClickEventArgs e)
         {
-            Toast.MakeText(Activity, "_CreateUser_", ToastLength.Long).Show();
-            _presenter.CreateUser(); //This function does nothing right now!
+            _presenter.CreateUser();
         }
 
         public override void OnResume()
@@ -53,6 +52,16 @@ namespace TrafficControl.GUI.Settings
             if (key.Equals("switch_preference"))
             {
                 Toast.MakeText(Activity, "Switched", ToastLength.Long).Show();
+            }
+        }
+
+        public void NavigateToCreateUser()
+        {
+            if (GetType() != typeof(CreateUserActivity))
+            {
+                var nextActivity = new Intent(Activity, typeof(CreateUserActivity));
+                nextActivity.AddFlags(ActivityFlags.ReorderToFront);
+                StartActivity(nextActivity);
             }
         }
     }

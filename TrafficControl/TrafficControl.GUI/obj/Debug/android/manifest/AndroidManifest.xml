@@ -3,6 +3,7 @@
   <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="21" />
   <uses-permission android:name="android.permission.INTERNET" />
   <application android:label="@string/ApplicationName" android:icon="@drawable/tclogo" android:theme="@style/Theme.Trafficcontrol" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="Opret ny bruger" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.CreateUserActivity" />
     <activity android:label="@string/ApplicationName" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.LogInActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
