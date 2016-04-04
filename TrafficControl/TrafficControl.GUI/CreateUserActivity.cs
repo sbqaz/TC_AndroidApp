@@ -15,19 +15,31 @@ namespace TrafficControl.GUI
     [Activity(Label = "Opret ny bruger")]
     public class CreateUserActivity : Activity
     {
+        private EditText _email;
+        private EditText _firstName;
+        private EditText _lastName;
+        private EditText _phoneNumber;
         private Spinner _userTypeSpinner;
+        private Button _createUser;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.CreateUser);
 
+            _email = FindViewById<EditText>(Resource.Id.CreateEmailInput);
+            _firstName = FindViewById<EditText>(Resource.Id.CreateFirstNameInput);
+            _lastName = FindViewById<EditText>(Resource.Id.CreateLastNameInput);
+            _phoneNumber = FindViewById<EditText>(Resource.Id.CreatePhonenumberInput);
+            _createUser = FindViewById<Button>(Resource.Id.CreateUserBtn);
+
             _userTypeSpinner = FindViewById<Spinner>(Resource.Id.UserTypeSpinner);
             _userTypeSpinner.ItemSelected += spinner_ItemSelected;
             var adapter = ArrayAdapter.CreateFromResource(
-                    this, Resource.Array.UserTypes, Android.Resource.Layout.SimpleSpinnerItem);
+                    this, Resource.Array.UserTypes, Resource.Layout.UserTypeSpinnerItem);
 
-            adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            adapter.SetDropDownViewResource(Resource.Layout.UserTypeDropDownItem);
             _userTypeSpinner.Adapter = adapter;
 
             ActionBar.SetDisplayHomeAsUpEnabled(true);

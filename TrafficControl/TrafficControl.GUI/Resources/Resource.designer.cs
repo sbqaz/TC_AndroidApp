@@ -250,115 +250,157 @@ namespace TrafficControl.GUI
 			public const int TCLogoYellow = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int trafficcontrolgreen_btn_check_holo_light = 2130837546;
+			public const int trafficcontrolgreen_activated_background_holo_light = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int trafficcontrolgreen_btn_check_off_disabled_focused_holo_light = 2130837547;
+			public const int trafficcontrolgreen_btn_check_holo_light = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int trafficcontrolgreen_btn_check_off_disabled_holo_light = 2130837548;
+			public const int trafficcontrolgreen_btn_check_off_disabled_focused_holo_light = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int trafficcontrolgreen_btn_check_off_focused_holo_light = 2130837549;
+			public const int trafficcontrolgreen_btn_check_off_disabled_holo_light = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int trafficcontrolgreen_btn_check_off_holo_light = 2130837550;
+			public const int trafficcontrolgreen_btn_check_off_focused_holo_light = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int trafficcontrolgreen_btn_check_off_pressed_holo_light = 2130837551;
+			public const int trafficcontrolgreen_btn_check_off_holo_light = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int trafficcontrolgreen_btn_check_on_disabled_focused_holo_light = 2130837552;
+			public const int trafficcontrolgreen_btn_check_off_pressed_holo_light = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int trafficcontrolgreen_btn_check_on_disabled_holo_light = 2130837553;
+			public const int trafficcontrolgreen_btn_check_on_disabled_focused_holo_light = 2130837553;
 			
 			// aapt resource value: 0x7f020032
-			public const int trafficcontrolgreen_btn_check_on_focused_holo_light = 2130837554;
+			public const int trafficcontrolgreen_btn_check_on_disabled_holo_light = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int trafficcontrolgreen_btn_check_on_holo_light = 2130837555;
+			public const int trafficcontrolgreen_btn_check_on_focused_holo_light = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int trafficcontrolgreen_btn_check_on_pressed_holo_light = 2130837556;
+			public const int trafficcontrolgreen_btn_check_on_holo_light = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int trafficcontrolgreen_btn_radio_holo_light = 2130837557;
+			public const int trafficcontrolgreen_btn_check_on_pressed_holo_light = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int trafficcontrolgreen_btn_radio_off_disabled_focused_holo_light = 2130837558;
+			public const int trafficcontrolgreen_btn_radio_holo_light = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int trafficcontrolgreen_btn_radio_off_disabled_holo_light = 2130837559;
+			public const int trafficcontrolgreen_btn_radio_off_disabled_focused_holo_light = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int trafficcontrolgreen_btn_radio_off_focused_holo_light = 2130837560;
+			public const int trafficcontrolgreen_btn_radio_off_disabled_holo_light = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int trafficcontrolgreen_btn_radio_off_holo_light = 2130837561;
+			public const int trafficcontrolgreen_btn_radio_off_focused_holo_light = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int trafficcontrolgreen_btn_radio_off_pressed_holo_light = 2130837562;
+			public const int trafficcontrolgreen_btn_radio_off_holo_light = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int trafficcontrolgreen_btn_radio_on_disabled_focused_holo_light = 2130837563;
+			public const int trafficcontrolgreen_btn_radio_off_pressed_holo_light = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int trafficcontrolgreen_btn_radio_on_disabled_holo_light = 2130837564;
+			public const int trafficcontrolgreen_btn_radio_on_disabled_focused_holo_light = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int trafficcontrolgreen_btn_radio_on_focused_holo_light = 2130837565;
+			public const int trafficcontrolgreen_btn_radio_on_disabled_holo_light = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int trafficcontrolgreen_btn_radio_on_holo_light = 2130837566;
+			public const int trafficcontrolgreen_btn_radio_on_focused_holo_light = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int trafficcontrolgreen_btn_radio_on_pressed_holo_light = 2130837567;
+			public const int trafficcontrolgreen_btn_radio_on_holo_light = 2130837567;
 			
 			// aapt resource value: 0x7f020040
-			public const int trafficcontrolgreen_edit_text_holo_light = 2130837568;
+			public const int trafficcontrolgreen_btn_radio_on_pressed_holo_light = 2130837568;
 			
 			// aapt resource value: 0x7f020041
-			public const int trafficcontrolgreen_switch_bg_disabled_holo_light = 2130837569;
+			public const int trafficcontrolgreen_edit_text_holo_light = 2130837569;
 			
 			// aapt resource value: 0x7f020042
-			public const int trafficcontrolgreen_switch_bg_focused_holo_light = 2130837570;
+			public const int trafficcontrolgreen_item_background_holo_light = 2130837570;
 			
 			// aapt resource value: 0x7f020043
-			public const int trafficcontrolgreen_switch_bg_holo_light = 2130837571;
+			public const int trafficcontrolgreen_list_activated_holo = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int trafficcontrolgreen_switch_inner_holo_light = 2130837572;
+			public const int trafficcontrolgreen_list_focused_holo = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int trafficcontrolgreen_switch_thumb_activated_holo_light = 2130837573;
+			public const int trafficcontrolgreen_list_longpressed_holo = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int trafficcontrolgreen_switch_thumb_disabled_holo_light = 2130837574;
+			public const int trafficcontrolgreen_list_pressed_holo_light = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int trafficcontrolgreen_switch_thumb_holo_light = 2130837575;
+			public const int trafficcontrolgreen_list_selector_background_transition_holo_light = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int trafficcontrolgreen_switch_thumb_pressed_holo_light = 2130837576;
+			public const int trafficcontrolgreen_list_selector_disabled_holo_light = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int trafficcontrolgreen_switch_track_holo_light = 2130837577;
+			public const int trafficcontrolgreen_list_selector_holo_light = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int trafficcontrolgreen_textfield_activated_holo_light = 2130837578;
+			public const int trafficcontrolgreen_spinner_background_holo_light = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int trafficcontrolgreen_textfield_default_holo_light = 2130837579;
+			public const int trafficcontrolgreen_spinner_default_holo_light = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int trafficcontrolgreen_textfield_disabled_focused_holo_light = 2130837580;
+			public const int trafficcontrolgreen_spinner_disabled_holo_light = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int trafficcontrolgreen_textfield_disabled_holo_light = 2130837581;
+			public const int trafficcontrolgreen_spinner_focused_holo_light = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int trafficcontrolgreen_textfield_focused_holo_light = 2130837582;
+			public const int trafficcontrolgreen_spinner_pressed_holo_light = 2130837582;
+			
+			// aapt resource value: 0x7f02004f
+			public const int trafficcontrolgreen_switch_bg_disabled_holo_light = 2130837583;
+			
+			// aapt resource value: 0x7f020050
+			public const int trafficcontrolgreen_switch_bg_focused_holo_light = 2130837584;
+			
+			// aapt resource value: 0x7f020051
+			public const int trafficcontrolgreen_switch_bg_holo_light = 2130837585;
+			
+			// aapt resource value: 0x7f020052
+			public const int trafficcontrolgreen_switch_inner_holo_light = 2130837586;
+			
+			// aapt resource value: 0x7f020053
+			public const int trafficcontrolgreen_switch_thumb_activated_holo_light = 2130837587;
+			
+			// aapt resource value: 0x7f020054
+			public const int trafficcontrolgreen_switch_thumb_disabled_holo_light = 2130837588;
+			
+			// aapt resource value: 0x7f020055
+			public const int trafficcontrolgreen_switch_thumb_holo_light = 2130837589;
+			
+			// aapt resource value: 0x7f020056
+			public const int trafficcontrolgreen_switch_thumb_pressed_holo_light = 2130837590;
+			
+			// aapt resource value: 0x7f020057
+			public const int trafficcontrolgreen_switch_track_holo_light = 2130837591;
+			
+			// aapt resource value: 0x7f020058
+			public const int trafficcontrolgreen_textfield_activated_holo_light = 2130837592;
+			
+			// aapt resource value: 0x7f020059
+			public const int trafficcontrolgreen_textfield_default_holo_light = 2130837593;
+			
+			// aapt resource value: 0x7f02005a
+			public const int trafficcontrolgreen_textfield_disabled_focused_holo_light = 2130837594;
+			
+			// aapt resource value: 0x7f02005b
+			public const int trafficcontrolgreen_textfield_disabled_holo_light = 2130837595;
+			
+			// aapt resource value: 0x7f02005c
+			public const int trafficcontrolgreen_textfield_focused_holo_light = 2130837596;
 			
 			static Drawable()
 			{
@@ -379,50 +421,62 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f090004
 			public const int CaseListing = 2131296260;
 			
-			// aapt resource value: 0x7f090010
-			public const int ContentFrame = 2131296272;
+			// aapt resource value: 0x7f090014
+			public const int ContentFrame = 2131296276;
 			
 			// aapt resource value: 0x7f090005
 			public const int CreateEmailInput = 2131296261;
 			
-			// aapt resource value: 0x7f09000c
-			public const int EmailInput = 2131296268;
-			
-			// aapt resource value: 0x7f090008
-			public const int HomeContentFrame = 2131296264;
-			
-			// aapt resource value: 0x7f090009
-			public const int LeftListView = 2131296265;
-			
-			// aapt resource value: 0x7f09000f
-			public const int LogInErrorMsg = 2131296271;
-			
-			// aapt resource value: 0x7f09000b
-			public const int LoginLogo = 2131296267;
-			
-			// aapt resource value: 0x7f090013
-			public const int Menu_About = 2131296275;
-			
-			// aapt resource value: 0x7f090014
-			public const int Menu_LogOut = 2131296276;
-			
-			// aapt resource value: 0x7f090012
-			public const int Menu_Options = 2131296274;
-			
-			// aapt resource value: 0x7f09000e
-			public const int MyButton = 2131296270;
+			// aapt resource value: 0x7f090006
+			public const int CreateFirstNameInput = 2131296262;
 			
 			// aapt resource value: 0x7f090007
-			public const int OptionsDrawer = 2131296263;
+			public const int CreateLastNameInput = 2131296263;
+			
+			// aapt resource value: 0x7f090008
+			public const int CreatePhonenumberInput = 2131296264;
+			
+			// aapt resource value: 0x7f09000a
+			public const int CreateUserBtn = 2131296266;
+			
+			// aapt resource value: 0x7f090010
+			public const int EmailInput = 2131296272;
+			
+			// aapt resource value: 0x7f09000c
+			public const int HomeContentFrame = 2131296268;
 			
 			// aapt resource value: 0x7f09000d
-			public const int PasswordInput = 2131296269;
+			public const int LeftListView = 2131296269;
+			
+			// aapt resource value: 0x7f090013
+			public const int LogInErrorMsg = 2131296275;
+			
+			// aapt resource value: 0x7f09000f
+			public const int LoginLogo = 2131296271;
+			
+			// aapt resource value: 0x7f090017
+			public const int Menu_About = 2131296279;
+			
+			// aapt resource value: 0x7f090018
+			public const int Menu_LogOut = 2131296280;
+			
+			// aapt resource value: 0x7f090016
+			public const int Menu_Options = 2131296278;
+			
+			// aapt resource value: 0x7f090012
+			public const int MyButton = 2131296274;
+			
+			// aapt resource value: 0x7f09000b
+			public const int OptionsDrawer = 2131296267;
 			
 			// aapt resource value: 0x7f090011
-			public const int SettingsContentFrame = 2131296273;
+			public const int PasswordInput = 2131296273;
 			
-			// aapt resource value: 0x7f090006
-			public const int UserTypeSpinner = 2131296262;
+			// aapt resource value: 0x7f090015
+			public const int SettingsContentFrame = 2131296277;
+			
+			// aapt resource value: 0x7f090009
+			public const int UserTypeSpinner = 2131296265;
 			
 			// aapt resource value: 0x7f090002
 			public const int case_id = 2131296258;
@@ -433,8 +487,8 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f090003
 			public const int case_time = 2131296259;
 			
-			// aapt resource value: 0x7f09000a
-			public const int main_content = 2131296266;
+			// aapt resource value: 0x7f09000e
+			public const int main_content = 2131296270;
 			
 			static Id()
 			{
@@ -475,6 +529,12 @@ namespace TrafficControl.GUI
 			
 			// aapt resource value: 0x7f030008
 			public const int SideMenuItem = 2130903048;
+			
+			// aapt resource value: 0x7f030009
+			public const int UserTypeDropDownItem = 2130903049;
+			
+			// aapt resource value: 0x7f03000a
+			public const int UserTypeSpinnerItem = 2130903050;
 			
 			static Layout()
 			{
@@ -554,17 +614,20 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f070007
 			public const int ProgressBar_Trafficcontrol = 2131165191;
 			
+			// aapt resource value: 0x7f07000a
+			public const int SpinnerTrafficControlGreen = 2131165194;
+			
 			// aapt resource value: 0x7f070000
 			public const int Theme_Trafficcontrol = 2131165184;
 			
 			// aapt resource value: 0x7f070009
 			public const int Theme_Trafficcontrol_Widget = 2131165193;
 			
-			// aapt resource value: 0x7f07000a
-			public const int TrafficControlGreen = 2131165194;
-			
 			// aapt resource value: 0x7f07000b
-			public const int _TrafficControlGreen = 2131165195;
+			public const int TrafficControlGreen = 2131165195;
+			
+			// aapt resource value: 0x7f07000c
+			public const int _TrafficControlGreen = 2131165196;
 			
 			static Style()
 			{

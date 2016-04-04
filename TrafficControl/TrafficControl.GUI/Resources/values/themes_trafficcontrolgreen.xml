@@ -12,6 +12,8 @@
     <item name="android:listChoiceIndicatorMultiple">@drawable/trafficcontrolgreen_btn_check_holo_light</item>
 
     <item name="android:listChoiceIndicatorSingle">@drawable/trafficcontrolgreen_btn_radio_holo_light</item>
+    
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerTrafficControlGreen</item>
 
   </style>
 
