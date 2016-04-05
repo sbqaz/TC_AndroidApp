@@ -1,4 +1,5 @@
-﻿using Android.Text;
+﻿using System.Threading.Tasks;
+using Android.Text;
 using TrafficControl.BLL.LogIn;
 
 namespace TrafficControl.GUI.LogIn
@@ -18,7 +19,7 @@ namespace TrafficControl.GUI.LogIn
             _logInView = null;
         }
 
-        public void LogInCredentials(string email, string password)
+        public async void LogInCredentialsAsync(string email, string password)
         {
             bool error = false;
             if (TextUtils.IsEmpty(email))
@@ -34,15 +35,20 @@ namespace TrafficControl.GUI.LogIn
 
             if (!error)
             {
-                //Validate email aswell??
-                if (_logInModel.ValidateLogIn(email, password))
+                _logInView.ShowProgressDialog();
+                var validation = await Task.Factory.StartNew(() => _logInModel.ValidateLogIn(email, password));
+
+                //Validate email "syntax" aswell??
+                if (validation)
                 {
-                    _logInView.NavigateToHome();
                     _logInView.HideLogInErrorMsg();
+                    _logInView.HideProgressDialog();
+                    _logInView.NavigateToHome();
                 }
                 else
                 {
                     _logInView.ShowLogInErrorMsg();
+                    _logInView.HideProgressDialog();
                 }
             }
         }

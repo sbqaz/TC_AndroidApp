@@ -1,16 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using TrafficControl.BLL;
-using TrafficControl.BLL.LogIn;
 using TrafficControl.GUI.LogIn;
 
 namespace TrafficControl.GUI
@@ -24,6 +17,8 @@ namespace TrafficControl.GUI
         private Button _logInBtn;
         private TextView _logInErrorMsg;
 
+        private ProgressDialog _progressDialog;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -36,13 +31,16 @@ namespace TrafficControl.GUI
             _logInErrorMsg = FindViewById<TextView>(Resource.Id.LogInErrorMsg);
             _presenter = new LogInPresenter(this, ModelFactory.Instance.CreateLogInModel());
 
+            _progressDialog = new ProgressDialog(this);
+            _progressDialog.SetMessage("Logger ind...");
+
             _logInBtn.Click += OnLogInBtnClicked;
 
         }
 
         private void OnLogInBtnClicked(object sender, EventArgs e)
         {
-            _presenter.LogInCredentials(_email.Text, _password.Text);
+            _presenter.LogInCredentialsAsync(_email.Text, _password.Text);
         }
 
         protected override void OnDestroy()
@@ -61,6 +59,16 @@ namespace TrafficControl.GUI
         {
             _email.RequestFocus();
             _email.SetError("Email cannot be empty", null);
+        }
+
+        public void ShowProgressDialog()
+        {
+            _progressDialog.Show();
+        }
+
+        public void HideProgressDialog()
+        {
+            _progressDialog.Hide();
         }
 
         public void ShowLogInErrorMsg()

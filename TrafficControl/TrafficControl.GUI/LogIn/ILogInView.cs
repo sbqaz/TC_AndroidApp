@@ -6,6 +6,8 @@
         void SetEmailError();
         void ShowLogInErrorMsg();
         void HideLogInErrorMsg();
+        void ShowProgressDialog();
+        void HideProgressDialog();
         void NavigateToHome();
     }
 }

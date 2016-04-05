@@ -66,9 +66,7 @@ E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficCon
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.TrafficControl-Signed.apk
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\Xamarin.Android.Support.v4.dll
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.pdb
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.pdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.csprojResolveAssemblyReference.cache
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.pdb
@@ -340,9 +338,6 @@ E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawab
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xxhdpi\trafficcontrolgreen_switch_thumb_pressed_holo_light.9.png
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\R.cs.flag
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\uploadflags.txt
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.dll.mdb
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll.mdb
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.mdb
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.config
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.pdb
@@ -677,3 +672,59 @@ D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\R.cs.flag
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\uploadflags.txt
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll.mdb
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.mdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.config
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.RestSharp.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\RestSharp.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\Newtonsoft.Json.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.RestSharp.pdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\RestSharp.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\Newtonsoft.Json.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\menuactivitylayout.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\casesfragment.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\createuser.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\usertypespinneritem.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\usertypedropdownitem.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable\trafficcontrolgreen_activated_background_holo_light.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable\trafficcontrolgreen_item_background_holo_light.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable\trafficcontrolgreen_list_selector_background_transition_holo_light.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable\trafficcontrolgreen_list_selector_holo_light.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable\trafficcontrolgreen_spinner_background_holo_light.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-hdpi\trafficcontrolgreen_list_activated_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-hdpi\trafficcontrolgreen_list_focused_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-hdpi\trafficcontrolgreen_list_longpressed_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-hdpi\trafficcontrolgreen_list_pressed_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-hdpi\trafficcontrolgreen_list_selector_disabled_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-hdpi\trafficcontrolgreen_spinner_default_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-hdpi\trafficcontrolgreen_spinner_disabled_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-hdpi\trafficcontrolgreen_spinner_focused_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-hdpi\trafficcontrolgreen_spinner_pressed_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-mdpi\trafficcontrolgreen_list_activated_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-mdpi\trafficcontrolgreen_list_focused_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-mdpi\trafficcontrolgreen_list_longpressed_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-mdpi\trafficcontrolgreen_list_pressed_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-mdpi\trafficcontrolgreen_list_selector_disabled_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-mdpi\trafficcontrolgreen_spinner_default_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-mdpi\trafficcontrolgreen_spinner_disabled_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-mdpi\trafficcontrolgreen_spinner_focused_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-mdpi\trafficcontrolgreen_spinner_pressed_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xhdpi\trafficcontrolgreen_list_activated_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xhdpi\trafficcontrolgreen_list_focused_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xhdpi\trafficcontrolgreen_list_longpressed_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xhdpi\trafficcontrolgreen_list_pressed_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xhdpi\trafficcontrolgreen_list_selector_disabled_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xhdpi\trafficcontrolgreen_spinner_default_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xhdpi\trafficcontrolgreen_spinner_disabled_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xhdpi\trafficcontrolgreen_spinner_focused_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xhdpi\trafficcontrolgreen_spinner_pressed_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xxhdpi\trafficcontrolgreen_list_activated_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xxhdpi\trafficcontrolgreen_list_focused_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xxhdpi\trafficcontrolgreen_list_longpressed_holo.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xxhdpi\trafficcontrolgreen_list_pressed_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xxhdpi\trafficcontrolgreen_list_selector_disabled_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xxhdpi\trafficcontrolgreen_spinner_default_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xxhdpi\trafficcontrolgreen_spinner_disabled_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xxhdpi\trafficcontrolgreen_spinner_focused_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable-xxhdpi\trafficcontrolgreen_spinner_pressed_holo_light.9.png
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\values\styles_trafficcontrolgreen.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll.mdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.mdb

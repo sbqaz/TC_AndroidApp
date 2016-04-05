@@ -3,6 +3,6 @@
     public interface ILogInPresenter
     {
         void OnDestroy();
-        void LogInCredentials(string email, string password);
+        void LogInCredentialsAsync(string email, string password);
     }
 }
