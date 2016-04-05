@@ -65,9 +65,9 @@
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\TC_DAL\TrafficControl.DAL\TrafficControl.DAL.csproj">
-      <Project>{4396c852-8ec9-4a9c-bb5d-8e5c45407c51}</Project>
-      <Name>TrafficControl.DAL</Name>
+    <ProjectReference Include="..\..\..\TC_DAL\TrafficControl.DAL.RestSharp\TrafficControl.DAL.RestSharp.csproj">
+      <Project>{99424c50-f132-4de5-a9b1-919cfea3f26b}</Project>
+      <Name>TrafficControl.DAL.RestSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -2,7 +2,7 @@
 using TrafficControl.BLL.Home;
 using TrafficControl.BLL.LogIn;
 using TrafficControl.BLL.Settings;
-using TrafficControl.DAL;
+using TrafficControl.DAL.RestSharp;
 
 namespace TrafficControl.BLL
 {
@@ -18,7 +18,7 @@ namespace TrafficControl.BLL
 
         private ModelFactory()
         {
-            _tcApi = new TCAPIdummy();
+            _tcApi = new TCApi();
             _logInModel = new LogInModel(_tcApi);
             _homeModel = new HomeModel();
             _settingsModel = new SettingsModel();
