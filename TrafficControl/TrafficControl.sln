@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficControl.BLL", "Traff
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficControl.DAL.RestSharp", "..\..\TC_DAL\TrafficControl.DAL.RestSharp\TrafficControl.DAL.RestSharp.csproj", "{99424C50-F132-4DE5-A9B1-919CFEA3F26B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficControl.Test.Unit", "TrafficControl.Test.Unit\TrafficControl.Test.Unit.csproj", "{8076C0EE-0399-49C4-9AA6-3D1777543758}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{99424C50-F132-4DE5-A9B1-919CFEA3F26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99424C50-F132-4DE5-A9B1-919CFEA3F26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99424C50-F132-4DE5-A9B1-919CFEA3F26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8076C0EE-0399-49C4-9AA6-3D1777543758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8076C0EE-0399-49C4-9AA6-3D1777543758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8076C0EE-0399-49C4-9AA6-3D1777543758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8076C0EE-0399-49C4-9AA6-3D1777543758}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

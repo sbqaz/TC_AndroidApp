@@ -1,8 +1,10 @@
-﻿namespace TrafficControl.GUI.LogIn
+﻿using System.Threading.Tasks;
+
+namespace TrafficControl.GUI.LogIn
 {
     public interface ILogInPresenter
     {
         void OnDestroy();
-        void LogInCredentialsAsync(string email, string password);
+        Task LogInCredentialsAsync(string email, string password);
     }
 }

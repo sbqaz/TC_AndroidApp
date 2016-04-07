@@ -1,3 +1,4 @@
+using System;
 using TrafficControl.DAL.RestSharp;
 
 namespace TrafficControl.BLL.LogIn
@@ -12,6 +13,8 @@ namespace TrafficControl.BLL.LogIn
 
         public bool ValidateLogIn(string email, string password)
         {
+            if (email == null) throw new ArgumentNullException(nameof(email));
+            if (password == null) throw new ArgumentNullException(nameof(password));
             return _tcApi.LogIn(email, password);
         }
     }

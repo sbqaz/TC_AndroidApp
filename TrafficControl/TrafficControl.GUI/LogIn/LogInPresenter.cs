@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using Android.Text;
 using TrafficControl.BLL.LogIn;
 
 namespace TrafficControl.GUI.LogIn
@@ -14,20 +13,21 @@ namespace TrafficControl.GUI.LogIn
             _logInModel = model;
         }
 
+        //Redundant?
         public void OnDestroy()
         {
             _logInView = null;
         }
 
-        public async void LogInCredentialsAsync(string email, string password)
+        public async Task LogInCredentialsAsync(string email, string password)
         {
             bool error = false;
-            if (TextUtils.IsEmpty(email))
+            if (string.IsNullOrEmpty(email))
             {
                 _logInView.SetEmailError();
                 error = true;
             }
-            if (TextUtils.IsEmpty(password))
+            if (string.IsNullOrEmpty(password))
             {
                 _logInView.SetPasswordError();
                 error = true;
