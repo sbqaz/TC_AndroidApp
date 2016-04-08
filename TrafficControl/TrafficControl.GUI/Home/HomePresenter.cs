@@ -36,6 +36,7 @@ namespace TrafficControl.GUI.Home
             return _homeModel.MyCases;
         }
 
+        //Move to view?
         public void CaseItemClicked(Activity activity, object sender, AdapterView.ItemClickEventArgs e)
         {
             string text = string.Format("Casename: {0}\n" +
