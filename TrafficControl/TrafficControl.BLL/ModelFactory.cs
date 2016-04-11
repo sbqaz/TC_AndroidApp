@@ -1,4 +1,5 @@
 ﻿using System;
+using TrafficControl.BLL.CreateUser;
 using TrafficControl.BLL.Home;
 using TrafficControl.BLL.LogIn;
 using TrafficControl.BLL.Settings;
@@ -15,6 +16,7 @@ namespace TrafficControl.BLL
         private readonly ILogInModel _logInModel;
         private readonly IHomeModel _homeModel;
         private readonly ISettingsModel _settingsModel;
+        private ICreateUserModel _createUserModel;
 
         private ModelFactory()
         {
@@ -22,6 +24,7 @@ namespace TrafficControl.BLL
             _logInModel = new LogInModel(_tcApi);
             _homeModel = new HomeModel();
             _settingsModel = new SettingsModel();
+            _createUserModel = new CreateUserModel(_tcApi);
         }
 
         public static ModelFactory Instance
@@ -55,6 +58,10 @@ namespace TrafficControl.BLL
         {
             return _settingsModel;
         }
-         
+
+        public ICreateUserModel CreateCreateUserModel()
+        {
+            return _createUserModel;
+        }
     }
 }

@@ -421,62 +421,68 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f090004
 			public const int CaseListing = 2131296260;
 			
-			// aapt resource value: 0x7f090014
-			public const int ContentFrame = 2131296276;
+			// aapt resource value: 0x7f090007
+			public const int ConfirmPasswordCreate = 2131296263;
+			
+			// aapt resource value: 0x7f090016
+			public const int ContentFrame = 2131296278;
 			
 			// aapt resource value: 0x7f090005
 			public const int CreateEmailInput = 2131296261;
 			
-			// aapt resource value: 0x7f090006
-			public const int CreateFirstNameInput = 2131296262;
-			
-			// aapt resource value: 0x7f090007
-			public const int CreateLastNameInput = 2131296263;
-			
 			// aapt resource value: 0x7f090008
-			public const int CreatePhonenumberInput = 2131296264;
-			
-			// aapt resource value: 0x7f09000a
-			public const int CreateUserBtn = 2131296266;
-			
-			// aapt resource value: 0x7f090010
-			public const int EmailInput = 2131296272;
-			
-			// aapt resource value: 0x7f09000c
-			public const int HomeContentFrame = 2131296268;
-			
-			// aapt resource value: 0x7f09000d
-			public const int LeftListView = 2131296269;
-			
-			// aapt resource value: 0x7f090013
-			public const int LogInErrorMsg = 2131296275;
-			
-			// aapt resource value: 0x7f09000f
-			public const int LoginLogo = 2131296271;
-			
-			// aapt resource value: 0x7f090017
-			public const int Menu_About = 2131296279;
-			
-			// aapt resource value: 0x7f090018
-			public const int Menu_LogOut = 2131296280;
-			
-			// aapt resource value: 0x7f090016
-			public const int Menu_Options = 2131296278;
-			
-			// aapt resource value: 0x7f090012
-			public const int MyButton = 2131296274;
-			
-			// aapt resource value: 0x7f09000b
-			public const int OptionsDrawer = 2131296267;
-			
-			// aapt resource value: 0x7f090011
-			public const int PasswordInput = 2131296273;
-			
-			// aapt resource value: 0x7f090015
-			public const int SettingsContentFrame = 2131296277;
+			public const int CreateFirstNameInput = 2131296264;
 			
 			// aapt resource value: 0x7f090009
-			public const int UserTypeSpinner = 2131296265;
+			public const int CreateLastNameInput = 2131296265;
+			
+			// aapt resource value: 0x7f09000a
+			public const int CreatePhonenumberInput = 2131296266;
+			
+			// aapt resource value: 0x7f09000c
+			public const int CreateUserBtn = 2131296268;
+			
+			// aapt resource value: 0x7f090012
+			public const int EmailInput = 2131296274;
+			
+			// aapt resource value: 0x7f09000e
+			public const int HomeContentFrame = 2131296270;
+			
+			// aapt resource value: 0x7f09000f
+			public const int LeftListView = 2131296271;
+			
+			// aapt resource value: 0x7f090015
+			public const int LogInErrorMsg = 2131296277;
+			
+			// aapt resource value: 0x7f090011
+			public const int LoginLogo = 2131296273;
+			
+			// aapt resource value: 0x7f090019
+			public const int Menu_About = 2131296281;
+			
+			// aapt resource value: 0x7f09001a
+			public const int Menu_LogOut = 2131296282;
+			
+			// aapt resource value: 0x7f090018
+			public const int Menu_Options = 2131296280;
+			
+			// aapt resource value: 0x7f090014
+			public const int MyButton = 2131296276;
+			
+			// aapt resource value: 0x7f09000d
+			public const int OptionsDrawer = 2131296269;
+			
+			// aapt resource value: 0x7f090006
+			public const int PasswordCreate = 2131296262;
+			
+			// aapt resource value: 0x7f090013
+			public const int PasswordInput = 2131296275;
+			
+			// aapt resource value: 0x7f090017
+			public const int SettingsContentFrame = 2131296279;
+			
+			// aapt resource value: 0x7f09000b
+			public const int UserTypeSpinner = 2131296267;
 			
 			// aapt resource value: 0x7f090002
 			public const int case_id = 2131296258;
@@ -487,8 +493,8 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f090003
 			public const int case_time = 2131296259;
 			
-			// aapt resource value: 0x7f09000e
-			public const int main_content = 2131296270;
+			// aapt resource value: 0x7f090010
+			public const int main_content = 2131296272;
 			
 			static Id()
 			{

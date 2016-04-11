@@ -52,13 +52,13 @@ namespace TrafficControl.GUI
         public void SetPasswordError()
         {
             _password.RequestFocus();
-            _password.SetError("Password cannot be empty", null);
+            _password.SetError("Kodeord må ikke være tom", null);
         }
 
         public void SetEmailError()
         {
             _email.RequestFocus();
-            _email.SetError("Email cannot be empty", null);
+            _email.SetError("Email må ikke være tom", null);
         }
 
         public void ShowProgressDialog()

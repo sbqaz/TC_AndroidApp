@@ -77,6 +77,9 @@
   <ItemGroup>
     <Compile Include="Adapters\CaseAdapter.cs" />
     <Compile Include="CreateUserActivity.cs" />
+    <Compile Include="CreateUser\CreateUserPresenter.cs" />
+    <Compile Include="CreateUser\ICreateUserPresenter.cs" />
+    <Compile Include="CreateUser\ICreateUserView.cs" />
     <Compile Include="Home\AllCasesFragment.cs" />
     <Compile Include="Home\HomePresenter.cs" />
     <Compile Include="Home\IHomePresenter.cs" />
