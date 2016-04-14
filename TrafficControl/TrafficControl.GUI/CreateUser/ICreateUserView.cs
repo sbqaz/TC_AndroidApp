@@ -10,5 +10,8 @@ namespace TrafficControl.GUI.CreateUser
         void SetPhoneNumberError();
         void ConfirmPasswordNotMatchingError();
         void UserCreated();
+        void ShowProgressDialog();
+        void HideProgressDialog();
+        void UserNotCreated();
     }
 }

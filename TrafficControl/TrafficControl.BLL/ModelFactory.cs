@@ -20,7 +20,7 @@ namespace TrafficControl.BLL
 
         private ModelFactory()
         {
-            _tcApi = new TCAPIdummy();
+            _tcApi = new TCApi();
             _logInModel = new LogInModel(_tcApi);
             _homeModel = new HomeModel();
             _settingsModel = new SettingsModel();

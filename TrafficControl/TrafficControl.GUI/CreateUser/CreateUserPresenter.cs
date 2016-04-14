@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using TrafficControl.BLL.CreateUser;
 
 namespace TrafficControl.GUI.CreateUser
@@ -13,7 +14,7 @@ namespace TrafficControl.GUI.CreateUser
             _model = model;
         }
 
-        public void OnCreateUserClick(string email, string password, string confirmPassword, string name, string phoneNumber, string userType)
+        public async Task OnCreateUserClick(string email, string password, string confirmPassword, string name, string phoneNumber, string userType)
         {
             bool error = false;
             if (string.IsNullOrEmpty(email))
@@ -55,9 +56,18 @@ namespace TrafficControl.GUI.CreateUser
 
             if (!error)
             {
-                //Async create user?? Return true if success??
-                _model.CreateUser(email, password, confirmPassword, name, phoneNumber, userType);
-                _view.UserCreated();
+                _view.ShowProgressDialog();
+                var userCreated = await Task.Factory.StartNew(() => _model.CreateUser(email, password, name, phoneNumber, userType));
+                if (userCreated)
+                {
+                    _view.HideProgressDialog();
+                    _view.UserCreated();
+                }
+                else
+                {
+                    _view.HideProgressDialog();
+                    _view.UserNotCreated();
+                }
             }
         }
     }

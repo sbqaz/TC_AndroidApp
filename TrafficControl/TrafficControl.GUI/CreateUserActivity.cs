@@ -28,7 +28,8 @@ namespace TrafficControl.GUI
         private Button _createUser;
         private ICreateUserPresenter _presenter;
         private string _typeSelected;
-
+        
+        private ProgressDialog _progressDialog;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -45,6 +46,8 @@ namespace TrafficControl.GUI
             _presenter = new CreateUserPresenter(this, ModelFactory.Instance.CreateCreateUserModel());
 
             _createUser.Click += CreateUserOnClick;
+            _progressDialog = new ProgressDialog(this);
+            _progressDialog.SetMessage("Opretter ny bruger...");
 
             _userTypeSpinner = FindViewById<Spinner>(Resource.Id.UserTypeSpinner);
             _userTypeSpinner.ItemSelected += spinner_ItemSelected;
@@ -110,20 +113,36 @@ namespace TrafficControl.GUI
         public void SetPhoneNumberError()
         {
             _phoneNumber.RequestFocus();
-            _phoneNumber.SetError("Kodeord skal udfyldes", null);
+            _phoneNumber.SetError("Mobil skal udfyldes", null);
         }
 
         public void ConfirmPasswordNotMatchingError()
         {
             _confirmPassword.RequestFocus();
-            _confirmPassword.SetError("Passer ikker overens med kodeord", null);
+            _confirmPassword.SetError("Passer ikke overens med kodeord", null);
         }
 
         public void UserCreated()
         {
             string toast = "Bruger oprettet";
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
+            Toast.MakeText(this, toast, ToastLength.Short).Show();
             Finish();
+        }
+
+        public void ShowProgressDialog()
+        {
+            _progressDialog.Show();
+        }
+
+        public void HideProgressDialog()
+        {
+            _progressDialog.Hide();
+        }
+
+        public void UserNotCreated()
+        {
+            string toast = "Bruger kunne oprettes.";
+            Toast.MakeText(this, toast, ToastLength.Short).Show();
         }
     }
 }
