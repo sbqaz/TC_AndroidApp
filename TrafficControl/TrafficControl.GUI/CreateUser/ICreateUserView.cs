@@ -6,7 +6,8 @@ namespace TrafficControl.GUI.CreateUser
         void SetEmailError();
         void SetPasswordError();
         void SetConfirmPasswordError();
-        void SetNameError();
+        void SetFirstNameError();
+        void SetLastNameError();
         void SetPhoneNumberError();
         void ConfirmPasswordNotMatchingError();
         void UserCreated();

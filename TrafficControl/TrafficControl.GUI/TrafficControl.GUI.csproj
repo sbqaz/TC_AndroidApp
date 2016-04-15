@@ -99,6 +99,7 @@
     <Compile Include="Settings\ISettingsPresenter.cs" />
     <Compile Include="Settings\ISettingsView.cs" />
     <Compile Include="Settings\SettingsCheckBoxPreference.cs" />
+    <Compile Include="Settings\SettingsEditTextPreference.cs" />
     <Compile Include="Settings\SettingsPreference.cs" />
     <Compile Include="Settings\SettingsPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -145,6 +146,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\UserTypeDropDownItem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\preference_with_value.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

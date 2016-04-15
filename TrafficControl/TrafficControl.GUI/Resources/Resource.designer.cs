@@ -457,14 +457,14 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f090011
 			public const int LoginLogo = 2131296273;
 			
-			// aapt resource value: 0x7f090019
-			public const int Menu_About = 2131296281;
+			// aapt resource value: 0x7f09001b
+			public const int Menu_About = 2131296283;
+			
+			// aapt resource value: 0x7f09001c
+			public const int Menu_LogOut = 2131296284;
 			
 			// aapt resource value: 0x7f09001a
-			public const int Menu_LogOut = 2131296282;
-			
-			// aapt resource value: 0x7f090018
-			public const int Menu_Options = 2131296280;
+			public const int Menu_Options = 2131296282;
 			
 			// aapt resource value: 0x7f090014
 			public const int MyButton = 2131296276;
@@ -478,8 +478,8 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f090013
 			public const int PasswordInput = 2131296275;
 			
-			// aapt resource value: 0x7f090017
-			public const int SettingsContentFrame = 2131296279;
+			// aapt resource value: 0x7f090019
+			public const int SettingsContentFrame = 2131296281;
 			
 			// aapt resource value: 0x7f09000b
 			public const int UserTypeSpinner = 2131296267;
@@ -495,6 +495,12 @@ namespace TrafficControl.GUI
 			
 			// aapt resource value: 0x7f090010
 			public const int main_content = 2131296272;
+			
+			// aapt resource value: 0x7f090017
+			public const int preference_first_line = 2131296279;
+			
+			// aapt resource value: 0x7f090018
+			public const int preference_value = 2131296280;
 			
 			static Id()
 			{
@@ -528,19 +534,22 @@ namespace TrafficControl.GUI
 			public const int MenuActivityLayout = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int Settings = 2130903046;
+			public const int preference_with_value = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int SettingsFragment = 2130903047;
+			public const int Settings = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int SideMenuItem = 2130903048;
+			public const int SettingsFragment = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int UserTypeDropDownItem = 2130903049;
+			public const int SideMenuItem = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int UserTypeSpinnerItem = 2130903050;
+			public const int UserTypeDropDownItem = 2130903050;
+			
+			// aapt resource value: 0x7f03000b
+			public const int UserTypeSpinnerItem = 2130903051;
 			
 			static Layout()
 			{

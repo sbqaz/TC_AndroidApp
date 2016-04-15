@@ -63,7 +63,7 @@ namespace TrafficControl.GUI
 
         private void CreateUserOnClick(object sender, EventArgs eventArgs)
         {
-            _presenter.OnCreateUserClick(_email.Text, _password.Text, _confirmPassword.Text, _firstName.Text + " " + _lastName.Text, _phoneNumber.Text, _typeSelected);
+            _presenter.OnCreateUserClick(_email.Text, _password.Text, _confirmPassword.Text, _firstName.Text, _lastName.Text, _phoneNumber.Text, _typeSelected);
         }
 
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
@@ -104,10 +104,16 @@ namespace TrafficControl.GUI
             _confirmPassword.SetError("Bekræft kodeord skal udfyldes", null);
         }
 
-        public void SetNameError()
+        public void SetFirstNameError()
         {
             _firstName.RequestFocus();
             _firstName.SetError("Fornavn skal udfyldes", null);
+        }
+
+        public void SetLastNameError()
+        {
+            _firstName.RequestFocus();
+            _firstName.SetError("Efternavn skal udfyldes", null);
         }
 
         public void SetPhoneNumberError()
@@ -141,7 +147,7 @@ namespace TrafficControl.GUI
 
         public void UserNotCreated()
         {
-            string toast = "Bruger kunne oprettes.";
+            string toast = "Bruger kunne ikke oprettes.";
             Toast.MakeText(this, toast, ToastLength.Short).Show();
         }
     }

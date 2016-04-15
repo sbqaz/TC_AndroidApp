@@ -14,7 +14,7 @@ namespace TrafficControl.GUI.CreateUser
             _model = model;
         }
 
-        public async Task OnCreateUserClick(string email, string password, string confirmPassword, string name, string phoneNumber, string userType)
+        public async Task OnCreateUserClick(string email, string password, string confirmPassword, string firstName, string lastName, string phoneNumber, string userType)
         {
             bool error = false;
             if (string.IsNullOrEmpty(email))
@@ -35,10 +35,16 @@ namespace TrafficControl.GUI.CreateUser
                 _view.SetConfirmPasswordError();
                 error = true;
             }
-            else if (string.IsNullOrEmpty(name))
+            else if (string.IsNullOrEmpty(firstName))
             {
                 _view.ShowMissingInfoError();
-                _view.SetNameError();
+                _view.SetFirstNameError();
+                error = true;
+            }
+            else if (string.IsNullOrEmpty(lastName))
+            {
+                _view.ShowMissingInfoError();
+                _view.SetLastNameError();
                 error = true;
             }
             else if (string.IsNullOrEmpty(phoneNumber))
@@ -57,7 +63,7 @@ namespace TrafficControl.GUI.CreateUser
             if (!error)
             {
                 _view.ShowProgressDialog();
-                var userCreated = await Task.Factory.StartNew(() => _model.CreateUser(email, password, name, phoneNumber, userType));
+                var userCreated = await Task.Factory.StartNew(() => _model.CreateUser(email, password, firstName + " " + lastName, phoneNumber, userType));
                 if (userCreated)
                 {
                     _view.HideProgressDialog();

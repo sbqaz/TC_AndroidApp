@@ -1,5 +1,7 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
+using Android.Preferences;
 using TrafficControl.GUI.Home;
 
 namespace TrafficControl.GUI
@@ -15,6 +17,17 @@ namespace TrafficControl.GUI
             
             AddTab("Mine sager", new MyCasesFragment());
             AddTab("Seneste sager", new AllCasesFragment());
+
+            SetUserPreferences();
+        }
+
+        private void SetUserPreferences()
+        {
+            //Set preference text to summary instead of preference_value
+            ISharedPreferences settings = PreferenceManager.GetDefaultSharedPreferences(this);
+            ISharedPreferencesEditor editor = settings.Edit();
+            editor.PutString("test_preference", "PRESET Preference");
+            editor.Apply();
         }
 
         private void AddTab(string tabText, Fragment view)

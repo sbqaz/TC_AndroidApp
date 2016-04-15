@@ -17,6 +17,10 @@
             android:key="@string/settings_create_user"
             android:title="Opret ny bruger"
             android:summary="Administrator, Montør, osv..." />
+        <TrafficControl.GUI.Settings.SettingsEditTextPreference
+            android:key="test_preference"
+            android:title="Title"
+            android:summary="Summary" />
     </TrafficControl.GUI.Settings.SettingsPreferenceCategory>
     <TrafficControl.GUI.Settings.SettingsPreferenceCategory
         android:title="Sager"
