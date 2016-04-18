@@ -23,6 +23,7 @@ namespace TrafficControl.GUI
             AddTab("Seneste sager", new AllCasesFragment());
 
             _userPreference = ModelFactory.Instance.CreateUserPreference();
+            _userPreference.SetUserPreference();
             SetUserPreferences();
         }
 

@@ -21,13 +21,10 @@ namespace TrafficControl.BLL
 
         private ModelFactory()
         {
-            _tcApi = new TCAPIdummy();
+            _tcApi = new TCApi();
             _logInModel = new LogInModel(_tcApi);
-
-             var homeModel = new HomeModel(_tcApi);
-            _homeModel = homeModel;
-            _userPreference = homeModel;
-
+            _homeModel = new HomeModel(_tcApi);
+            _userPreference = new UserPreference(_tcApi);
             _settingsModel = new SettingsModel();
             _createUserModel = new CreateUserModel(_tcApi);
         }

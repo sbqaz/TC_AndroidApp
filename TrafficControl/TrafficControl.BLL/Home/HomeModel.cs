@@ -5,15 +5,17 @@ using System.Text;
 using System.Threading;
 using TrafficControl.BLL.Observer;
 using TrafficControl.DAL.RestSharp;
+using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.BLL.Home
 {
-    public class HomeModel : Subject<IHomeModel>, IHomeModel, IUserPreference
+    public class HomeModel : Subject<IHomeModel>, IHomeModel
     {
         private readonly List<Case> _cases;
         private readonly List<Case> _myCases;
 
         private ITCApi _api;
+        private User _currentUser;
 
         public List<Case> Cases
         {
@@ -70,26 +72,6 @@ namespace TrafficControl.BLL.Home
             DateTime start = new DateTime(1995, 1, 1);
             int range = (DateTime.Today - start).Days;
             return start.AddDays(random.Next(range));
-        }
-
-        public string GetUserName()
-        {
-            return "Jacob Boes Eriksen";
-        }
-
-        public string GetPhonenumber()
-        {
-            return "+45 60724427";
-        }
-
-        public bool GetEmailNotification()
-        {
-            return false;
-        }
-
-        public bool GetSmsNotification()
-        {
-            return true;
         }
     }
 }

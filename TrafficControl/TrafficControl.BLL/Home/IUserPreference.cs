@@ -2,6 +2,7 @@
 {
     public interface IUserPreference
     {
+        void SetUserPreference();
         string GetUserName();
         string GetPhonenumber();
         bool GetEmailNotification();
