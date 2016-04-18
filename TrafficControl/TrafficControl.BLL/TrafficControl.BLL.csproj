@@ -48,6 +48,7 @@
     <Compile Include="CreateUser\ICreateUserModel.cs" />
     <Compile Include="Home\HomeModel.cs" />
     <Compile Include="Home\IHomeModel.cs" />
+    <Compile Include="Home\IUserPreference.cs" />
     <Compile Include="LogIn\LogInModel.cs" />
     <Compile Include="LogIn\ILogInModel.cs" />
     <Compile Include="ModelFactory.cs" />

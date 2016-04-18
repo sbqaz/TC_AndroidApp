@@ -15,14 +15,19 @@ namespace TrafficControl.BLL
         private readonly ITCApi _tcApi;
         private readonly ILogInModel _logInModel;
         private readonly IHomeModel _homeModel;
+        private readonly IUserPreference _userPreference;
         private readonly ISettingsModel _settingsModel;
-        private ICreateUserModel _createUserModel;
+        private readonly ICreateUserModel _createUserModel;
 
         private ModelFactory()
         {
             _tcApi = new TCAPIdummy();
             _logInModel = new LogInModel(_tcApi);
-            _homeModel = new HomeModel();
+
+             var homeModel = new HomeModel(_tcApi);
+            _homeModel = homeModel;
+            _userPreference = homeModel;
+
             _settingsModel = new SettingsModel();
             _createUserModel = new CreateUserModel(_tcApi);
         }
@@ -62,6 +67,11 @@ namespace TrafficControl.BLL
         public ICreateUserModel CreateCreateUserModel()
         {
             return _createUserModel;
+        }
+
+        public IUserPreference CreateUserPreference()
+        {
+            return _userPreference;
         }
     }
 }

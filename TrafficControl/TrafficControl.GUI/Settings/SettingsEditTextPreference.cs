@@ -10,31 +10,29 @@ namespace TrafficControl.GUI.Settings
 {
     public class SettingsEditTextPreference : EditTextPreference
     {
-        private TextView _valueText;
-
         public SettingsEditTextPreference(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         {
-            LayoutResource = Resource.Layout.preference_with_value;
+            //LayoutResource = Resource.Layout.preference_with_value;
         }
 
         public SettingsEditTextPreference(Context context) : base(context)
         {
-            LayoutResource = Resource.Layout.preference_with_value;
+            //LayoutResource = Resource.Layout.preference_with_value;
         }
 
         public SettingsEditTextPreference(Context context, IAttributeSet attrs) : base(context, attrs)
         {
-            LayoutResource = Resource.Layout.preference_with_value;
+            //LayoutResource = Resource.Layout.preference_with_value;
         }
 
         public SettingsEditTextPreference(Context context, IAttributeSet attrs, int defStyleAttr) : base(context, attrs, defStyleAttr)
         {
-            LayoutResource = Resource.Layout.preference_with_value;
+            //LayoutResource = Resource.Layout.preference_with_value;
         }
 
         public SettingsEditTextPreference(Context context, IAttributeSet attrs, int defStyleAttr, int defStyleRes) : base(context, attrs, defStyleAttr, defStyleRes)
         {
-            LayoutResource = Resource.Layout.preference_with_value;
+            //LayoutResource = Resource.Layout.preference_with_value;
         }
 
         protected override void OnBindView(View view)
@@ -43,10 +41,10 @@ namespace TrafficControl.GUI.Settings
             TextView titleView = view.FindViewById<TextView>(Android.Resource.Id.Title);
             titleView.SetTextColor(view.Resources.GetColor(Resource.Color.ForeGround));
 
-            _valueText = view.FindViewById<TextView>(Resource.Id.preference_value);
-            if (_valueText != null)
+            TextView valueText = view.FindViewById<TextView>(Android.Resource.Id.Summary);
+            if (valueText != null)
             {
-                _valueText.Text = Text;
+                valueText.Text = Text;
             }
         }
     }

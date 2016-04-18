@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <TrafficControl.GUI.Settings.SettingsPreferenceCategory
-        android:title="Brugere"
-        android:key="category_users">
-        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
-            android:key="switch_preference"
-            android:title="Title"
-            android:summary="Summary"
-            android:defaultValue="true" />
-        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
-            android:key="checkbox_preference"
-            android:title="Title"
-            android:summary="Summary"
-            android:defaultValue="true" />
+        android:title="Bruger"
+        android:key="@string/category_users">
+        <TrafficControl.GUI.Settings.SettingsEditTextPreference
+            android:key="@string/settings_user_name"
+            android:title="Navn"
+            android:summary=" " />
+        <TrafficControl.GUI.Settings.SettingsPreference
+            android:key="@string/settings_user_password"
+            android:title="Skift Kodeord" />
+        <TrafficControl.GUI.Settings.SettingsEditTextPreference
+            android:key="@string/settings_user_phonenumber"
+            android:title="Mobil"
+            android:summary=" " />
         <TrafficControl.GUI.Settings.SettingsPreference
             android:key="@string/settings_create_user"
             android:title="Opret ny bruger"
             android:summary="Administrator, Montør, osv..." />
-        <TrafficControl.GUI.Settings.SettingsEditTextPreference
-            android:key="test_preference"
-            android:title="Title"
-            android:summary="Summary" />
+    </TrafficControl.GUI.Settings.SettingsPreferenceCategory>
+    <TrafficControl.GUI.Settings.SettingsPreferenceCategory
+        android:title="Notifikationer"
+        android:key="@string/category_notifications">
+        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
+            android:key="@string/settings_notify_email"
+            android:title="Email notifikation" />
+        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
+            android:key="@string/settings_notify_sms"
+            android:title="Sms notifikation" />
     </TrafficControl.GUI.Settings.SettingsPreferenceCategory>
     <TrafficControl.GUI.Settings.SettingsPreferenceCategory
         android:title="Sager"
@@ -37,25 +44,6 @@
             android:defaultValue="true" />
         <TrafficControl.GUI.Settings.SettingsPreference
             android:key="third_case_preference"
-            android:title="Title"
-            android:summary="Summary"
-            android:defaultValue="true" />
-    </TrafficControl.GUI.Settings.SettingsPreferenceCategory>
-    <TrafficControl.GUI.Settings.SettingsPreferenceCategory
-        android:title="Notifikationer"
-        android:key="category_notifications">
-        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
-            android:key="first_notifications_preference"
-            android:title="Title"
-            android:summary="Summary"
-            android:defaultValue="true" />
-        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
-            android:key="second_notifications_preference"
-            android:title="Title"
-            android:summary="Summary"
-            android:defaultValue="true" />
-        <TrafficControl.GUI.Settings.SettingsPreference
-            android:key="third_notifications_preference"
             android:title="Title"
             android:summary="Summary"
             android:defaultValue="true" />

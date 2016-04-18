@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using TrafficControl.BLL.Observer;
+using TrafficControl.DAL.RestSharp;
 
 namespace TrafficControl.BLL.Home
 {
-    public class HomeModel : Subject<IHomeModel>, IHomeModel
+    public class HomeModel : Subject<IHomeModel>, IHomeModel, IUserPreference
     {
         private readonly List<Case> _cases;
         private readonly List<Case> _myCases;
+
+        private ITCApi _api;
 
         public List<Case> Cases
         {
@@ -22,8 +25,9 @@ namespace TrafficControl.BLL.Home
             get { return _myCases; }
         }
 
-        public HomeModel() : base()
+        public HomeModel(ITCApi api) : base()
         {
+            _api = api;
             _cases = new List<Case>();
             _myCases = new List<Case>();
             ThreadPool.QueueUserWorkItem(o => SlowMethod());
@@ -68,5 +72,24 @@ namespace TrafficControl.BLL.Home
             return start.AddDays(random.Next(range));
         }
 
+        public string GetUserName()
+        {
+            return "Jacob Boes Eriksen";
+        }
+
+        public string GetPhonenumber()
+        {
+            return "+45 60724427";
+        }
+
+        public bool GetEmailNotification()
+        {
+            return false;
+        }
+
+        public bool GetSmsNotification()
+        {
+            return true;
+        }
     }
 }
