@@ -1,4 +1,5 @@
-﻿using TrafficControl.DAL.RestSharp;
+﻿using System.Threading.Tasks;
+using TrafficControl.DAL.RestSharp;
 using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.BLL.Home
@@ -7,8 +8,7 @@ namespace TrafficControl.BLL.Home
     {
         private User _currentUser;
         private ITCApi _api;
-
-        //Update User from here!!
+        
         public UserPreference(ITCApi api)
         {
             _api = api;
@@ -21,17 +21,23 @@ namespace TrafficControl.BLL.Home
 
         public string GetUserFirstName()
         {
-            return _currentUser.FirstName;
+            if(_currentUser.FirstName != null)
+                return _currentUser.FirstName;
+            return "_NO_NAME_";
         }
 
         public string GetUserLastName()
         {
-            return _currentUser.LastName;
+            if(_currentUser.LastName != null)
+                return _currentUser.LastName;
+            return "_NO_NAME_";
         }
 
         public string GetPhonenumber()
         {
-            return _currentUser.Number;
+            if(_currentUser.Number != null)
+                return _currentUser.Number;
+            return "_NO_PHONENUMBER_";
         }
 
         public bool GetEmailNotification()
@@ -76,6 +82,7 @@ namespace TrafficControl.BLL.Home
 
         private void UpdateCurrentUser()
         {
+            Task.Factory.StartNew(() => _api.UpdateUser(_currentUser));
             //Update via api
             //_api.UpdateUser(_currentUser);
         }

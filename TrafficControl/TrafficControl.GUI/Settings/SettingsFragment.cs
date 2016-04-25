@@ -93,12 +93,12 @@ namespace TrafficControl.GUI.Settings
 
         public void NavigateToChangePassword()
         {
-            //if (GetType() != typeof(CreateUserActivity))
-            //{
-            //    var nextActivity = new Intent(Activity, typeof(CreateUserActivity));
-            //    nextActivity.AddFlags(ActivityFlags.ReorderToFront);
-            //    StartActivity(nextActivity);
-            //}
+            if (GetType() != typeof(ChangePasswordActivity))
+            {
+                var nextActivity = new Intent(Activity, typeof(ChangePasswordActivity));
+                nextActivity.AddFlags(ActivityFlags.ReorderToFront);
+                StartActivity(nextActivity);
+            }
         }
     }
 }

@@ -77,7 +77,10 @@
   <ItemGroup>
     <Compile Include="Adapters\CaseAdapter.cs" />
     <Compile Include="CreateUserActivity.cs" />
+    <Compile Include="CreateUser\ChangePasswordPresenter.cs" />
     <Compile Include="CreateUser\CreateUserPresenter.cs" />
+    <Compile Include="CreateUser\IChangePasswordPresenter.cs" />
+    <Compile Include="CreateUser\IChangePasswordView.cs" />
     <Compile Include="CreateUser\ICreateUserPresenter.cs" />
     <Compile Include="CreateUser\ICreateUserView.cs" />
     <Compile Include="Home\AllCasesFragment.cs" />
@@ -106,7 +109,7 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Settings\SettingsFragment.cs" />
     <Compile Include="Settings\SettingsPreferenceCategory.cs" />
-    <Compile Include="UpdatePasswordActivity.cs" />
+    <Compile Include="ChangePasswordActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -150,6 +153,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\preference_with_value.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ChangePassword.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

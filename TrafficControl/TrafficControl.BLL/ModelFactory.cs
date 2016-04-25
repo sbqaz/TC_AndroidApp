@@ -18,6 +18,7 @@ namespace TrafficControl.BLL
         private readonly IUserPreference _userPreference;
         private readonly ISettingsModel _settingsModel;
         private readonly ICreateUserModel _createUserModel;
+        private readonly IChangePasswordModel _changePasswordModel;
 
         private ModelFactory()
         {
@@ -27,6 +28,7 @@ namespace TrafficControl.BLL
             _userPreference = new UserPreference(_tcApi);
             _settingsModel = new SettingsModel();
             _createUserModel = new CreateUserModel(_tcApi);
+            _changePasswordModel = new ChangePasswordModel(_tcApi);
         }
 
         public static ModelFactory Instance
@@ -69,6 +71,11 @@ namespace TrafficControl.BLL
         public IUserPreference CreateUserPreference()
         {
             return _userPreference;
+        }
+
+        public IChangePasswordModel CreateChangePasswordModel()
+        {
+            return _changePasswordModel;
         }
     }
 }
