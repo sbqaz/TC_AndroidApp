@@ -32,7 +32,8 @@ namespace TrafficControl.GUI
             //Set preference text to summary instead of preference_value
             ISharedPreferences settings = PreferenceManager.GetDefaultSharedPreferences(this);
             ISharedPreferencesEditor editor = settings.Edit();
-            editor.PutString(GetString(Resource.String.settings_user_name), _userPreference.GetUserName());
+            editor.PutString(GetString(Resource.String.settings_user_name), _userPreference.GetUserFirstName());
+            editor.PutString(GetString(Resource.String.settings_user_lastname), _userPreference.GetUserLastName());
             editor.PutString(GetString(Resource.String.settings_user_phonenumber), _userPreference.GetPhonenumber());
             editor.PutBoolean(GetString(Resource.String.settings_notify_email), _userPreference.GetEmailNotification());
             editor.PutBoolean(GetString(Resource.String.settings_notify_sms), _userPreference.GetSmsNotification());

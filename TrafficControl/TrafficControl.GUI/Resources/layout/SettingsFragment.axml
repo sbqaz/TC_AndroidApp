@@ -5,7 +5,11 @@
         android:key="@string/category_users">
         <TrafficControl.GUI.Settings.SettingsEditTextPreference
             android:key="@string/settings_user_name"
-            android:title="Navn"
+            android:title="Fornavn"
+            android:summary=" " />
+        <TrafficControl.GUI.Settings.SettingsEditTextPreference
+            android:key="@string/settings_user_lastname"
+            android:title="Efternavn"
             android:summary=" " />
         <TrafficControl.GUI.Settings.SettingsPreference
             android:key="@string/settings_user_password"

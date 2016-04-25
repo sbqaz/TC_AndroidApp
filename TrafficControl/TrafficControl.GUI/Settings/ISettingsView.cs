@@ -3,5 +3,6 @@
     public interface ISettingsView
     {
         void NavigateToCreateUser();
+        void NavigateToChangePassword();
     }
 }

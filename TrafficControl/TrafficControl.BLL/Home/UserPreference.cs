@@ -19,9 +19,14 @@ namespace TrafficControl.BLL.Home
             _currentUser = _api.GetUser();
         }
 
-        public string GetUserName()
+        public string GetUserFirstName()
         {
-            return _currentUser.FirstName + " " + _currentUser.LastName;
+            return _currentUser.FirstName;
+        }
+
+        public string GetUserLastName()
+        {
+            return _currentUser.LastName;
         }
 
         public string GetPhonenumber()
@@ -37,6 +42,42 @@ namespace TrafficControl.BLL.Home
         public bool GetSmsNotification()
         {
             return _currentUser.SMSNotification;
+        }
+
+        public void SetFirstName(string newFirstName)
+        {
+            _currentUser.FirstName = newFirstName;
+            UpdateCurrentUser();
+        }
+
+        public void SetLastName(string newLastName)
+        {
+            _currentUser.LastName = newLastName;
+            UpdateCurrentUser();
+        }
+
+        public void SetPhonenumber(string newPhonenumber)
+        {
+            _currentUser.Number = newPhonenumber;
+            UpdateCurrentUser();
+        }
+
+        public void SetNotifyEmail(bool newNotification)
+        {
+            _currentUser.EmailNotification = newNotification;
+            UpdateCurrentUser();
+        }
+
+        public void SetNotifySms(bool newNotification)
+        {
+            _currentUser.SMSNotification = newNotification;
+            UpdateCurrentUser();
+        }
+
+        private void UpdateCurrentUser()
+        {
+            //Update via api
+            //_api.UpdateUser(_currentUser);
         }
     }
 }

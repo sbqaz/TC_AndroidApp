@@ -106,6 +106,7 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Settings\SettingsFragment.cs" />
     <Compile Include="Settings\SettingsPreferenceCategory.cs" />
+    <Compile Include="UpdatePasswordActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

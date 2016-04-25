@@ -21,6 +21,7 @@ namespace TrafficControl.GUI
     [Activity(Label = "Indstillinger")]
     public class SettingsActivity : Activity
     {
+        private SettingsFragment _settingsFragment;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -30,9 +31,15 @@ namespace TrafficControl.GUI
             ActionBar.SetHomeButtonEnabled(true);
             //Fragment manager / transaction
             var fragTx = this.FragmentManager.BeginTransaction();
-            var settingsFragment = new SettingsFragment();
-            fragTx.Add(Resource.Id.SettingsContentFrame, settingsFragment);
-            fragTx.Commit();
+
+            //Still adds fragment twice when phone is tilted
+            if (fragTx.IsEmpty)
+            {
+                _settingsFragment = new SettingsFragment();
+
+                fragTx.Add(Resource.Id.SettingsContentFrame, _settingsFragment);
+                fragTx.Commit();
+            }
         }
 
         public override bool OnMenuItemSelected(int featureId, IMenuItem item)
