@@ -57,12 +57,19 @@ namespace TrafficControl.GUI
         {
             _presenter.LogInCredentialsAsync(_email.Text, _password.Text);
 
+            ISharedPreferences settings = Application.Context.GetSharedPreferences("TCInfo", FileCreationMode.Private);
+            ISharedPreferencesEditor editor = settings.Edit();
+
             if (_rememberChkBox.Checked)
             {
-                ISharedPreferences settings = Application.Context.GetSharedPreferences("TCInfo", FileCreationMode.Private);
-                ISharedPreferencesEditor editor = settings.Edit();
                 editor.PutString(GetString(Resource.String.login_email), _email.Text);
                 editor.PutString(GetString(Resource.String.login_password), _password.Text);
+                editor.Commit();
+            }
+            else
+            {
+                editor.PutString(GetString(Resource.String.login_email), String.Empty);
+                editor.PutString(GetString(Resource.String.login_password), String.Empty);
                 editor.Commit();
             }
         }
