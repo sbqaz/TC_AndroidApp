@@ -44,6 +44,12 @@
             android:id="@+id/PasswordInput"
             android:textColor="@color/ForeGround"
             android:textCursorDrawable="@null" />
+        <CheckBox
+            android:id="@+id/rememberMeChkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ForeGround"
+            android:text="Husk" />
         <Button
             android:id="@+id/MyButton"
             android:layout_width="fill_parent"

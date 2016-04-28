@@ -1,6 +1,8 @@
 using System;
 using Android.App;
+using Android.Content;
 using Android.OS;
+using Android.Preferences;
 using Android.Views;
 using Android.Widget;
 using TrafficControl.BLL;
@@ -16,6 +18,7 @@ namespace TrafficControl.GUI
         private EditText _password;
         private Button _logInBtn;
         private TextView _logInErrorMsg;
+        private CheckBox _rememberChkBox;
 
         private ProgressDialog _progressDialog;
 
@@ -29,10 +32,22 @@ namespace TrafficControl.GUI
             _password = FindViewById<EditText>(Resource.Id.PasswordInput);
             _logInBtn = FindViewById<Button>(Resource.Id.MyButton);
             _logInErrorMsg = FindViewById<TextView>(Resource.Id.LogInErrorMsg);
+            _rememberChkBox = FindViewById<CheckBox>(Resource.Id.rememberMeChkBox);
             _presenter = new LogInPresenter(this, ModelFactory.Instance.CreateLogInModel());
 
             _progressDialog = new ProgressDialog(this);
             _progressDialog.SetMessage("Logger ind...");
+            
+            ISharedPreferences settings = Application.Context.GetSharedPreferences("TCInfo", FileCreationMode.Private);
+            string email = settings.GetString(GetString(Resource.String.login_email), String.Empty);
+            string password = settings.GetString(GetString(Resource.String.login_password), String.Empty);
+
+            if (email != String.Empty || password != String.Empty)
+            {
+                _email.Text = email;
+                _password.Text = password;
+                _rememberChkBox.Checked = true;
+            }
 
             _logInBtn.Click += OnLogInBtnClicked;
 
@@ -41,6 +56,15 @@ namespace TrafficControl.GUI
         private void OnLogInBtnClicked(object sender, EventArgs e)
         {
             _presenter.LogInCredentialsAsync(_email.Text, _password.Text);
+
+            if (_rememberChkBox.Checked)
+            {
+                ISharedPreferences settings = Application.Context.GetSharedPreferences("TCInfo", FileCreationMode.Private);
+                ISharedPreferencesEditor editor = settings.Edit();
+                editor.PutString(GetString(Resource.String.login_email), _email.Text);
+                editor.PutString(GetString(Resource.String.login_password), _password.Text);
+                editor.Commit();
+            }
         }
 
         protected override void OnDestroy()

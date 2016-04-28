@@ -11,6 +11,8 @@
   <string name="settings_notify_sms">NotifySms</string>
   <string name="settings_notify_email">NotifyEmail</string>
   <string name="CreateUserType">Vælg bruger type</string>
+  <string name="login_email">LoginEmail</string>
+  <string name="login_password">LoginPassword</string>
   <string-array name="UserTypes">
     <item>Administrator</item>
     <item>Montør</item>
