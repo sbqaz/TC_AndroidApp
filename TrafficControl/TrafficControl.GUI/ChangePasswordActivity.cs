@@ -22,6 +22,7 @@ namespace TrafficControl.GUI
         private EditText _confirmNewPassword;
         private Button _changePasswordButton;
         private IChangePasswordPresenter _presenter;
+        private ProgressDialog _progressDialog;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -35,6 +36,9 @@ namespace TrafficControl.GUI
 
             _presenter = new ChangePasswordPresenter(this, ModelFactory.Instance.CreateChangePasswordModel());
             _changePasswordButton.Click += OnChangePasswordButtonClicked;
+
+            _progressDialog = new ProgressDialog(this);
+            _progressDialog.SetMessage("Opretter ny bruger...");
 
             ActionBar.SetDisplayHomeAsUpEnabled(true);
             ActionBar.SetHomeButtonEnabled(true);
@@ -56,22 +60,55 @@ namespace TrafficControl.GUI
 
         public void ShowMissingInfoError()
         {
-            throw new NotImplementedException();
+            string toast = "Alle felter skal udfyldes";
+            Toast.MakeText(this, toast, ToastLength.Long).Show();
         }
 
         public void SetOldPasswordError()
         {
-            throw new NotImplementedException();
+            _oldPassword.RequestFocus();
+            _oldPassword.SetError("Gammelt kodeord skal udfyldes", null);
         }
 
         public void SetNewPasswordError()
         {
-            throw new NotImplementedException();
+            _newPassword.RequestFocus();
+            _newPassword.SetError("Nyt kodeord skal udfyldes", null);
         }
 
         public void SetConfirmNewPasswordError()
         {
-            throw new NotImplementedException();
+            _confirmNewPassword.RequestFocus();
+            _confirmNewPassword.SetError("Bekræft nyt kodeord skal udfyldes", null);
+        }
+
+        public void ConfirmNewPasswordNotMatchingError()
+        {
+            _confirmNewPassword.RequestFocus();
+            _confirmNewPassword.SetError("Passer ikke overens med nyt kodeord", null);
+        }
+
+        public void ShowProgressDialog()
+        {
+            _progressDialog.Show();
+        }
+
+        public void HideProgressDialog()
+        {
+            _progressDialog.Hide();
+        }
+
+        public void PasswordChanged()
+        {
+            string toast = "Kodeord ændret";
+            Toast.MakeText(this, toast, ToastLength.Short).Show();
+            Finish();
+        }
+
+        public void PasswordNotChanged()
+        {
+            string toast = "Kodeord kunne ikke ændres, tjek forbindelsen";
+            Toast.MakeText(this, toast, ToastLength.Short).Show();
         }
     }
 }

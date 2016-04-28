@@ -1,7 +1,9 @@
-﻿namespace TrafficControl.GUI.CreateUser
+﻿using System.Threading.Tasks;
+
+namespace TrafficControl.GUI.CreateUser
 {
     public interface IChangePasswordPresenter
     {
-        void ChangePassword(string text, string s, string text1);
+        Task ChangePassword(string text, string s, string text1);
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IChangePasswordModel
     {
-         
+        bool ChangePassword(string oldPw, string newPw);
     }
 }

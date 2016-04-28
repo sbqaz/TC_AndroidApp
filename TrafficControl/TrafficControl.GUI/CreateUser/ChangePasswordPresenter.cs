@@ -1,4 +1,5 @@
-﻿using TrafficControl.BLL.CreateUser;
+﻿using System.Threading.Tasks;
+using TrafficControl.BLL.CreateUser;
 using TrafficControl.BLL.Home;
 
 namespace TrafficControl.GUI.CreateUser
@@ -14,7 +15,7 @@ namespace TrafficControl.GUI.CreateUser
             _model = model;
         }
 
-        public void ChangePassword(string oldPw, string newPw, string confirmNewPw)
+        public async Task ChangePassword(string oldPw, string newPw, string confirmNewPw)
         {
             bool error = false;
             if (string.IsNullOrEmpty(oldPw))
@@ -36,20 +37,26 @@ namespace TrafficControl.GUI.CreateUser
                 error = true;
             }
 
+            if (newPw != confirmNewPw)
+            {
+                _view.ConfirmNewPasswordNotMatchingError();
+                error = true;
+            }
+
             if (!error)
             {
-                //_view.ShowProgressDialog();
-                //var userCreated = await Task.Factory.StartNew(() => _model.CreateUser(email, password, firstName + " " + lastName, phoneNumber, userType));
-                //if (userCreated)
-                //{
-                //    _view.HideProgressDialog();
-                //    _view.UserCreated();
-                //}
-                //else
-                //{
-                //    _view.HideProgressDialog();
-                //    _view.UserNotCreated();
-                //}
+                _view.ShowProgressDialog();
+                var userCreated = await Task.Factory.StartNew(() => _model.ChangePassword(oldPw, newPw));
+                if (userCreated)
+                {
+                    _view.HideProgressDialog();
+                    _view.PasswordChanged();
+                }
+                else
+                {
+                    _view.HideProgressDialog();
+                    _view.PasswordNotChanged();
+                }
             }
         }
     }

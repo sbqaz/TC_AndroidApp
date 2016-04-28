@@ -6,5 +6,10 @@ namespace TrafficControl.GUI.CreateUser
         void SetOldPasswordError();
         void SetNewPasswordError();
         void SetConfirmNewPasswordError();
+        void ConfirmNewPasswordNotMatchingError();
+        void ShowProgressDialog();
+        void HideProgressDialog();
+        void PasswordChanged();
+        void PasswordNotChanged();
     }
 }
