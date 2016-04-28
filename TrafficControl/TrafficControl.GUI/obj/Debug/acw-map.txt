@@ -1,3 +1,7 @@
+TrafficControl.GUI.CreateCaseActivity, TrafficControl.GUI;md56b3a59ca03fc5e073370dc85bbbcd31e.CreateCaseActivity
+TrafficControl.GUI.CreateCaseActivity, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56b3a59ca03fc5e073370dc85bbbcd31e.CreateCaseActivity
+TrafficControl.GUI.CreateCaseActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.CreateCaseActivity
+trafficcontrol.gui.CreateCaseActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.CreateCaseActivity
 TrafficControl.GUI.CreateUserActivity, TrafficControl.GUI;md56b3a59ca03fc5e073370dc85bbbcd31e.CreateUserActivity
 TrafficControl.GUI.CreateUserActivity, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56b3a59ca03fc5e073370dc85bbbcd31e.CreateUserActivity
 TrafficControl.GUI.CreateUserActivity;md56b3a59ca03fc5e073370dc85bbbcd31e.CreateUserActivity

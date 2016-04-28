@@ -3,6 +3,7 @@
   <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="21" />
   <uses-permission android:name="android.permission.INTERNET" />
   <application android:label="@string/ApplicationName" android:icon="@drawable/tclogo" android:theme="@style/Theme.Trafficcontrol" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="Opret sag" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.CreateCaseActivity" />
     <activity android:label="Opret ny bruger" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.CreateUserActivity" />
     <activity android:label="@string/ApplicationName" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.LogInActivity">
       <intent-filter>
@@ -12,7 +13,7 @@
     </activity>
     <activity android:label="Hjem" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.HomeActivity" />
     <activity android:label="Indstillinger" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.SettingsActivity" />
-    <activity android:label="Skift kodeord" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.ChangePasswordActivity" />
+    <activity android:label="Skift adgangskode" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.ChangePasswordActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="TrafficControl.TrafficControl.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

@@ -8,7 +8,16 @@
         android:id="@+id/CaseListing"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="10"
         android:divider="@color/ForeGround"
         android:dividerHeight="1dp" />
+    <Button
+        android:id="@+id/CreateCaseBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Opret sag"
+        android:background="@color/ColorStrHansen3"
+        android:textColor="@color/WhiteStrHansen"
+        android:layout_margin="16dp" />
 </LinearLayout>

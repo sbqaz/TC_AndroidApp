@@ -13,7 +13,7 @@
             android:summary=" " />
         <TrafficControl.GUI.Settings.SettingsPreference
             android:key="@string/settings_user_password"
-            android:title="Skift Kodeord" />
+            android:title="Skift adgangskode" />
         <TrafficControl.GUI.Settings.SettingsEditTextPreference
             android:key="@string/settings_user_phonenumber"
             android:title="Mobil"

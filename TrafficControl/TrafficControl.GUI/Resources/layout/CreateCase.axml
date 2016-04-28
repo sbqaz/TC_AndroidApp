@@ -15,35 +15,32 @@
             android:textColor="@color/ForeGround"
             android:padding="10sp" />
         <EditText
-            android:id="@+id/CreateEmailInput"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
             android:textCursorDrawable="@null" />
         <TextView
-            android:text="Adgangskode"
+            android:text="Kodeord"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
             android:padding="10sp" />
         <EditText
-            android:id="@+id/PasswordCreate"
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
             android:textCursorDrawable="@null" />
         <TextView
-            android:text="Bekræft adgangskode"
+            android:text="Bekræft Kodeord"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
             android:padding="10sp" />
         <EditText
-            android:id="@+id/ConfirmPasswordCreate"
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,7 +68,6 @@
             android:textColor="@color/ForeGround"
             android:padding="10sp" />
         <EditText
-            android:id="@+id/CreateLastNameInput"
             android:inputType="textPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,7 +81,6 @@
             android:textColor="@color/ForeGround"
             android:padding="10sp" />
         <EditText
-            android:id="@+id/CreatePhonenumberInput"
             android:inputType="phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -98,14 +93,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
             android:padding="10sp" />
-        <Spinner
-            android:id="@+id/UserTypeSpinner"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:prompt="@string/CreateUserType"
-            android:textColor="@color/ForeGround" />
         <Button
-            android:id="@+id/CreateUserBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Opret bruger"

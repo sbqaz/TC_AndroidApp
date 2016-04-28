@@ -32,7 +32,7 @@
             android:textColor="@color/ForeGround"
             android:textCursorDrawable="@null" />
         <TextView
-            android:text="Kodeord"
+            android:text="Adgangskode"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             android:textColor="@color/WhiteStrHansen"
             android:layout_margin="16dp" />
         <TextView
-            android:text="Forkert email eller kodeord."
+            android:text="Forkert email eller adgangskode."
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

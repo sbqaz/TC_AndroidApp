@@ -14,7 +14,7 @@ using TrafficControl.GUI.CreateUser;
 
 namespace TrafficControl.GUI
 {
-    [Activity(Label = "Skift kodeord")]
+    [Activity(Label = "Skift adgangskode")]
     public class ChangePasswordActivity : Activity, IChangePasswordView
     {
         private EditText _oldPassword;
@@ -67,25 +67,25 @@ namespace TrafficControl.GUI
         public void SetOldPasswordError()
         {
             _oldPassword.RequestFocus();
-            _oldPassword.SetError("Gammelt kodeord skal udfyldes", null);
+            _oldPassword.SetError("Gammel adgangskode skal udfyldes", null);
         }
 
         public void SetNewPasswordError()
         {
             _newPassword.RequestFocus();
-            _newPassword.SetError("Nyt kodeord skal udfyldes", null);
+            _newPassword.SetError("Ny adgangskode skal udfyldes", null);
         }
 
         public void SetConfirmNewPasswordError()
         {
             _confirmNewPassword.RequestFocus();
-            _confirmNewPassword.SetError("Bekræft nyt kodeord skal udfyldes", null);
+            _confirmNewPassword.SetError("Bekræft ny adgangskode skal udfyldes", null);
         }
 
         public void ConfirmNewPasswordNotMatchingError()
         {
             _confirmNewPassword.RequestFocus();
-            _confirmNewPassword.SetError("Passer ikke overens med nyt kodeord", null);
+            _confirmNewPassword.SetError("Passer ikke overens med ny adgangskode", null);
         }
 
         public void ShowProgressDialog()
@@ -100,14 +100,14 @@ namespace TrafficControl.GUI
 
         public void PasswordChanged()
         {
-            string toast = "Kodeord ændret";
+            string toast = "Adgangskode ændret";
             Toast.MakeText(this, toast, ToastLength.Short).Show();
             Finish();
         }
 
         public void PasswordNotChanged()
         {
-            string toast = "Kodeord kunne ikke ændres, tjek forbindelsen";
+            string toast = "Adgangskode kunne ikke ændres, tjek forbindelsen";
             Toast.MakeText(this, toast, ToastLength.Short).Show();
         }
     }

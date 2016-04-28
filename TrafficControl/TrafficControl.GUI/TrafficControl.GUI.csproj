@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\CaseAdapter.cs" />
+    <Compile Include="CreateCaseActivity.cs" />
     <Compile Include="CreateUserActivity.cs" />
     <Compile Include="CreateUser\ChangePasswordPresenter.cs" />
     <Compile Include="CreateUser\CreateUserPresenter.cs" />
@@ -156,6 +157,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ChangePassword.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CreateCase.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

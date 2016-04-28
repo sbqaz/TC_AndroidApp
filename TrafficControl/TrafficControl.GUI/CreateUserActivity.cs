@@ -95,13 +95,13 @@ namespace TrafficControl.GUI
         public void SetPasswordError()
         {
             _password.RequestFocus();
-            _password.SetError("Kodeord skal udfyldes", null);
+            _password.SetError("Adgangskode skal udfyldes", null);
         }
 
         public void SetConfirmPasswordError()
         {
             _confirmPassword.RequestFocus();
-            _confirmPassword.SetError("Bekræft kodeord skal udfyldes", null);
+            _confirmPassword.SetError("Bekræft adgangskode skal udfyldes", null);
         }
 
         public void SetFirstNameError()
@@ -125,7 +125,7 @@ namespace TrafficControl.GUI
         public void ConfirmPasswordNotMatchingError()
         {
             _confirmPassword.RequestFocus();
-            _confirmPassword.SetError("Passer ikke overens med kodeord", null);
+            _confirmPassword.SetError("Passer ikke overens med adgangskode", null);
         }
 
         public void UserCreated()

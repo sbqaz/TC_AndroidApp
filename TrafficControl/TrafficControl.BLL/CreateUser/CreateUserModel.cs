@@ -12,7 +12,7 @@ namespace TrafficControl.BLL.CreateUser
         public CreateUserModel(ITCApi api)
         {
             _api = api;
-            _userTypes = new Dictionary<string, int> {{"Administrator", 0}, {"Montør", 1}, {"Randers Kommune", 2}};
+            _userTypes = new Dictionary<string, int> {{"Administrator", 2}, {"Montør", 1}, {"Randers Kommune", 0}};
         }
 
         public bool CreateUser(string email, string password, string name, string phoneNumber, string userType)

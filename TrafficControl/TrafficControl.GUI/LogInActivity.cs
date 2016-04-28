@@ -83,7 +83,7 @@ namespace TrafficControl.GUI
         public void SetPasswordError()
         {
             _password.RequestFocus();
-            _password.SetError("Kodeord må ikke være tom", null);
+            _password.SetError("Adgangskode må ikke være tom", null);
         }
 
         public void SetEmailError()

@@ -18,7 +18,7 @@ namespace TrafficControl.GUI.Home
 
             _presenter = new HomePresenter(this, ModelFactory.Instance.CreateHomeModel());
             _caseAdapter = new CaseAdapter(base.ContextActivity, _presenter.GetCases());
-
+            
             CaseView.Adapter = _caseAdapter;
             CaseView.ItemClick += OnCaseItemClicked;
 
