@@ -8,33 +8,20 @@
         android:layout_height="wrap_content"
         android:background="@color/WhiteStrHansen">
         <TextView
-            android:text="E-mail"
+            android:text="Installation"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
             android:padding="10sp" />
-        <EditText
-            android:inputType="textEmailAddress"
+        <AutoCompleteTextView
+            android:id="@+id/create_case_installation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
             android:textCursorDrawable="@null" />
         <TextView
-            android:text="Kodeord"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/ForeGround"
-            android:padding="10sp" />
-        <EditText
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/ForeGround"
-            android:textCursorDrawable="@null" />
-        <TextView
-            android:text="Bekræft Kodeord"
+            android:text="Anmelder"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,52 +34,18 @@
             android:textColor="@color/ForeGround"
             android:textCursorDrawable="@null" />
         <TextView
-            android:text="Fornavn"
+            android:text="Fejlbeskrivelse"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
             android:padding="10sp" />
         <EditText
-            android:id="@+id/CreateFirstNameInput"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
             android:textCursorDrawable="@null" />
-        <TextView
-            android:text="Efternavn"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/ForeGround"
-            android:padding="10sp" />
-        <EditText
-            android:inputType="textPersonName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/ForeGround"
-            android:textCursorDrawable="@null" />
-        <TextView
-            android:text="Mobil"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/ForeGround"
-            android:padding="10sp" />
-        <EditText
-            android:inputType="phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/ForeGround"
-            android:textCursorDrawable="@null" />
-        <TextView
-            android:text="Type"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/ForeGround"
-            android:padding="10sp" />
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Case.cs" />
+    <Compile Include="CreateCase\CreateCaseModel.cs" />
+    <Compile Include="CreateCase\ICreateCaseModel.cs" />
     <Compile Include="CreateUser\ChangePasswordModel.cs" />
     <Compile Include="CreateUser\CreateUserModel.cs" />
     <Compile Include="CreateUser\IChangePasswordModel.cs" />
