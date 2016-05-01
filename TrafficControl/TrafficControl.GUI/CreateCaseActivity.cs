@@ -18,6 +18,9 @@ namespace TrafficControl.GUI
     public class CreateCaseActivity : Activity, ICreateCaseView
     {
         private ICreateCasePresenter _presenter;
+        private AutoCompleteTextView _installation;
+        private AutoCompleteTextView _observedBy;
+        private EditText _errorDescription;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -26,11 +29,18 @@ namespace TrafficControl.GUI
 
             _presenter = new CreateCasePresenter(this, ModelFactory.Instance.CreateCreateCaseModel());
 
-            ArrayAdapter<String> installationAdapter = new ArrayAdapter<String>(this, Resource.Layout.SideMenuItem, _presenter.Installations);
-            AutoCompleteTextView installation = FindViewById<AutoCompleteTextView>(Resource.Id.create_case_installation);
-            installation.Threshold = 1;
-            installation.Adapter = installationAdapter;
-            
+            var installationAdapter = new ArrayAdapter<String>(this, Resource.Layout.SideMenuItem, _presenter.Installations);
+            _installation = FindViewById<AutoCompleteTextView>(Resource.Id.create_case_installation);
+            _installation.Adapter = installationAdapter;
+
+            _observedBy = FindViewById<AutoCompleteTextView>(Resource.Id.create_case_installation);
+            _observedBy.Adapter = installationAdapter;
+
+            _installation = FindViewById<AutoCompleteTextView>(Resource.Id.create_case_installation);
+            _installation.Adapter = installationAdapter;
+
+            _errorDescription = FindViewById<EditText>(Resource.Id.create_case_errorDescription);
+
             ActionBar.SetDisplayHomeAsUpEnabled(true);
             ActionBar.SetHomeButtonEnabled(true);
         }

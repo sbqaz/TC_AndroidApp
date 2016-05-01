@@ -20,7 +20,7 @@ namespace TrafficControl.BLL
         private readonly ISettingsModel _settingsModel;
         private readonly ICreateUserModel _createUserModel;
         private readonly IChangePasswordModel _changePasswordModel;
-        private ICreateCaseModel _createCaseModel;
+        private readonly ICreateCaseModel _createCaseModel;
 
         private ModelFactory()
         {

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/WhiteStrHansen">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -19,7 +20,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
-            android:textCursorDrawable="@null" />
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:completionThreshold="1"
+            android:imeOptions="actionNext" />
         <TextView
             android:text="Anmelder"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -27,12 +31,15 @@
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
             android:padding="10sp" />
-        <EditText
-            android:inputType="textPassword"
+        <AutoCompleteTextView
+            android:id="@+id/create_case_observer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
-            android:textCursorDrawable="@null" />
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:completionThreshold="1"
+            android:imeOptions="actionNext" />
         <TextView
             android:text="Fejlbeskrivelse"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -41,15 +48,18 @@
             android:textColor="@color/ForeGround"
             android:padding="10sp" />
         <EditText
-            android:inputType="textPassword"
+            android:id="@+id/create_case_errorDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
-            android:textCursorDrawable="@null" />
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:imeOptions="actionDone" />
         <Button
+            android:id="@+id/create_case_btn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Opret bruger"
+            android:text="Opret sag"
             android:background="@color/ColorStrHansen3"
             android:textColor="@color/WhiteStrHansen"
             android:layout_margin="16dp" />
