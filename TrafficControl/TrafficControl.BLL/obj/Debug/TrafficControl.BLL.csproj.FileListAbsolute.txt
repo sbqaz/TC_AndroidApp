@@ -28,17 +28,6 @@ E:\NewOneDrive\OneDrive\4. Semester\PRJ4\TrafficControl\TrafficControl.BLL\obj\D
 E:\NewOneDrive\OneDrive\4. Semester\PRJ4\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
 C:\Users\jacob\OneDrive\4. Semester\PRJ4\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
 C:\Users\jacob\OneDrive\4. Semester\PRJ4\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.pdb
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.apk
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL-Signed.apk
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.csprojResolveAssemblyReference.cache
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.pdb
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\android\bin\TrafficControl.BLL.apk
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\res\values\strings.xml
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\R.cs.flag
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\uploadflags.txt
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.config
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.pdb
@@ -55,16 +44,37 @@ D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\android\b
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\res\values\strings.xml
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\R.cs.flag
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\uploadflags.txt
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.DAL.RestSharp.dll.mdb
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.config
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.pdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.apk
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL-Signed.apk
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.DAL.RestSharp.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\Xamarin.Android.Support.v4.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\Xamarin.GooglePlayServices.Base.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\Xamarin.GooglePlayServices.Basement.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\Xamarin.GooglePlayServices.Maps.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\RestSharp.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\Newtonsoft.Json.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.DAL.RestSharp.pdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\RestSharp.xml
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\Newtonsoft.Json.xml
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.DAL.RestSharp.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.csprojResolveAssemblyReference.cache
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.pdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\android\bin\TrafficControl.BLL.apk
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\res\values\strings.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\R.cs.flag
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\uploadflags.txt
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb

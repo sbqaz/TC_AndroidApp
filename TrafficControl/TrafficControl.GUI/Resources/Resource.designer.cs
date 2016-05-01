@@ -26,15 +26,172 @@ namespace TrafficControl.GUI
 		
 		public static void UpdateIdValues()
 		{
+			global::TrafficControl.BLL.Resource.Attribute.ambientEnabled = global::TrafficControl.GUI.Resource.Attribute.ambientEnabled;
+			global::TrafficControl.BLL.Resource.Attribute.buttonSize = global::TrafficControl.GUI.Resource.Attribute.buttonSize;
+			global::TrafficControl.BLL.Resource.Attribute.cameraBearing = global::TrafficControl.GUI.Resource.Attribute.cameraBearing;
+			global::TrafficControl.BLL.Resource.Attribute.cameraTargetLat = global::TrafficControl.GUI.Resource.Attribute.cameraTargetLat;
+			global::TrafficControl.BLL.Resource.Attribute.cameraTargetLng = global::TrafficControl.GUI.Resource.Attribute.cameraTargetLng;
+			global::TrafficControl.BLL.Resource.Attribute.cameraTilt = global::TrafficControl.GUI.Resource.Attribute.cameraTilt;
+			global::TrafficControl.BLL.Resource.Attribute.cameraZoom = global::TrafficControl.GUI.Resource.Attribute.cameraZoom;
+			global::TrafficControl.BLL.Resource.Attribute.circleCrop = global::TrafficControl.GUI.Resource.Attribute.circleCrop;
+			global::TrafficControl.BLL.Resource.Attribute.colorScheme = global::TrafficControl.GUI.Resource.Attribute.colorScheme;
+			global::TrafficControl.BLL.Resource.Attribute.imageAspectRatio = global::TrafficControl.GUI.Resource.Attribute.imageAspectRatio;
+			global::TrafficControl.BLL.Resource.Attribute.imageAspectRatioAdjust = global::TrafficControl.GUI.Resource.Attribute.imageAspectRatioAdjust;
+			global::TrafficControl.BLL.Resource.Attribute.liteMode = global::TrafficControl.GUI.Resource.Attribute.liteMode;
+			global::TrafficControl.BLL.Resource.Attribute.mapType = global::TrafficControl.GUI.Resource.Attribute.mapType;
+			global::TrafficControl.BLL.Resource.Attribute.scopeUris = global::TrafficControl.GUI.Resource.Attribute.scopeUris;
+			global::TrafficControl.BLL.Resource.Attribute.uiCompass = global::TrafficControl.GUI.Resource.Attribute.uiCompass;
+			global::TrafficControl.BLL.Resource.Attribute.uiMapToolbar = global::TrafficControl.GUI.Resource.Attribute.uiMapToolbar;
+			global::TrafficControl.BLL.Resource.Attribute.uiRotateGestures = global::TrafficControl.GUI.Resource.Attribute.uiRotateGestures;
+			global::TrafficControl.BLL.Resource.Attribute.uiScrollGestures = global::TrafficControl.GUI.Resource.Attribute.uiScrollGestures;
+			global::TrafficControl.BLL.Resource.Attribute.uiTiltGestures = global::TrafficControl.GUI.Resource.Attribute.uiTiltGestures;
+			global::TrafficControl.BLL.Resource.Attribute.uiZoomControls = global::TrafficControl.GUI.Resource.Attribute.uiZoomControls;
+			global::TrafficControl.BLL.Resource.Attribute.uiZoomGestures = global::TrafficControl.GUI.Resource.Attribute.uiZoomGestures;
+			global::TrafficControl.BLL.Resource.Attribute.useViewLifecycle = global::TrafficControl.GUI.Resource.Attribute.useViewLifecycle;
+			global::TrafficControl.BLL.Resource.Attribute.zOrderOnTop = global::TrafficControl.GUI.Resource.Attribute.zOrderOnTop;
+			global::TrafficControl.BLL.Resource.Color.common_action_bar_splitter = global::TrafficControl.GUI.Resource.Color.common_action_bar_splitter;
+			global::TrafficControl.BLL.Resource.Color.common_google_signin_btn_text_dark = global::TrafficControl.GUI.Resource.Color.common_google_signin_btn_text_dark;
+			global::TrafficControl.BLL.Resource.Color.common_google_signin_btn_text_dark_default = global::TrafficControl.GUI.Resource.Color.common_google_signin_btn_text_dark_default;
+			global::TrafficControl.BLL.Resource.Color.common_google_signin_btn_text_dark_disabled = global::TrafficControl.GUI.Resource.Color.common_google_signin_btn_text_dark_disabled;
+			global::TrafficControl.BLL.Resource.Color.common_google_signin_btn_text_dark_focused = global::TrafficControl.GUI.Resource.Color.common_google_signin_btn_text_dark_focused;
+			global::TrafficControl.BLL.Resource.Color.common_google_signin_btn_text_dark_pressed = global::TrafficControl.GUI.Resource.Color.common_google_signin_btn_text_dark_pressed;
+			global::TrafficControl.BLL.Resource.Color.common_google_signin_btn_text_light = global::TrafficControl.GUI.Resource.Color.common_google_signin_btn_text_light;
+			global::TrafficControl.BLL.Resource.Color.common_google_signin_btn_text_light_default = global::TrafficControl.GUI.Resource.Color.common_google_signin_btn_text_light_default;
+			global::TrafficControl.BLL.Resource.Color.common_google_signin_btn_text_light_disabled = global::TrafficControl.GUI.Resource.Color.common_google_signin_btn_text_light_disabled;
+			global::TrafficControl.BLL.Resource.Color.common_google_signin_btn_text_light_focused = global::TrafficControl.GUI.Resource.Color.common_google_signin_btn_text_light_focused;
+			global::TrafficControl.BLL.Resource.Color.common_google_signin_btn_text_light_pressed = global::TrafficControl.GUI.Resource.Color.common_google_signin_btn_text_light_pressed;
+			global::TrafficControl.BLL.Resource.Color.common_plus_signin_btn_text_dark = global::TrafficControl.GUI.Resource.Color.common_plus_signin_btn_text_dark;
+			global::TrafficControl.BLL.Resource.Color.common_plus_signin_btn_text_dark_default = global::TrafficControl.GUI.Resource.Color.common_plus_signin_btn_text_dark_default;
+			global::TrafficControl.BLL.Resource.Color.common_plus_signin_btn_text_dark_disabled = global::TrafficControl.GUI.Resource.Color.common_plus_signin_btn_text_dark_disabled;
+			global::TrafficControl.BLL.Resource.Color.common_plus_signin_btn_text_dark_focused = global::TrafficControl.GUI.Resource.Color.common_plus_signin_btn_text_dark_focused;
+			global::TrafficControl.BLL.Resource.Color.common_plus_signin_btn_text_dark_pressed = global::TrafficControl.GUI.Resource.Color.common_plus_signin_btn_text_dark_pressed;
+			global::TrafficControl.BLL.Resource.Color.common_plus_signin_btn_text_light = global::TrafficControl.GUI.Resource.Color.common_plus_signin_btn_text_light;
+			global::TrafficControl.BLL.Resource.Color.common_plus_signin_btn_text_light_default = global::TrafficControl.GUI.Resource.Color.common_plus_signin_btn_text_light_default;
+			global::TrafficControl.BLL.Resource.Color.common_plus_signin_btn_text_light_disabled = global::TrafficControl.GUI.Resource.Color.common_plus_signin_btn_text_light_disabled;
+			global::TrafficControl.BLL.Resource.Color.common_plus_signin_btn_text_light_focused = global::TrafficControl.GUI.Resource.Color.common_plus_signin_btn_text_light_focused;
+			global::TrafficControl.BLL.Resource.Color.common_plus_signin_btn_text_light_pressed = global::TrafficControl.GUI.Resource.Color.common_plus_signin_btn_text_light_pressed;
+			global::TrafficControl.BLL.Resource.Drawable.common_full_open_on_phone = global::TrafficControl.GUI.Resource.Drawable.common_full_open_on_phone;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_icon_dark = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_icon_dark;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_icon_dark_disabled = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_icon_dark_disabled;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_icon_dark_focused = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_icon_dark_focused;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_icon_dark_normal = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_icon_dark_normal;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_icon_dark_pressed = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_icon_dark_pressed;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_icon_light = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_icon_light;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_icon_light_disabled = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_icon_light_disabled;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_icon_light_focused = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_icon_light_focused;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_icon_light_normal = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_icon_light_normal;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_icon_light_pressed = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_icon_light_pressed;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_text_dark = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_text_dark;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_text_dark_disabled = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_text_dark_disabled;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_text_dark_focused = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_text_dark_focused;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_text_dark_normal = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_text_dark_normal;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_text_dark_pressed = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_text_dark_pressed;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_text_light = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_text_light;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_text_light_disabled = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_text_light_disabled;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_text_light_focused = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_text_light_focused;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_text_light_normal = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_text_light_normal;
+			global::TrafficControl.BLL.Resource.Drawable.common_google_signin_btn_text_light_pressed = global::TrafficControl.GUI.Resource.Drawable.common_google_signin_btn_text_light_pressed;
+			global::TrafficControl.BLL.Resource.Drawable.common_ic_googleplayservices = global::TrafficControl.GUI.Resource.Drawable.common_ic_googleplayservices;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_icon_dark = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_icon_dark;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_icon_dark_disabled = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_icon_dark_disabled;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_icon_dark_focused = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_icon_dark_focused;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_icon_dark_normal = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_icon_dark_normal;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_icon_dark_pressed = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_icon_dark_pressed;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_icon_light = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_icon_light;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_icon_light_disabled = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_icon_light_disabled;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_icon_light_focused = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_icon_light_focused;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_icon_light_normal = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_icon_light_normal;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_icon_light_pressed = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_icon_light_pressed;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_text_dark = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_text_dark;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_text_dark_disabled = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_text_dark_disabled;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_text_dark_focused = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_text_dark_focused;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_text_dark_normal = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_text_dark_normal;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_text_dark_pressed = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_text_dark_pressed;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_text_light = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_text_light;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_text_light_disabled = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_text_light_disabled;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_text_light_focused = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_text_light_focused;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_text_light_normal = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_text_light_normal;
+			global::TrafficControl.BLL.Resource.Drawable.common_plus_signin_btn_text_light_pressed = global::TrafficControl.GUI.Resource.Drawable.common_plus_signin_btn_text_light_pressed;
+			global::TrafficControl.BLL.Resource.Id.adjust_height = global::TrafficControl.GUI.Resource.Id.adjust_height;
+			global::TrafficControl.BLL.Resource.Id.adjust_width = global::TrafficControl.GUI.Resource.Id.adjust_width;
+			global::TrafficControl.BLL.Resource.Id.auto = global::TrafficControl.GUI.Resource.Id.auto;
+			global::TrafficControl.BLL.Resource.Id.dark = global::TrafficControl.GUI.Resource.Id.dark;
+			global::TrafficControl.BLL.Resource.Id.hybrid = global::TrafficControl.GUI.Resource.Id.hybrid;
+			global::TrafficControl.BLL.Resource.Id.icon_only = global::TrafficControl.GUI.Resource.Id.icon_only;
+			global::TrafficControl.BLL.Resource.Id.light = global::TrafficControl.GUI.Resource.Id.light;
+			global::TrafficControl.BLL.Resource.Id.none = global::TrafficControl.GUI.Resource.Id.none;
+			global::TrafficControl.BLL.Resource.Id.normal = global::TrafficControl.GUI.Resource.Id.normal;
+			global::TrafficControl.BLL.Resource.Id.satellite = global::TrafficControl.GUI.Resource.Id.satellite;
+			global::TrafficControl.BLL.Resource.Id.standard = global::TrafficControl.GUI.Resource.Id.standard;
+			global::TrafficControl.BLL.Resource.Id.terrain = global::TrafficControl.GUI.Resource.Id.terrain;
+			global::TrafficControl.BLL.Resource.Id.wide = global::TrafficControl.GUI.Resource.Id.wide;
+			global::TrafficControl.BLL.Resource.Integer.google_play_services_version = global::TrafficControl.GUI.Resource.Integer.google_play_services_version;
 			global::TrafficControl.BLL.Resource.String.ApplicationName = global::TrafficControl.GUI.Resource.String.ApplicationName;
 			global::TrafficControl.BLL.Resource.String.Hello = global::TrafficControl.GUI.Resource.String.Hello;
+			global::TrafficControl.BLL.Resource.String.auth_google_play_services_client_facebook_display_name = global::TrafficControl.GUI.Resource.String.auth_google_play_services_client_facebook_display_name;
+			global::TrafficControl.BLL.Resource.String.auth_google_play_services_client_google_display_name = global::TrafficControl.GUI.Resource.String.auth_google_play_services_client_google_display_name;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_api_unavailable_text = global::TrafficControl.GUI.Resource.String.common_google_play_services_api_unavailable_text;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_enable_button = global::TrafficControl.GUI.Resource.String.common_google_play_services_enable_button;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_enable_text = global::TrafficControl.GUI.Resource.String.common_google_play_services_enable_text;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_enable_title = global::TrafficControl.GUI.Resource.String.common_google_play_services_enable_title;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_install_button = global::TrafficControl.GUI.Resource.String.common_google_play_services_install_button;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_install_text_phone = global::TrafficControl.GUI.Resource.String.common_google_play_services_install_text_phone;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_install_text_tablet = global::TrafficControl.GUI.Resource.String.common_google_play_services_install_text_tablet;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_install_title = global::TrafficControl.GUI.Resource.String.common_google_play_services_install_title;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_invalid_account_text = global::TrafficControl.GUI.Resource.String.common_google_play_services_invalid_account_text;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_invalid_account_title = global::TrafficControl.GUI.Resource.String.common_google_play_services_invalid_account_title;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_network_error_text = global::TrafficControl.GUI.Resource.String.common_google_play_services_network_error_text;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_network_error_title = global::TrafficControl.GUI.Resource.String.common_google_play_services_network_error_title;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_notification_ticker = global::TrafficControl.GUI.Resource.String.common_google_play_services_notification_ticker;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_restricted_profile_text = global::TrafficControl.GUI.Resource.String.common_google_play_services_restricted_profile_text;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_restricted_profile_title = global::TrafficControl.GUI.Resource.String.common_google_play_services_restricted_profile_title;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_sign_in_failed_text = global::TrafficControl.GUI.Resource.String.common_google_play_services_sign_in_failed_text;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_sign_in_failed_title = global::TrafficControl.GUI.Resource.String.common_google_play_services_sign_in_failed_title;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_unknown_issue = global::TrafficControl.GUI.Resource.String.common_google_play_services_unknown_issue;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_unsupported_text = global::TrafficControl.GUI.Resource.String.common_google_play_services_unsupported_text;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_unsupported_title = global::TrafficControl.GUI.Resource.String.common_google_play_services_unsupported_title;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_update_button = global::TrafficControl.GUI.Resource.String.common_google_play_services_update_button;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_update_text = global::TrafficControl.GUI.Resource.String.common_google_play_services_update_text;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_update_title = global::TrafficControl.GUI.Resource.String.common_google_play_services_update_title;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_updating_text = global::TrafficControl.GUI.Resource.String.common_google_play_services_updating_text;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_updating_title = global::TrafficControl.GUI.Resource.String.common_google_play_services_updating_title;
+			global::TrafficControl.BLL.Resource.String.common_google_play_services_wear_update_text = global::TrafficControl.GUI.Resource.String.common_google_play_services_wear_update_text;
+			global::TrafficControl.BLL.Resource.String.common_open_on_phone = global::TrafficControl.GUI.Resource.String.common_open_on_phone;
+			global::TrafficControl.BLL.Resource.String.common_signin_button_text = global::TrafficControl.GUI.Resource.String.common_signin_button_text;
+			global::TrafficControl.BLL.Resource.String.common_signin_button_text_long = global::TrafficControl.GUI.Resource.String.common_signin_button_text_long;
+			global::TrafficControl.BLL.Resource.Styleable.LoadingImageView = global::TrafficControl.GUI.Resource.Styleable.LoadingImageView;
+			global::TrafficControl.BLL.Resource.Styleable.LoadingImageView_circleCrop = global::TrafficControl.GUI.Resource.Styleable.LoadingImageView_circleCrop;
+			global::TrafficControl.BLL.Resource.Styleable.LoadingImageView_imageAspectRatio = global::TrafficControl.GUI.Resource.Styleable.LoadingImageView_imageAspectRatio;
+			global::TrafficControl.BLL.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust = global::TrafficControl.GUI.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs = global::TrafficControl.GUI.Resource.Styleable.MapAttrs;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_ambientEnabled = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_ambientEnabled;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_cameraBearing = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_cameraBearing;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_cameraTargetLat = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_cameraTargetLat;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_cameraTargetLng = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_cameraTargetLng;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_cameraTilt = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_cameraTilt;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_cameraZoom = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_cameraZoom;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_liteMode = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_liteMode;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_mapType = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_mapType;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_uiCompass = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_uiCompass;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_uiMapToolbar = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_uiMapToolbar;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_uiRotateGestures = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_uiRotateGestures;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_uiScrollGestures = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_uiScrollGestures;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_uiTiltGestures = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_uiTiltGestures;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_uiZoomControls = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_uiZoomControls;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_uiZoomGestures = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_uiZoomGestures;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_useViewLifecycle = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_useViewLifecycle;
+			global::TrafficControl.BLL.Resource.Styleable.MapAttrs_zOrderOnTop = global::TrafficControl.GUI.Resource.Styleable.MapAttrs_zOrderOnTop;
+			global::TrafficControl.BLL.Resource.Styleable.SignInButton = global::TrafficControl.GUI.Resource.Styleable.SignInButton;
+			global::TrafficControl.BLL.Resource.Styleable.SignInButton_buttonSize = global::TrafficControl.GUI.Resource.Styleable.SignInButton_buttonSize;
+			global::TrafficControl.BLL.Resource.Styleable.SignInButton_colorScheme = global::TrafficControl.GUI.Resource.Styleable.SignInButton_colorScheme;
+			global::TrafficControl.BLL.Resource.Styleable.SignInButton_scopeUris = global::TrafficControl.GUI.Resource.Styleable.SignInButton_scopeUris;
 		}
 		
 		public partial class Array
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int UserTypes = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int UserTypes = 2131165184;
 			
 			static Array()
 			{
@@ -49,6 +206,75 @@ namespace TrafficControl.GUI
 		public partial class Attribute
 		{
 			
+			// aapt resource value: 0x7f010010
+			public const int ambientEnabled = 2130771984;
+			
+			// aapt resource value: 0x7f010014
+			public const int buttonSize = 2130771988;
+			
+			// aapt resource value: 0x7f010001
+			public const int cameraBearing = 2130771969;
+			
+			// aapt resource value: 0x7f010002
+			public const int cameraTargetLat = 2130771970;
+			
+			// aapt resource value: 0x7f010003
+			public const int cameraTargetLng = 2130771971;
+			
+			// aapt resource value: 0x7f010004
+			public const int cameraTilt = 2130771972;
+			
+			// aapt resource value: 0x7f010005
+			public const int cameraZoom = 2130771973;
+			
+			// aapt resource value: 0x7f010013
+			public const int circleCrop = 2130771987;
+			
+			// aapt resource value: 0x7f010015
+			public const int colorScheme = 2130771989;
+			
+			// aapt resource value: 0x7f010012
+			public const int imageAspectRatio = 2130771986;
+			
+			// aapt resource value: 0x7f010011
+			public const int imageAspectRatioAdjust = 2130771985;
+			
+			// aapt resource value: 0x7f010006
+			public const int liteMode = 2130771974;
+			
+			// aapt resource value: 0x7f010000
+			public const int mapType = 2130771968;
+			
+			// aapt resource value: 0x7f010016
+			public const int scopeUris = 2130771990;
+			
+			// aapt resource value: 0x7f010007
+			public const int uiCompass = 2130771975;
+			
+			// aapt resource value: 0x7f01000f
+			public const int uiMapToolbar = 2130771983;
+			
+			// aapt resource value: 0x7f010008
+			public const int uiRotateGestures = 2130771976;
+			
+			// aapt resource value: 0x7f010009
+			public const int uiScrollGestures = 2130771977;
+			
+			// aapt resource value: 0x7f01000a
+			public const int uiTiltGestures = 2130771978;
+			
+			// aapt resource value: 0x7f01000b
+			public const int uiZoomControls = 2130771979;
+			
+			// aapt resource value: 0x7f01000c
+			public const int uiZoomGestures = 2130771980;
+			
+			// aapt resource value: 0x7f01000d
+			public const int useViewLifecycle = 2130771981;
+			
+			// aapt resource value: 0x7f01000e
+			public const int zOrderOnTop = 2130771982;
+			
 			static Attribute()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -62,53 +288,116 @@ namespace TrafficControl.GUI
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f05000c
-			public const int CaseClosed = 2131034124;
+			// aapt resource value: 0x7f06001d
+			public const int CaseClosed = 2131099677;
 			
-			// aapt resource value: 0x7f05000b
-			public const int CaseOpen = 2131034123;
+			// aapt resource value: 0x7f06001c
+			public const int CaseOpen = 2131099676;
 			
-			// aapt resource value: 0x7f05000d
-			public const int CaseTaken = 2131034125;
+			// aapt resource value: 0x7f06001e
+			public const int CaseTaken = 2131099678;
 			
-			// aapt resource value: 0x7f050001
-			public const int ColorStrHansen1 = 2131034113;
+			// aapt resource value: 0x7f060012
+			public const int ColorStrHansen1 = 2131099666;
 			
-			// aapt resource value: 0x7f050002
-			public const int ColorStrHansen2 = 2131034114;
+			// aapt resource value: 0x7f060013
+			public const int ColorStrHansen2 = 2131099667;
 			
-			// aapt resource value: 0x7f050003
-			public const int ColorStrHansen3 = 2131034115;
+			// aapt resource value: 0x7f060014
+			public const int ColorStrHansen3 = 2131099668;
 			
-			// aapt resource value: 0x7f050004
-			public const int ColorStrHansen4 = 2131034116;
+			// aapt resource value: 0x7f060015
+			public const int ColorStrHansen4 = 2131099669;
 			
-			// aapt resource value: 0x7f050009
-			public const int ForeGround = 2131034121;
+			// aapt resource value: 0x7f06001a
+			public const int ForeGround = 2131099674;
 			
-			// aapt resource value: 0x7f05000e
-			public const int Grey = 2131034126;
+			// aapt resource value: 0x7f06001f
+			public const int Grey = 2131099679;
 			
-			// aapt resource value: 0x7f05000a
-			public const int Red = 2131034122;
+			// aapt resource value: 0x7f06001b
+			public const int Red = 2131099675;
 			
-			// aapt resource value: 0x7f050005
-			public const int WeakColorStrHansen1 = 2131034117;
+			// aapt resource value: 0x7f060016
+			public const int WeakColorStrHansen1 = 2131099670;
 			
-			// aapt resource value: 0x7f050006
-			public const int WeakColorStrHansen2 = 2131034118;
+			// aapt resource value: 0x7f060017
+			public const int WeakColorStrHansen2 = 2131099671;
 			
-			// aapt resource value: 0x7f050007
-			public const int WeakColorStrHansen3 = 2131034119;
+			// aapt resource value: 0x7f060018
+			public const int WeakColorStrHansen3 = 2131099672;
 			
-			// aapt resource value: 0x7f050008
-			public const int WeakColorStrHansen4 = 2131034120;
+			// aapt resource value: 0x7f060019
+			public const int WeakColorStrHansen4 = 2131099673;
 			
-			// aapt resource value: 0x7f050000
-			public const int WhiteStrHansen = 2131034112;
+			// aapt resource value: 0x7f060011
+			public const int WhiteStrHansen = 2131099665;
 			
-			// aapt resource value: 0x7f05000f
-			public const int trafficcontrolgreen_color = 2131034127;
+			// aapt resource value: 0x7f060008
+			public const int common_action_bar_splitter = 2131099656;
+			
+			// aapt resource value: 0x7f060021
+			public const int common_google_signin_btn_text_dark = 2131099681;
+			
+			// aapt resource value: 0x7f060009
+			public const int common_google_signin_btn_text_dark_default = 2131099657;
+			
+			// aapt resource value: 0x7f06000b
+			public const int common_google_signin_btn_text_dark_disabled = 2131099659;
+			
+			// aapt resource value: 0x7f06000c
+			public const int common_google_signin_btn_text_dark_focused = 2131099660;
+			
+			// aapt resource value: 0x7f06000a
+			public const int common_google_signin_btn_text_dark_pressed = 2131099658;
+			
+			// aapt resource value: 0x7f060022
+			public const int common_google_signin_btn_text_light = 2131099682;
+			
+			// aapt resource value: 0x7f06000d
+			public const int common_google_signin_btn_text_light_default = 2131099661;
+			
+			// aapt resource value: 0x7f06000f
+			public const int common_google_signin_btn_text_light_disabled = 2131099663;
+			
+			// aapt resource value: 0x7f060010
+			public const int common_google_signin_btn_text_light_focused = 2131099664;
+			
+			// aapt resource value: 0x7f06000e
+			public const int common_google_signin_btn_text_light_pressed = 2131099662;
+			
+			// aapt resource value: 0x7f060023
+			public const int common_plus_signin_btn_text_dark = 2131099683;
+			
+			// aapt resource value: 0x7f060000
+			public const int common_plus_signin_btn_text_dark_default = 2131099648;
+			
+			// aapt resource value: 0x7f060002
+			public const int common_plus_signin_btn_text_dark_disabled = 2131099650;
+			
+			// aapt resource value: 0x7f060003
+			public const int common_plus_signin_btn_text_dark_focused = 2131099651;
+			
+			// aapt resource value: 0x7f060001
+			public const int common_plus_signin_btn_text_dark_pressed = 2131099649;
+			
+			// aapt resource value: 0x7f060024
+			public const int common_plus_signin_btn_text_light = 2131099684;
+			
+			// aapt resource value: 0x7f060004
+			public const int common_plus_signin_btn_text_light_default = 2131099652;
+			
+			// aapt resource value: 0x7f060006
+			public const int common_plus_signin_btn_text_light_disabled = 2131099654;
+			
+			// aapt resource value: 0x7f060007
+			public const int common_plus_signin_btn_text_light_focused = 2131099655;
+			
+			// aapt resource value: 0x7f060005
+			public const int common_plus_signin_btn_text_light_pressed = 2131099653;
+			
+			// aapt resource value: 0x7f060020
+			public const int trafficcontrolgreen_color = 2131099680;
 			
 			static Color()
 			{
@@ -163,244 +452,370 @@ namespace TrafficControl.GUI
 			public const int CaseItemSelector = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int edittext_bg = 2130837517;
+			public const int common_full_open_on_phone = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int Icon = 2130837518;
+			public const int common_google_signin_btn_icon_dark = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int list_focused_trafficcontrol = 2130837519;
+			public const int common_google_signin_btn_icon_dark_disabled = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int list_pressed_trafficcontrol = 2130837520;
+			public const int common_google_signin_btn_icon_dark_focused = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int Logo = 2130837521;
+			public const int common_google_signin_btn_icon_dark_normal = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int Logo2 = 2130837522;
+			public const int common_google_signin_btn_icon_dark_pressed = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int menu_dropdown_panel_trafficcontrol = 2130837523;
+			public const int common_google_signin_btn_icon_light = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int progress_bg_trafficcontrol = 2130837524;
+			public const int common_google_signin_btn_icon_light_disabled = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int progress_horizontal_trafficcontrol = 2130837525;
+			public const int common_google_signin_btn_icon_light_focused = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int progress_primary_trafficcontrol = 2130837526;
+			public const int common_google_signin_btn_icon_light_normal = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int progress_secondary_trafficcontrol = 2130837527;
+			public const int common_google_signin_btn_icon_light_pressed = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int selectable_background_trafficcontrol = 2130837528;
+			public const int common_google_signin_btn_text_dark = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int SideMenuItemSelector = 2130837529;
+			public const int common_google_signin_btn_text_dark_disabled = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int spinner_ab_default_trafficcontrol = 2130837530;
+			public const int common_google_signin_btn_text_dark_focused = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int spinner_ab_disabled_trafficcontrol = 2130837531;
+			public const int common_google_signin_btn_text_dark_normal = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int spinner_ab_focused_trafficcontrol = 2130837532;
+			public const int common_google_signin_btn_text_dark_pressed = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int spinner_ab_pressed_trafficcontrol = 2130837533;
+			public const int common_google_signin_btn_text_light = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int spinner_background_ab_trafficcontrol = 2130837534;
+			public const int common_google_signin_btn_text_light_disabled = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int tab_indicator_ab_trafficcontrol = 2130837535;
+			public const int common_google_signin_btn_text_light_focused = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int tab_selected_focused_trafficcontrol = 2130837536;
+			public const int common_google_signin_btn_text_light_normal = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int tab_selected_pressed_trafficcontrol = 2130837537;
+			public const int common_google_signin_btn_text_light_pressed = 2130837537;
 			
 			// aapt resource value: 0x7f020022
-			public const int tab_selected_trafficcontrol = 2130837538;
+			public const int common_ic_googleplayservices = 2130837538;
 			
 			// aapt resource value: 0x7f020023
-			public const int tab_unselected_focused_trafficcontrol = 2130837539;
+			public const int common_plus_signin_btn_icon_dark = 2130837539;
 			
 			// aapt resource value: 0x7f020024
-			public const int tab_unselected_pressed_trafficcontrol = 2130837540;
+			public const int common_plus_signin_btn_icon_dark_disabled = 2130837540;
 			
 			// aapt resource value: 0x7f020025
-			public const int tab_unselected_trafficcontrol = 2130837541;
+			public const int common_plus_signin_btn_icon_dark_focused = 2130837541;
 			
 			// aapt resource value: 0x7f020026
-			public const int TCLogo = 2130837542;
+			public const int common_plus_signin_btn_icon_dark_normal = 2130837542;
 			
 			// aapt resource value: 0x7f020027
-			public const int TCLogoGreen = 2130837543;
+			public const int common_plus_signin_btn_icon_dark_pressed = 2130837543;
 			
 			// aapt resource value: 0x7f020028
-			public const int TCLogoRed = 2130837544;
+			public const int common_plus_signin_btn_icon_light = 2130837544;
 			
 			// aapt resource value: 0x7f020029
-			public const int TCLogoYellow = 2130837545;
+			public const int common_plus_signin_btn_icon_light_disabled = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int trafficcontrolgreen_activated_background_holo_light = 2130837546;
+			public const int common_plus_signin_btn_icon_light_focused = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int trafficcontrolgreen_btn_check_holo_light = 2130837547;
+			public const int common_plus_signin_btn_icon_light_normal = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int trafficcontrolgreen_btn_check_off_disabled_focused_holo_light = 2130837548;
+			public const int common_plus_signin_btn_icon_light_pressed = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int trafficcontrolgreen_btn_check_off_disabled_holo_light = 2130837549;
+			public const int common_plus_signin_btn_text_dark = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int trafficcontrolgreen_btn_check_off_focused_holo_light = 2130837550;
+			public const int common_plus_signin_btn_text_dark_disabled = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int trafficcontrolgreen_btn_check_off_holo_light = 2130837551;
+			public const int common_plus_signin_btn_text_dark_focused = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int trafficcontrolgreen_btn_check_off_pressed_holo_light = 2130837552;
+			public const int common_plus_signin_btn_text_dark_normal = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int trafficcontrolgreen_btn_check_on_disabled_focused_holo_light = 2130837553;
+			public const int common_plus_signin_btn_text_dark_pressed = 2130837553;
 			
 			// aapt resource value: 0x7f020032
-			public const int trafficcontrolgreen_btn_check_on_disabled_holo_light = 2130837554;
+			public const int common_plus_signin_btn_text_light = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int trafficcontrolgreen_btn_check_on_focused_holo_light = 2130837555;
+			public const int common_plus_signin_btn_text_light_disabled = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int trafficcontrolgreen_btn_check_on_holo_light = 2130837556;
+			public const int common_plus_signin_btn_text_light_focused = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int trafficcontrolgreen_btn_check_on_pressed_holo_light = 2130837557;
+			public const int common_plus_signin_btn_text_light_normal = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int trafficcontrolgreen_btn_radio_holo_light = 2130837558;
+			public const int common_plus_signin_btn_text_light_pressed = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int trafficcontrolgreen_btn_radio_off_disabled_focused_holo_light = 2130837559;
+			public const int edittext_bg = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int trafficcontrolgreen_btn_radio_off_disabled_holo_light = 2130837560;
+			public const int Icon = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int trafficcontrolgreen_btn_radio_off_focused_holo_light = 2130837561;
+			public const int list_focused_trafficcontrol = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int trafficcontrolgreen_btn_radio_off_holo_light = 2130837562;
+			public const int list_pressed_trafficcontrol = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int trafficcontrolgreen_btn_radio_off_pressed_holo_light = 2130837563;
+			public const int Logo = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int trafficcontrolgreen_btn_radio_on_disabled_focused_holo_light = 2130837564;
+			public const int Logo2 = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int trafficcontrolgreen_btn_radio_on_disabled_holo_light = 2130837565;
+			public const int menu_dropdown_panel_trafficcontrol = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int trafficcontrolgreen_btn_radio_on_focused_holo_light = 2130837566;
+			public const int progress_bg_trafficcontrol = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int trafficcontrolgreen_btn_radio_on_holo_light = 2130837567;
+			public const int progress_horizontal_trafficcontrol = 2130837567;
 			
 			// aapt resource value: 0x7f020040
-			public const int trafficcontrolgreen_btn_radio_on_pressed_holo_light = 2130837568;
+			public const int progress_primary_trafficcontrol = 2130837568;
 			
 			// aapt resource value: 0x7f020041
-			public const int trafficcontrolgreen_edit_text_holo_light = 2130837569;
+			public const int progress_secondary_trafficcontrol = 2130837569;
 			
 			// aapt resource value: 0x7f020042
-			public const int trafficcontrolgreen_item_background_holo_light = 2130837570;
+			public const int selectable_background_trafficcontrol = 2130837570;
 			
 			// aapt resource value: 0x7f020043
-			public const int trafficcontrolgreen_list_activated_holo = 2130837571;
+			public const int SideMenuItemSelector = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int trafficcontrolgreen_list_focused_holo = 2130837572;
+			public const int spinner_ab_default_trafficcontrol = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int trafficcontrolgreen_list_longpressed_holo = 2130837573;
+			public const int spinner_ab_disabled_trafficcontrol = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int trafficcontrolgreen_list_pressed_holo_light = 2130837574;
+			public const int spinner_ab_focused_trafficcontrol = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int trafficcontrolgreen_list_selector_background_transition_holo_light = 2130837575;
+			public const int spinner_ab_pressed_trafficcontrol = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int trafficcontrolgreen_list_selector_disabled_holo_light = 2130837576;
+			public const int spinner_background_ab_trafficcontrol = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int trafficcontrolgreen_list_selector_holo_light = 2130837577;
+			public const int tab_indicator_ab_trafficcontrol = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int trafficcontrolgreen_spinner_background_holo_light = 2130837578;
+			public const int tab_selected_focused_trafficcontrol = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int trafficcontrolgreen_spinner_default_holo_light = 2130837579;
+			public const int tab_selected_pressed_trafficcontrol = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int trafficcontrolgreen_spinner_disabled_holo_light = 2130837580;
+			public const int tab_selected_trafficcontrol = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int trafficcontrolgreen_spinner_focused_holo_light = 2130837581;
+			public const int tab_unselected_focused_trafficcontrol = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int trafficcontrolgreen_spinner_pressed_holo_light = 2130837582;
+			public const int tab_unselected_pressed_trafficcontrol = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int trafficcontrolgreen_switch_bg_disabled_holo_light = 2130837583;
+			public const int tab_unselected_trafficcontrol = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int trafficcontrolgreen_switch_bg_focused_holo_light = 2130837584;
+			public const int TCLogo = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int trafficcontrolgreen_switch_bg_holo_light = 2130837585;
+			public const int TCLogoGreen = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int trafficcontrolgreen_switch_inner_holo_light = 2130837586;
+			public const int TCLogoRed = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int trafficcontrolgreen_switch_thumb_activated_holo_light = 2130837587;
+			public const int TCLogoYellow = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int trafficcontrolgreen_switch_thumb_disabled_holo_light = 2130837588;
+			public const int trafficcontrolgreen_activated_background_holo_light = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int trafficcontrolgreen_switch_thumb_holo_light = 2130837589;
+			public const int trafficcontrolgreen_btn_check_holo_light = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int trafficcontrolgreen_switch_thumb_pressed_holo_light = 2130837590;
+			public const int trafficcontrolgreen_btn_check_off_disabled_focused_holo_light = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int trafficcontrolgreen_switch_track_holo_light = 2130837591;
+			public const int trafficcontrolgreen_btn_check_off_disabled_holo_light = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int trafficcontrolgreen_textfield_activated_holo_light = 2130837592;
+			public const int trafficcontrolgreen_btn_check_off_focused_holo_light = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int trafficcontrolgreen_textfield_default_holo_light = 2130837593;
+			public const int trafficcontrolgreen_btn_check_off_holo_light = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int trafficcontrolgreen_textfield_disabled_focused_holo_light = 2130837594;
+			public const int trafficcontrolgreen_btn_check_off_pressed_holo_light = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int trafficcontrolgreen_textfield_disabled_holo_light = 2130837595;
+			public const int trafficcontrolgreen_btn_check_on_disabled_focused_holo_light = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int trafficcontrolgreen_textfield_focused_holo_light = 2130837596;
+			public const int trafficcontrolgreen_btn_check_on_disabled_holo_light = 2130837596;
+			
+			// aapt resource value: 0x7f02005d
+			public const int trafficcontrolgreen_btn_check_on_focused_holo_light = 2130837597;
+			
+			// aapt resource value: 0x7f02005e
+			public const int trafficcontrolgreen_btn_check_on_holo_light = 2130837598;
+			
+			// aapt resource value: 0x7f02005f
+			public const int trafficcontrolgreen_btn_check_on_pressed_holo_light = 2130837599;
+			
+			// aapt resource value: 0x7f020060
+			public const int trafficcontrolgreen_btn_radio_holo_light = 2130837600;
+			
+			// aapt resource value: 0x7f020061
+			public const int trafficcontrolgreen_btn_radio_off_disabled_focused_holo_light = 2130837601;
+			
+			// aapt resource value: 0x7f020062
+			public const int trafficcontrolgreen_btn_radio_off_disabled_holo_light = 2130837602;
+			
+			// aapt resource value: 0x7f020063
+			public const int trafficcontrolgreen_btn_radio_off_focused_holo_light = 2130837603;
+			
+			// aapt resource value: 0x7f020064
+			public const int trafficcontrolgreen_btn_radio_off_holo_light = 2130837604;
+			
+			// aapt resource value: 0x7f020065
+			public const int trafficcontrolgreen_btn_radio_off_pressed_holo_light = 2130837605;
+			
+			// aapt resource value: 0x7f020066
+			public const int trafficcontrolgreen_btn_radio_on_disabled_focused_holo_light = 2130837606;
+			
+			// aapt resource value: 0x7f020067
+			public const int trafficcontrolgreen_btn_radio_on_disabled_holo_light = 2130837607;
+			
+			// aapt resource value: 0x7f020068
+			public const int trafficcontrolgreen_btn_radio_on_focused_holo_light = 2130837608;
+			
+			// aapt resource value: 0x7f020069
+			public const int trafficcontrolgreen_btn_radio_on_holo_light = 2130837609;
+			
+			// aapt resource value: 0x7f02006a
+			public const int trafficcontrolgreen_btn_radio_on_pressed_holo_light = 2130837610;
+			
+			// aapt resource value: 0x7f02006b
+			public const int trafficcontrolgreen_edit_text_holo_light = 2130837611;
+			
+			// aapt resource value: 0x7f02006c
+			public const int trafficcontrolgreen_item_background_holo_light = 2130837612;
+			
+			// aapt resource value: 0x7f02006d
+			public const int trafficcontrolgreen_list_activated_holo = 2130837613;
+			
+			// aapt resource value: 0x7f02006e
+			public const int trafficcontrolgreen_list_focused_holo = 2130837614;
+			
+			// aapt resource value: 0x7f02006f
+			public const int trafficcontrolgreen_list_longpressed_holo = 2130837615;
+			
+			// aapt resource value: 0x7f020070
+			public const int trafficcontrolgreen_list_pressed_holo_light = 2130837616;
+			
+			// aapt resource value: 0x7f020071
+			public const int trafficcontrolgreen_list_selector_background_transition_holo_light = 2130837617;
+			
+			// aapt resource value: 0x7f020072
+			public const int trafficcontrolgreen_list_selector_disabled_holo_light = 2130837618;
+			
+			// aapt resource value: 0x7f020073
+			public const int trafficcontrolgreen_list_selector_holo_light = 2130837619;
+			
+			// aapt resource value: 0x7f020074
+			public const int trafficcontrolgreen_spinner_background_holo_light = 2130837620;
+			
+			// aapt resource value: 0x7f020075
+			public const int trafficcontrolgreen_spinner_default_holo_light = 2130837621;
+			
+			// aapt resource value: 0x7f020076
+			public const int trafficcontrolgreen_spinner_disabled_holo_light = 2130837622;
+			
+			// aapt resource value: 0x7f020077
+			public const int trafficcontrolgreen_spinner_focused_holo_light = 2130837623;
+			
+			// aapt resource value: 0x7f020078
+			public const int trafficcontrolgreen_spinner_pressed_holo_light = 2130837624;
+			
+			// aapt resource value: 0x7f020079
+			public const int trafficcontrolgreen_switch_bg_disabled_holo_light = 2130837625;
+			
+			// aapt resource value: 0x7f02007a
+			public const int trafficcontrolgreen_switch_bg_focused_holo_light = 2130837626;
+			
+			// aapt resource value: 0x7f02007b
+			public const int trafficcontrolgreen_switch_bg_holo_light = 2130837627;
+			
+			// aapt resource value: 0x7f02007c
+			public const int trafficcontrolgreen_switch_inner_holo_light = 2130837628;
+			
+			// aapt resource value: 0x7f02007d
+			public const int trafficcontrolgreen_switch_thumb_activated_holo_light = 2130837629;
+			
+			// aapt resource value: 0x7f02007e
+			public const int trafficcontrolgreen_switch_thumb_disabled_holo_light = 2130837630;
+			
+			// aapt resource value: 0x7f02007f
+			public const int trafficcontrolgreen_switch_thumb_holo_light = 2130837631;
+			
+			// aapt resource value: 0x7f020080
+			public const int trafficcontrolgreen_switch_thumb_pressed_holo_light = 2130837632;
+			
+			// aapt resource value: 0x7f020081
+			public const int trafficcontrolgreen_switch_track_holo_light = 2130837633;
+			
+			// aapt resource value: 0x7f020082
+			public const int trafficcontrolgreen_textfield_activated_holo_light = 2130837634;
+			
+			// aapt resource value: 0x7f020083
+			public const int trafficcontrolgreen_textfield_default_holo_light = 2130837635;
+			
+			// aapt resource value: 0x7f020084
+			public const int trafficcontrolgreen_textfield_disabled_focused_holo_light = 2130837636;
+			
+			// aapt resource value: 0x7f020085
+			public const int trafficcontrolgreen_textfield_disabled_holo_light = 2130837637;
+			
+			// aapt resource value: 0x7f020086
+			public const int trafficcontrolgreen_textfield_focused_holo_light = 2130837638;
 			
 			static Drawable()
 			{
@@ -415,122 +830,164 @@ namespace TrafficControl.GUI
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f090000
-			public const int CaseIcon = 2131296256;
+			// aapt resource value: 0x7f0a000d
+			public const int CaseIcon = 2131361805;
 			
-			// aapt resource value: 0x7f090004
-			public const int CaseListing = 2131296260;
+			// aapt resource value: 0x7f0a0011
+			public const int CaseListing = 2131361809;
 			
-			// aapt resource value: 0x7f090009
-			public const int ChangePasswordBtn = 2131296265;
+			// aapt resource value: 0x7f0a0016
+			public const int ChangePasswordBtn = 2131361814;
 			
-			// aapt resource value: 0x7f090008
-			public const int ConfirmNewPassword = 2131296264;
+			// aapt resource value: 0x7f0a0015
+			public const int ConfirmNewPassword = 2131361813;
 			
-			// aapt resource value: 0x7f090010
-			public const int ConfirmPasswordCreate = 2131296272;
+			// aapt resource value: 0x7f0a001d
+			public const int ConfirmPasswordCreate = 2131361821;
 			
-			// aapt resource value: 0x7f090020
-			public const int ContentFrame = 2131296288;
+			// aapt resource value: 0x7f0a002e
+			public const int ContentFrame = 2131361838;
 			
-			// aapt resource value: 0x7f090005
-			public const int CreateCaseBtn = 2131296261;
+			// aapt resource value: 0x7f0a0012
+			public const int CreateCaseBtn = 2131361810;
 			
-			// aapt resource value: 0x7f09000e
-			public const int CreateEmailInput = 2131296270;
+			// aapt resource value: 0x7f0a001b
+			public const int CreateEmailInput = 2131361819;
 			
-			// aapt resource value: 0x7f090011
-			public const int CreateFirstNameInput = 2131296273;
+			// aapt resource value: 0x7f0a001e
+			public const int CreateFirstNameInput = 2131361822;
 			
-			// aapt resource value: 0x7f090012
-			public const int CreateLastNameInput = 2131296274;
+			// aapt resource value: 0x7f0a001f
+			public const int CreateLastNameInput = 2131361823;
 			
-			// aapt resource value: 0x7f090013
-			public const int CreatePhonenumberInput = 2131296275;
+			// aapt resource value: 0x7f0a0020
+			public const int CreatePhonenumberInput = 2131361824;
 			
-			// aapt resource value: 0x7f090015
-			public const int CreateUserBtn = 2131296277;
+			// aapt resource value: 0x7f0a0022
+			public const int CreateUserBtn = 2131361826;
 			
-			// aapt resource value: 0x7f09001b
-			public const int EmailInput = 2131296283;
+			// aapt resource value: 0x7f0a0028
+			public const int EmailInput = 2131361832;
 			
-			// aapt resource value: 0x7f090017
-			public const int HomeContentFrame = 2131296279;
+			// aapt resource value: 0x7f0a0024
+			public const int HomeContentFrame = 2131361828;
 			
-			// aapt resource value: 0x7f090018
-			public const int LeftListView = 2131296280;
+			// aapt resource value: 0x7f0a0025
+			public const int LeftListView = 2131361829;
 			
-			// aapt resource value: 0x7f09001f
-			public const int LogInErrorMsg = 2131296287;
+			// aapt resource value: 0x7f0a002c
+			public const int LogInErrorMsg = 2131361836;
 			
-			// aapt resource value: 0x7f09001a
-			public const int LoginLogo = 2131296282;
+			// aapt resource value: 0x7f0a0027
+			public const int LoginLogo = 2131361831;
 			
-			// aapt resource value: 0x7f090025
-			public const int Menu_About = 2131296293;
+			// aapt resource value: 0x7f0a002d
+			public const int MapContentFrame = 2131361837;
 			
-			// aapt resource value: 0x7f090026
-			public const int Menu_LogOut = 2131296294;
+			// aapt resource value: 0x7f0a0033
+			public const int Menu_About = 2131361843;
 			
-			// aapt resource value: 0x7f090024
-			public const int Menu_Options = 2131296292;
+			// aapt resource value: 0x7f0a0034
+			public const int Menu_LogOut = 2131361844;
 			
-			// aapt resource value: 0x7f09001e
-			public const int MyButton = 2131296286;
+			// aapt resource value: 0x7f0a0032
+			public const int Menu_Options = 2131361842;
 			
-			// aapt resource value: 0x7f090007
-			public const int NewPassword = 2131296263;
+			// aapt resource value: 0x7f0a002b
+			public const int MyButton = 2131361835;
 			
-			// aapt resource value: 0x7f090006
-			public const int OldPassword = 2131296262;
+			// aapt resource value: 0x7f0a0014
+			public const int NewPassword = 2131361812;
 			
-			// aapt resource value: 0x7f090016
-			public const int OptionsDrawer = 2131296278;
+			// aapt resource value: 0x7f0a0013
+			public const int OldPassword = 2131361811;
 			
-			// aapt resource value: 0x7f09000f
-			public const int PasswordCreate = 2131296271;
+			// aapt resource value: 0x7f0a0023
+			public const int OptionsDrawer = 2131361827;
 			
-			// aapt resource value: 0x7f09001c
-			public const int PasswordInput = 2131296284;
+			// aapt resource value: 0x7f0a001c
+			public const int PasswordCreate = 2131361820;
 			
-			// aapt resource value: 0x7f090023
-			public const int SettingsContentFrame = 2131296291;
+			// aapt resource value: 0x7f0a0029
+			public const int PasswordInput = 2131361833;
 			
-			// aapt resource value: 0x7f090014
-			public const int UserTypeSpinner = 2131296276;
+			// aapt resource value: 0x7f0a0031
+			public const int SettingsContentFrame = 2131361841;
 			
-			// aapt resource value: 0x7f090002
-			public const int case_id = 2131296258;
+			// aapt resource value: 0x7f0a0021
+			public const int UserTypeSpinner = 2131361825;
 			
-			// aapt resource value: 0x7f090001
-			public const int case_name = 2131296257;
+			// aapt resource value: 0x7f0a0005
+			public const int adjust_height = 2131361797;
 			
-			// aapt resource value: 0x7f090003
-			public const int case_time = 2131296259;
+			// aapt resource value: 0x7f0a0006
+			public const int adjust_width = 2131361798;
 			
-			// aapt resource value: 0x7f09000d
-			public const int create_case_btn = 2131296269;
+			// aapt resource value: 0x7f0a000a
+			public const int auto = 2131361802;
 			
-			// aapt resource value: 0x7f09000c
-			public const int create_case_errorDescription = 2131296268;
+			// aapt resource value: 0x7f0a000f
+			public const int case_id = 2131361807;
 			
-			// aapt resource value: 0x7f09000b
-			public const int create_case_informer = 2131296267;
+			// aapt resource value: 0x7f0a000e
+			public const int case_name = 2131361806;
 			
-			// aapt resource value: 0x7f09000a
-			public const int create_case_installation = 2131296266;
+			// aapt resource value: 0x7f0a0010
+			public const int case_time = 2131361808;
 			
-			// aapt resource value: 0x7f090019
-			public const int main_content = 2131296281;
+			// aapt resource value: 0x7f0a001a
+			public const int create_case_btn = 2131361818;
 			
-			// aapt resource value: 0x7f090021
-			public const int preference_first_line = 2131296289;
+			// aapt resource value: 0x7f0a0019
+			public const int create_case_errorDescription = 2131361817;
 			
-			// aapt resource value: 0x7f090022
-			public const int preference_value = 2131296290;
+			// aapt resource value: 0x7f0a0018
+			public const int create_case_informer = 2131361816;
 			
-			// aapt resource value: 0x7f09001d
-			public const int rememberMeChkBox = 2131296285;
+			// aapt resource value: 0x7f0a0017
+			public const int create_case_installation = 2131361815;
+			
+			// aapt resource value: 0x7f0a000b
+			public const int dark = 2131361803;
+			
+			// aapt resource value: 0x7f0a0000
+			public const int hybrid = 2131361792;
+			
+			// aapt resource value: 0x7f0a0007
+			public const int icon_only = 2131361799;
+			
+			// aapt resource value: 0x7f0a000c
+			public const int light = 2131361804;
+			
+			// aapt resource value: 0x7f0a0026
+			public const int main_content = 2131361830;
+			
+			// aapt resource value: 0x7f0a0001
+			public const int none = 2131361793;
+			
+			// aapt resource value: 0x7f0a0002
+			public const int normal = 2131361794;
+			
+			// aapt resource value: 0x7f0a002f
+			public const int preference_first_line = 2131361839;
+			
+			// aapt resource value: 0x7f0a0030
+			public const int preference_value = 2131361840;
+			
+			// aapt resource value: 0x7f0a002a
+			public const int rememberMeChkBox = 2131361834;
+			
+			// aapt resource value: 0x7f0a0003
+			public const int satellite = 2131361795;
+			
+			// aapt resource value: 0x7f0a0008
+			public const int standard = 2131361800;
+			
+			// aapt resource value: 0x7f0a0004
+			public const int terrain = 2131361796;
+			
+			// aapt resource value: 0x7f0a0009
+			public const int wide = 2131361801;
 			
 			static Id()
 			{
@@ -538,6 +995,22 @@ namespace TrafficControl.GUI
 			}
 			
 			private Id()
+			{
+			}
+		}
+		
+		public partial class Integer
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int google_play_services_version = 2131034112;
+			
+			static Integer()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Integer()
 			{
 			}
 		}
@@ -567,25 +1040,28 @@ namespace TrafficControl.GUI
 			public const int LogIn = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int MenuActivityLayout = 2130903047;
+			public const int Map = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int preference_with_value = 2130903048;
+			public const int MenuActivityLayout = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int Settings = 2130903049;
+			public const int preference_with_value = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int SettingsFragment = 2130903050;
+			public const int Settings = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int SideMenuItem = 2130903051;
+			public const int SettingsFragment = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int UserTypeDropDownItem = 2130903052;
+			public const int SideMenuItem = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int UserTypeSpinnerItem = 2130903053;
+			public const int UserTypeDropDownItem = 2130903053;
+			
+			// aapt resource value: 0x7f03000e
+			public const int UserTypeSpinnerItem = 2130903054;
 			
 			static Layout()
 			{
@@ -600,8 +1076,8 @@ namespace TrafficControl.GUI
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f080000
-			public const int main_menu = 2131230720;
+			// aapt resource value: 0x7f090000
+			public const int main_menu = 2131296256;
 			
 			static Menu()
 			{
@@ -616,47 +1092,140 @@ namespace TrafficControl.GUI
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7f040020
+			public const int ApplicationName = 2130968608;
 			
-			// aapt resource value: 0x7f04000b
-			public const int CreateUserType = 2130968587;
+			// aapt resource value: 0x7f04002a
+			public const int CreateUserType = 2130968618;
+			
+			// aapt resource value: 0x7f04001f
+			public const int Hello = 2130968607;
+			
+			// aapt resource value: 0x7f040001
+			public const int auth_google_play_services_client_facebook_display_name = 2130968577;
 			
 			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			public const int auth_google_play_services_client_google_display_name = 2130968576;
 			
-			// aapt resource value: 0x7f040008
-			public const int category_notifications = 2130968584;
+			// aapt resource value: 0x7f040027
+			public const int category_notifications = 2130968615;
 			
-			// aapt resource value: 0x7f040007
-			public const int category_users = 2130968583;
+			// aapt resource value: 0x7f040026
+			public const int category_users = 2130968614;
 			
-			// aapt resource value: 0x7f04000c
-			public const int login_email = 2130968588;
-			
-			// aapt resource value: 0x7f04000d
-			public const int login_password = 2130968589;
-			
-			// aapt resource value: 0x7f040002
-			public const int settings_create_user = 2130968578;
+			// aapt resource value: 0x7f040018
+			public const int common_google_play_services_api_unavailable_text = 2130968600;
 			
 			// aapt resource value: 0x7f04000a
-			public const int settings_notify_email = 2130968586;
+			public const int common_google_play_services_enable_button = 2130968586;
 			
 			// aapt resource value: 0x7f040009
-			public const int settings_notify_sms = 2130968585;
+			public const int common_google_play_services_enable_text = 2130968585;
 			
-			// aapt resource value: 0x7f040004
-			public const int settings_user_lastname = 2130968580;
+			// aapt resource value: 0x7f040008
+			public const int common_google_play_services_enable_title = 2130968584;
 			
-			// aapt resource value: 0x7f040003
-			public const int settings_user_name = 2130968579;
+			// aapt resource value: 0x7f040007
+			public const int common_google_play_services_install_button = 2130968583;
 			
 			// aapt resource value: 0x7f040005
-			public const int settings_user_password = 2130968581;
+			public const int common_google_play_services_install_text_phone = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int settings_user_phonenumber = 2130968582;
+			public const int common_google_play_services_install_text_tablet = 2130968582;
+			
+			// aapt resource value: 0x7f040004
+			public const int common_google_play_services_install_title = 2130968580;
+			
+			// aapt resource value: 0x7f040013
+			public const int common_google_play_services_invalid_account_text = 2130968595;
+			
+			// aapt resource value: 0x7f040012
+			public const int common_google_play_services_invalid_account_title = 2130968594;
+			
+			// aapt resource value: 0x7f040011
+			public const int common_google_play_services_network_error_text = 2130968593;
+			
+			// aapt resource value: 0x7f040010
+			public const int common_google_play_services_network_error_title = 2130968592;
+			
+			// aapt resource value: 0x7f040003
+			public const int common_google_play_services_notification_ticker = 2130968579;
+			
+			// aapt resource value: 0x7f04001c
+			public const int common_google_play_services_restricted_profile_text = 2130968604;
+			
+			// aapt resource value: 0x7f04001b
+			public const int common_google_play_services_restricted_profile_title = 2130968603;
+			
+			// aapt resource value: 0x7f04001a
+			public const int common_google_play_services_sign_in_failed_text = 2130968602;
+			
+			// aapt resource value: 0x7f040019
+			public const int common_google_play_services_sign_in_failed_title = 2130968601;
+			
+			// aapt resource value: 0x7f040002
+			public const int common_google_play_services_unknown_issue = 2130968578;
+			
+			// aapt resource value: 0x7f040015
+			public const int common_google_play_services_unsupported_text = 2130968597;
+			
+			// aapt resource value: 0x7f040014
+			public const int common_google_play_services_unsupported_title = 2130968596;
+			
+			// aapt resource value: 0x7f040016
+			public const int common_google_play_services_update_button = 2130968598;
+			
+			// aapt resource value: 0x7f04000c
+			public const int common_google_play_services_update_text = 2130968588;
+			
+			// aapt resource value: 0x7f04000b
+			public const int common_google_play_services_update_title = 2130968587;
+			
+			// aapt resource value: 0x7f04000f
+			public const int common_google_play_services_updating_text = 2130968591;
+			
+			// aapt resource value: 0x7f04000e
+			public const int common_google_play_services_updating_title = 2130968590;
+			
+			// aapt resource value: 0x7f04000d
+			public const int common_google_play_services_wear_update_text = 2130968589;
+			
+			// aapt resource value: 0x7f040017
+			public const int common_open_on_phone = 2130968599;
+			
+			// aapt resource value: 0x7f04001d
+			public const int common_signin_button_text = 2130968605;
+			
+			// aapt resource value: 0x7f04001e
+			public const int common_signin_button_text_long = 2130968606;
+			
+			// aapt resource value: 0x7f04002b
+			public const int login_email = 2130968619;
+			
+			// aapt resource value: 0x7f04002c
+			public const int login_password = 2130968620;
+			
+			// aapt resource value: 0x7f040021
+			public const int settings_create_user = 2130968609;
+			
+			// aapt resource value: 0x7f040029
+			public const int settings_notify_email = 2130968617;
+			
+			// aapt resource value: 0x7f040028
+			public const int settings_notify_sms = 2130968616;
+			
+			// aapt resource value: 0x7f040023
+			public const int settings_user_lastname = 2130968611;
+			
+			// aapt resource value: 0x7f040022
+			public const int settings_user_name = 2130968610;
+			
+			// aapt resource value: 0x7f040024
+			public const int settings_user_password = 2130968612;
+			
+			// aapt resource value: 0x7f040025
+			public const int settings_user_phonenumber = 2130968613;
 			
 			static String()
 			{
@@ -671,44 +1240,44 @@ namespace TrafficControl.GUI
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f070001
-			public const int ActionBar_Solid_Trafficcontrol = 2131165185;
+			// aapt resource value: 0x7f080001
+			public const int ActionBar_Solid_Trafficcontrol = 2131230721;
 			
-			// aapt resource value: 0x7f070002
-			public const int ActionBar_Transparent_Trafficcontrol = 2131165186;
+			// aapt resource value: 0x7f080002
+			public const int ActionBar_Transparent_Trafficcontrol = 2131230722;
 			
-			// aapt resource value: 0x7f070005
-			public const int ActionBarTabStyle_Trafficcontrol = 2131165189;
+			// aapt resource value: 0x7f080005
+			public const int ActionBarTabStyle_Trafficcontrol = 2131230725;
 			
-			// aapt resource value: 0x7f070008
-			public const int ActionButton_CloseMode_Trafficcontrol = 2131165192;
+			// aapt resource value: 0x7f080008
+			public const int ActionButton_CloseMode_Trafficcontrol = 2131230728;
 			
-			// aapt resource value: 0x7f070004
-			public const int DropDownListView_Trafficcontrol = 2131165188;
+			// aapt resource value: 0x7f080004
+			public const int DropDownListView_Trafficcontrol = 2131230724;
 			
-			// aapt resource value: 0x7f070006
-			public const int DropDownNav_Trafficcontrol = 2131165190;
+			// aapt resource value: 0x7f080006
+			public const int DropDownNav_Trafficcontrol = 2131230726;
 			
-			// aapt resource value: 0x7f070003
-			public const int PopupMenu_Trafficcontrol = 2131165187;
+			// aapt resource value: 0x7f080003
+			public const int PopupMenu_Trafficcontrol = 2131230723;
 			
-			// aapt resource value: 0x7f070007
-			public const int ProgressBar_Trafficcontrol = 2131165191;
+			// aapt resource value: 0x7f080007
+			public const int ProgressBar_Trafficcontrol = 2131230727;
 			
-			// aapt resource value: 0x7f07000a
-			public const int SpinnerTrafficControlGreen = 2131165194;
+			// aapt resource value: 0x7f08000a
+			public const int SpinnerTrafficControlGreen = 2131230730;
 			
-			// aapt resource value: 0x7f070000
-			public const int Theme_Trafficcontrol = 2131165184;
+			// aapt resource value: 0x7f080000
+			public const int Theme_Trafficcontrol = 2131230720;
 			
-			// aapt resource value: 0x7f070009
-			public const int Theme_Trafficcontrol_Widget = 2131165193;
+			// aapt resource value: 0x7f080009
+			public const int Theme_Trafficcontrol_Widget = 2131230729;
 			
-			// aapt resource value: 0x7f07000b
-			public const int TrafficControlGreen = 2131165195;
+			// aapt resource value: 0x7f08000b
+			public const int TrafficControlGreen = 2131230731;
 			
-			// aapt resource value: 0x7f07000c
-			public const int _TrafficControlGreen = 2131165196;
+			// aapt resource value: 0x7f08000c
+			public const int _TrafficControlGreen = 2131230732;
 			
 			static Style()
 			{
@@ -716,6 +1285,117 @@ namespace TrafficControl.GUI
 			}
 			
 			private Style()
+			{
+			}
+		}
+		
+		public partial class Styleable
+		{
+			
+			public static int[] LoadingImageView = new int[] {
+					2130771985,
+					2130771986,
+					2130771987};
+			
+			// aapt resource value: 2
+			public const int LoadingImageView_circleCrop = 2;
+			
+			// aapt resource value: 1
+			public const int LoadingImageView_imageAspectRatio = 1;
+			
+			// aapt resource value: 0
+			public const int LoadingImageView_imageAspectRatioAdjust = 0;
+			
+			public static int[] MapAttrs = new int[] {
+					2130771968,
+					2130771969,
+					2130771970,
+					2130771971,
+					2130771972,
+					2130771973,
+					2130771974,
+					2130771975,
+					2130771976,
+					2130771977,
+					2130771978,
+					2130771979,
+					2130771980,
+					2130771981,
+					2130771982,
+					2130771983,
+					2130771984};
+			
+			// aapt resource value: 16
+			public const int MapAttrs_ambientEnabled = 16;
+			
+			// aapt resource value: 1
+			public const int MapAttrs_cameraBearing = 1;
+			
+			// aapt resource value: 2
+			public const int MapAttrs_cameraTargetLat = 2;
+			
+			// aapt resource value: 3
+			public const int MapAttrs_cameraTargetLng = 3;
+			
+			// aapt resource value: 4
+			public const int MapAttrs_cameraTilt = 4;
+			
+			// aapt resource value: 5
+			public const int MapAttrs_cameraZoom = 5;
+			
+			// aapt resource value: 6
+			public const int MapAttrs_liteMode = 6;
+			
+			// aapt resource value: 0
+			public const int MapAttrs_mapType = 0;
+			
+			// aapt resource value: 7
+			public const int MapAttrs_uiCompass = 7;
+			
+			// aapt resource value: 15
+			public const int MapAttrs_uiMapToolbar = 15;
+			
+			// aapt resource value: 8
+			public const int MapAttrs_uiRotateGestures = 8;
+			
+			// aapt resource value: 9
+			public const int MapAttrs_uiScrollGestures = 9;
+			
+			// aapt resource value: 10
+			public const int MapAttrs_uiTiltGestures = 10;
+			
+			// aapt resource value: 11
+			public const int MapAttrs_uiZoomControls = 11;
+			
+			// aapt resource value: 12
+			public const int MapAttrs_uiZoomGestures = 12;
+			
+			// aapt resource value: 13
+			public const int MapAttrs_useViewLifecycle = 13;
+			
+			// aapt resource value: 14
+			public const int MapAttrs_zOrderOnTop = 14;
+			
+			public static int[] SignInButton = new int[] {
+					2130771988,
+					2130771989,
+					2130771990};
+			
+			// aapt resource value: 0
+			public const int SignInButton_buttonSize = 0;
+			
+			// aapt resource value: 1
+			public const int SignInButton_colorScheme = 1;
+			
+			// aapt resource value: 2
+			public const int SignInButton_scopeUris = 2;
+			
+			static Styleable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Styleable()
 			{
 			}
 		}

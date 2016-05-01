@@ -126,7 +126,14 @@ namespace TrafficControl.GUI
 
         public bool OnAboutClicked()
         {
-            return true;
+            if (GetType() != typeof(MapActivity))
+            {
+                var nextActivity = new Intent(this, typeof(MapActivity));
+                nextActivity.AddFlags(ActivityFlags.ReorderToFront);
+                StartActivity(nextActivity);
+                return true;
+            }
+            return false;
         }
     }
 }

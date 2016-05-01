@@ -7,6 +7,9 @@ E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\System.Xml.Linq.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\TrafficControl.BLL.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\Xamarin.GooglePlayServices.Base.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\Xamarin.GooglePlayServices.Basement.dll
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\Xamarin.GooglePlayServices.Maps.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\System.Runtime.Serialization.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\System.ServiceModel.Internals.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\TrafficControl.DAL.RestSharp.dll

@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="TrafficControl.TrafficControl" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="trafficcontrol.trafficcontrol" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
   <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="21" />
+  <!-- Google Maps for Android v2 requires OpenGL ES v2 -->
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+  <!-- We need to be able to download map tiles and access Google Play Services-->
   <uses-permission android:name="android.permission.INTERNET" />
+  <!-- Allow the application to access Google web-based services. -->
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <!-- Google Maps for Android v2 will cache map tiles on external storage -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <!-- Google Maps for Android v2 needs this permission so that it may check the connection state as it must download data -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <!-- Permission to receive remote notifications from Google Play Services -->
+  <!-- Notice here that we have the package name of our application as a prefix on the permissions. -->
+  <uses-permission android:name="trafficcontrol.trafficcontrol.permission.MAPS_RECEIVE" />
+  <permission android:name="trafficcontrol.trafficcontrol.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+  <!-- These are optional, but recommended. They will allow Maps to use the My Location provider. -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <application android:label="@string/ApplicationName" android:icon="@drawable/tclogo" android:theme="@style/Theme.Trafficcontrol" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyC-msdNAeA-ffO0ZjyXFh4ouMPOjF1XFRU" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <uses-library android:name="com.google.android.maps" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <activity android:label="Opret sag" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.CreateCaseActivity" />
     <activity android:label="Opret ny bruger" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.CreateUserActivity" />
     <activity android:label="@string/ApplicationName" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.LogInActivity">
@@ -12,14 +32,15 @@
       </intent-filter>
     </activity>
     <activity android:label="Hjem" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.HomeActivity" />
+    <activity android:label="Kort" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.MapActivity" />
     <activity android:label="Indstillinger" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.SettingsActivity" />
     <activity android:label="Skift adgangskode" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.ChangePasswordActivity" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="TrafficControl.TrafficControl.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="trafficcontrol.trafficcontrol.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.TrafficControl.TrafficControl" />
+        <category android:name="mono.android.intent.category.SEPPUKU.trafficcontrol.trafficcontrol" />
       </intent-filter>
     </receiver>
   </application>
