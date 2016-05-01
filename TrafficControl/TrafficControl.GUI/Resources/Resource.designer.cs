@@ -514,11 +514,11 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f09000c
 			public const int create_case_errorDescription = 2131296268;
 			
+			// aapt resource value: 0x7f09000b
+			public const int create_case_informer = 2131296267;
+			
 			// aapt resource value: 0x7f09000a
 			public const int create_case_installation = 2131296266;
-			
-			// aapt resource value: 0x7f09000b
-			public const int create_case_observer = 2131296267;
 			
 			// aapt resource value: 0x7f090019
 			public const int main_content = 2131296281;

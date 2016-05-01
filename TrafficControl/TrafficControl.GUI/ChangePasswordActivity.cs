@@ -38,7 +38,7 @@ namespace TrafficControl.GUI
             _changePasswordButton.Click += OnChangePasswordButtonClicked;
 
             _progressDialog = new ProgressDialog(this);
-            _progressDialog.SetMessage("Opretter ny bruger...");
+            _progressDialog.SetMessage("Ændrer password...");
 
             ActionBar.SetDisplayHomeAsUpEnabled(true);
             ActionBar.SetHomeButtonEnabled(true);

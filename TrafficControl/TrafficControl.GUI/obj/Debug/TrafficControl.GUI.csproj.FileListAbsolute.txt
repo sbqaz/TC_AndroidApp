@@ -731,7 +731,6 @@ D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficCo
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\preference_with_value.xml
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\changepassword.xml
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\createcase.xml
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.RestSharp.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.mdb
