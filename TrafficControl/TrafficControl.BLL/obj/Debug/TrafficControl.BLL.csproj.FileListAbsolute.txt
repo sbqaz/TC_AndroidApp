@@ -107,3 +107,7 @@ C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\Traffi
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
+C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
+C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
+C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
+C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
