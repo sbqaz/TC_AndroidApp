@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/WhiteStrHansen"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Sorter Sager Efter:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ForeGround"
+        android:padding="10sp" />
+    <Spinner
+        android:id="@+id/SortCasesSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/CreateUserType"
+        android:textColor="@color/ForeGround" />
+    <Button
+        android:id="@+id/SortCasesBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sorter Sager"
+        android:background="@color/ColorStrHansen3"
+        android:textColor="@color/WhiteStrHansen"
+        android:layout_margin="16dp" />
+    <FrameLayout
+        android:id="@+id/TrafficLightContentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -122,6 +123,21 @@ namespace TrafficControl.GUI
             {
                 _drawerLayout.CloseDrawer(_leftDrawer);
             }
+        }
+
+        public void OnTrafficLightClicked()
+        {
+            if (GetType() != typeof(TrafficLightOverviewActivity))
+            {
+                var nextActivity = new Intent(this, typeof(TrafficLightOverviewActivity));
+                nextActivity.AddFlags(ActivityFlags.ReorderToFront);
+                StartActivity(nextActivity);
+            }
+        }
+
+        public void OnMapClicked()
+        {
+            throw new NotImplementedException();
         }
 
         public bool OnAboutClicked()

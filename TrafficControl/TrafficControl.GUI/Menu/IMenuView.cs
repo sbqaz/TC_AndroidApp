@@ -8,5 +8,7 @@
         bool OnAboutClicked();
         bool OnLogOutClicked();
         void HideLeftDrawer();
+        void OnTrafficLightClicked();
+        void OnMapClicked();
     }
 }

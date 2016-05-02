@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\CaseAdapter.cs" />
+    <Compile Include="Adapters\TrafficLightListAdapter.cs" />
     <Compile Include="CreateCaseActivity.cs" />
     <Compile Include="CreateCase\CreateCasePresenter.cs" />
     <Compile Include="CreateCase\ICreateCasePresenter.cs" />
@@ -127,6 +128,13 @@
     <Compile Include="Settings\SettingsFragment.cs" />
     <Compile Include="Settings\SettingsPreferenceCategory.cs" />
     <Compile Include="ChangePasswordActivity.cs" />
+    <Compile Include="TrafficLightOverviewActivity.cs" />
+    <Compile Include="TrafficLight\AllTrafficLightFragment.cs" />
+    <Compile Include="TrafficLight\ITrafficLightOverviewPresenter.cs" />
+    <Compile Include="TrafficLight\ITrafficLightOverviewView.cs" />
+    <Compile Include="TrafficLight\MyTrafficLightFragments.cs" />
+    <Compile Include="TrafficLight\TrafficLightFragment.cs" />
+    <Compile Include="TrafficLight\TrafficLightOverviewPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -181,6 +189,11 @@
     <AndroidResource Include="Resources\layout\Map.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\SortCasesDropDownItem.axml" />
+    <AndroidResource Include="Resources\layout\SortCasesSpinner.axml" />
+    <AndroidResource Include="Resources\layout\TrafficLightFragments.axml" />
+    <AndroidResource Include="Resources\layout\TrafficLightItem.axml" />
+    <AndroidResource Include="Resources\layout\TrafficLights.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
@@ -1099,6 +1112,11 @@
       <Visible>False</Visible>
       <Version>29.0.0.1</Version>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\caseStrings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

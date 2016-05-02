@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ApplicationName">Traffic Control</string>
+  <string name="settings_sort_cases">SortCases</string>
+  <string name="SortCases">Sort Cases</string>
+  <string-array name="SortCases">
+    <item>Alfabetisk</item>
+    <item>ID</item>
+    <item>Status</item>
+  </string-array>
+</resources>

@@ -191,7 +191,10 @@ namespace TrafficControl.GUI
 		{
 			
 			// aapt resource value: 0x7f070000
-			public const int UserTypes = 2131165184;
+			public const int SortCases = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int UserTypes = 2131165185;
 			
 			static Array()
 			{
@@ -884,14 +887,14 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a002d
 			public const int MapContentFrame = 2131361837;
 			
-			// aapt resource value: 0x7f0a0033
-			public const int Menu_About = 2131361843;
+			// aapt resource value: 0x7f0a003b
+			public const int Menu_About = 2131361851;
 			
-			// aapt resource value: 0x7f0a0034
-			public const int Menu_LogOut = 2131361844;
+			// aapt resource value: 0x7f0a003c
+			public const int Menu_LogOut = 2131361852;
 			
-			// aapt resource value: 0x7f0a0032
-			public const int Menu_Options = 2131361842;
+			// aapt resource value: 0x7f0a003a
+			public const int Menu_Options = 2131361850;
 			
 			// aapt resource value: 0x7f0a002b
 			public const int MyButton = 2131361835;
@@ -913,6 +916,21 @@ namespace TrafficControl.GUI
 			
 			// aapt resource value: 0x7f0a0031
 			public const int SettingsContentFrame = 2131361841;
+			
+			// aapt resource value: 0x7f0a0038
+			public const int SortCasesBtn = 2131361848;
+			
+			// aapt resource value: 0x7f0a0037
+			public const int SortCasesSpinner = 2131361847;
+			
+			// aapt resource value: 0x7f0a0039
+			public const int TrafficLightContentFrame = 2131361849;
+			
+			// aapt resource value: 0x7f0a0033
+			public const int TrafficLightIcon = 2131361843;
+			
+			// aapt resource value: 0x7f0a0032
+			public const int TrafficLightListing = 2131361842;
 			
 			// aapt resource value: 0x7f0a0021
 			public const int UserTypeSpinner = 2131361825;
@@ -968,6 +986,9 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a0002
 			public const int normal = 2131361794;
 			
+			// aapt resource value: 0x7f0a0036
+			public const int number_of_active_cases = 2131361846;
+			
 			// aapt resource value: 0x7f0a002f
 			public const int preference_first_line = 2131361839;
 			
@@ -985,6 +1006,12 @@ namespace TrafficControl.GUI
 			
 			// aapt resource value: 0x7f0a0004
 			public const int terrain = 2131361796;
+			
+			// aapt resource value: 0x7f0a0034
+			public const int trafficlight_adress = 2131361844;
+			
+			// aapt resource value: 0x7f0a0035
+			public const int trafficlight_id = 2131361845;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int wide = 2131361801;
@@ -1058,10 +1085,25 @@ namespace TrafficControl.GUI
 			public const int SideMenuItem = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int UserTypeDropDownItem = 2130903053;
+			public const int SortCasesDropDownItem = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int UserTypeSpinnerItem = 2130903054;
+			public const int SortCasesSpinner = 2130903054;
+			
+			// aapt resource value: 0x7f03000f
+			public const int TrafficLightFragments = 2130903055;
+			
+			// aapt resource value: 0x7f030010
+			public const int TrafficLightItem = 2130903056;
+			
+			// aapt resource value: 0x7f030011
+			public const int TrafficLights = 2130903057;
+			
+			// aapt resource value: 0x7f030012
+			public const int UserTypeDropDownItem = 2130903058;
+			
+			// aapt resource value: 0x7f030013
+			public const int UserTypeSpinnerItem = 2130903059;
 			
 			static Layout()
 			{
@@ -1095,11 +1137,14 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f040020
 			public const int ApplicationName = 2130968608;
 			
-			// aapt resource value: 0x7f04002a
-			public const int CreateUserType = 2130968618;
+			// aapt resource value: 0x7f04002c
+			public const int CreateUserType = 2130968620;
 			
 			// aapt resource value: 0x7f04001f
 			public const int Hello = 2130968607;
+			
+			// aapt resource value: 0x7f040022
+			public const int SortCases = 2130968610;
 			
 			// aapt resource value: 0x7f040001
 			public const int auth_google_play_services_client_facebook_display_name = 2130968577;
@@ -1107,11 +1152,11 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f040000
 			public const int auth_google_play_services_client_google_display_name = 2130968576;
 			
-			// aapt resource value: 0x7f040027
-			public const int category_notifications = 2130968615;
+			// aapt resource value: 0x7f040029
+			public const int category_notifications = 2130968617;
 			
-			// aapt resource value: 0x7f040026
-			public const int category_users = 2130968614;
+			// aapt resource value: 0x7f040028
+			public const int category_users = 2130968616;
 			
 			// aapt resource value: 0x7f040018
 			public const int common_google_play_services_api_unavailable_text = 2130968600;
@@ -1200,32 +1245,35 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f04001e
 			public const int common_signin_button_text_long = 2130968606;
 			
-			// aapt resource value: 0x7f04002b
-			public const int login_email = 2130968619;
+			// aapt resource value: 0x7f04002d
+			public const int login_email = 2130968621;
 			
-			// aapt resource value: 0x7f04002c
-			public const int login_password = 2130968620;
-			
-			// aapt resource value: 0x7f040021
-			public const int settings_create_user = 2130968609;
-			
-			// aapt resource value: 0x7f040029
-			public const int settings_notify_email = 2130968617;
-			
-			// aapt resource value: 0x7f040028
-			public const int settings_notify_sms = 2130968616;
+			// aapt resource value: 0x7f04002e
+			public const int login_password = 2130968622;
 			
 			// aapt resource value: 0x7f040023
-			public const int settings_user_lastname = 2130968611;
+			public const int settings_create_user = 2130968611;
 			
-			// aapt resource value: 0x7f040022
-			public const int settings_user_name = 2130968610;
+			// aapt resource value: 0x7f04002b
+			public const int settings_notify_email = 2130968619;
 			
-			// aapt resource value: 0x7f040024
-			public const int settings_user_password = 2130968612;
+			// aapt resource value: 0x7f04002a
+			public const int settings_notify_sms = 2130968618;
+			
+			// aapt resource value: 0x7f040021
+			public const int settings_sort_cases = 2130968609;
 			
 			// aapt resource value: 0x7f040025
-			public const int settings_user_phonenumber = 2130968613;
+			public const int settings_user_lastname = 2130968613;
+			
+			// aapt resource value: 0x7f040024
+			public const int settings_user_name = 2130968612;
+			
+			// aapt resource value: 0x7f040026
+			public const int settings_user_password = 2130968614;
+			
+			// aapt resource value: 0x7f040027
+			public const int settings_user_phonenumber = 2130968615;
 			
 			static String()
 			{

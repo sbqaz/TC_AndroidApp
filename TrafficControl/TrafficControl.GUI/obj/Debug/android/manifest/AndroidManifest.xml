@@ -35,6 +35,7 @@
     <activity android:label="Kort" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.MapActivity" />
     <activity android:label="Indstillinger" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.SettingsActivity" />
     <activity android:label="Skift adgangskode" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.ChangePasswordActivity" />
+    <activity android:label="Lyskryds" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.TrafficLightOverviewActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="trafficcontrol.trafficcontrol.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

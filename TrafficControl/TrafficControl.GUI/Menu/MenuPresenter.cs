@@ -1,4 +1,5 @@
-﻿using Android.App;
+﻿using System;
+using Android.App;
 using Android.Content;
 using Android.Support.V4.Widget;
 using Android.Views;
@@ -9,7 +10,7 @@ namespace TrafficControl.GUI.Menu
     public class MenuPresenter : IMenuPresenter
     {
         private readonly IMenuView _view;
-        private readonly string[] _leftMenuItems = { "Hjem", "First", "Second", "Indstillinger" };
+        private readonly string[] _leftMenuItems = { "Hjem", "Sager", "Lyskryds", "Kort", "Indstillinger" };
 
         public MenuPresenter(IMenuView view)
         {
@@ -28,9 +29,14 @@ namespace TrafficControl.GUI.Menu
                 case "Hjem":
                     _view.OnHomeClicked();
                     break;
-                case "First":
+                case "´Sager":
+                    //_view.OnCasesClicked();
                     break;
-                case "Second":
+                case "Lyskryds":
+                    _view.OnTrafficLightClicked();
+                    break;
+                case "Kort":
+                    //_view.OnMapClicked();
                     break;
                 case "Indstillinger":
                     _view.OnSettingsClicked();
