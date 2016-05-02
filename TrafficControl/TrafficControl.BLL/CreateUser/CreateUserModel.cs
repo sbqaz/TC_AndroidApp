@@ -15,9 +15,9 @@ namespace TrafficControl.BLL.CreateUser
             _userTypes = new Dictionary<string, int> {{"Administrator", 2}, {"Montør", 1}, {"Randers Kommune", 0}};
         }
 
-        public bool CreateUser(string email, string password, string name, string phoneNumber, string userType)
+        public bool CreateUser(string email, string password, string confirmPassword, string firstname, string lastname, string phoneNumber, string userType)
         {
-            return _api.CreateUser(email, password, name, _userTypes[userType], phoneNumber);
+            return _api.CreateUser(email, password, confirmPassword, firstname, lastname, _userTypes[userType], phoneNumber);
         }
     }
 }

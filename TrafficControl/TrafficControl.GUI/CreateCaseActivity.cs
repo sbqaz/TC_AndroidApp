@@ -19,10 +19,11 @@ namespace TrafficControl.GUI
     {
         private ICreateCasePresenter _presenter;
         private AutoCompleteTextView _installation;
-        private AutoCompleteTextView _informer;
         private EditText _errorDescription;
         private Button _createCaseBtn;
         private ProgressDialog _progressDialog;
+        private Spinner _informerSpinner;
+        private string _informerSelected;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -31,14 +32,16 @@ namespace TrafficControl.GUI
 
             _presenter = new CreateCasePresenter(this, ModelFactory.Instance.CreateCreateCaseModel());
 
-            var installationAdapter = new ArrayAdapter<String>(this, Resource.Layout.SideMenuItem, _presenter.GetInstallations());
+            var installationAdapter = new ArrayAdapter<string>(this, Resource.Layout.SideMenuItem, _presenter.GetInstallations());
             _installation = FindViewById<AutoCompleteTextView>(Resource.Id.create_case_installation);
             _installation.Adapter = installationAdapter;
 
-            var informerAdapter = new ArrayAdapter<String>(this, Resource.Layout.SideMenuItem, _presenter.GetInformers());
-            _informer = FindViewById<AutoCompleteTextView>(Resource.Id.create_case_informer);
-            _informer.Adapter = informerAdapter;
-            
+            _informerSpinner = FindViewById<Spinner>(Resource.Id.create_case_informer);
+            _informerSpinner.ItemSelected += spinner_ItemSelected;
+            var adapter = new ArrayAdapter<string>(this, Resource.Layout.SideMenuItem, _presenter.GetInformers());
+            adapter.SetDropDownViewResource(Resource.Layout.UserTypeDropDownItem);
+            _informerSpinner.Adapter = adapter;
+
             _errorDescription = FindViewById<EditText>(Resource.Id.create_case_errorDescription);
             _createCaseBtn = FindViewById<Button>(Resource.Id.create_case_btn);
             _createCaseBtn.Click += OnCreateCaseClicked;
@@ -50,9 +53,14 @@ namespace TrafficControl.GUI
             ActionBar.SetHomeButtonEnabled(true);
         }
 
+        private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            _informerSelected = (string)_informerSpinner.GetItemAtPosition(e.Position);
+        }
+
         private void OnCreateCaseClicked(object sender, EventArgs e)
         {
-            _presenter.CreateCase(_installation.Text, _informer.Text, _errorDescription.Text);
+            _presenter.CreateCase(_installation.Text, _informerSelected, _errorDescription.Text);
         }
 
         public override bool OnMenuItemSelected(int featureId, IMenuItem item)
@@ -78,8 +86,7 @@ namespace TrafficControl.GUI
 
         public void SetInformerError()
         {
-            _informer.RequestFocus();
-            _informer.SetError("Skal udfyldes", null);
+            _informerSpinner.RequestFocus();
         }
 
         public void SetErrorDescriptionError()

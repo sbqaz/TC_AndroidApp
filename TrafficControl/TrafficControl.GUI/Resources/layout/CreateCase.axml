@@ -31,15 +31,11 @@
             android:layout_height="wrap_content"
             android:textColor="@color/ForeGround"
             android:padding="10sp" />
-        <AutoCompleteTextView
+        <Spinner
             android:id="@+id/create_case_informer"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/ForeGround"
-            android:textCursorDrawable="@null"
-            android:singleLine="true"
-            android:completionThreshold="1"
-            android:imeOptions="actionNext" />
+            android:textColor="@color/ForeGround" />
         <TextView
             android:text="Fejlbeskrivelse"
             android:textAppearance="?android:attr/textAppearanceMedium"

@@ -63,7 +63,7 @@ namespace TrafficControl.GUI.CreateUser
             if (!error)
             {
                 _view.ShowProgressDialog();
-                var userCreated = await Task.Factory.StartNew(() => _model.CreateUser(email, password, firstName + " " + lastName, phoneNumber, userType));
+                var userCreated = await Task.Factory.StartNew(() => _model.CreateUser(email, password, confirmPassword, firstName, lastName, phoneNumber, userType));
                 if (userCreated)
                 {
                     _view.HideProgressDialog();

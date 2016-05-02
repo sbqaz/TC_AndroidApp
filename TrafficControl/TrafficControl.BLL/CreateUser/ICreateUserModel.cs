@@ -2,6 +2,7 @@
 {
     public interface ICreateUserModel
     {
-        bool CreateUser(string email, string password, string name, string phoneNumber, string userType);
+        bool CreateUser(string email, string password, string confirmPassword, string firstname, string lastname,
+            string phoneNumber, string userType);
     }
 }
