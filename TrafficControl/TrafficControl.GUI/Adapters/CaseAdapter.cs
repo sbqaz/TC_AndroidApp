@@ -1,9 +1,5 @@
 ﻿using System.Collections.Generic;
 using Android.App;
-using Android.Content.Res;
-using Android.Graphics;
-using Android.Graphics.Drawables;
-using Android.Provider;
 using Android.Views;
 using Android.Widget;
 using Java.Lang;

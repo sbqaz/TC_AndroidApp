@@ -72,6 +72,8 @@
     <Compile Include="Home\UserPreference.cs" />
     <Compile Include="LogIn\LogInModel.cs" />
     <Compile Include="LogIn\ILogInModel.cs" />
+    <Compile Include="Map\IMapModel.cs" />
+    <Compile Include="Map\MapModel.cs" />
     <Compile Include="ModelFactory.cs" />
     <Compile Include="Observer\IObserver.cs" />
     <Compile Include="Observer\ISubject.cs" />

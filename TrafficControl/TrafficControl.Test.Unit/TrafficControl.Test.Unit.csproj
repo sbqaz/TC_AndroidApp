@@ -55,6 +55,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\..\TC_DAL\TrafficControl.DAL.RestSharp\TrafficControl.DAL.RestSharp.csproj">
       <Project>{99424c50-f132-4de5-a9b1-919cfea3f26b}</Project>
       <Name>TrafficControl.DAL.RestSharp</Name>
@@ -67,9 +70,6 @@
       <Project>{753600bc-04c5-4ca0-89d8-d593b5377403}</Project>
       <Name>TrafficControl.GUI</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

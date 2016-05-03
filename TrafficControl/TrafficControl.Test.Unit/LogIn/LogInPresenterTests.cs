@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using NSubstitute;
+﻿using NSubstitute;
 using NUnit.Framework;
 using TrafficControl.BLL.LogIn;
 using TrafficControl.GUI.LogIn;

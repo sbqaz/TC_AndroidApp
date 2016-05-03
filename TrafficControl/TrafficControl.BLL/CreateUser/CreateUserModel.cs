@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Threading;
 using TrafficControl.DAL.RestSharp;
 
 namespace TrafficControl.BLL.CreateUser
@@ -17,6 +16,14 @@ namespace TrafficControl.BLL.CreateUser
 
         public bool CreateUser(string email, string password, string confirmPassword, string firstname, string lastname, string phoneNumber, string userType)
         {
+            //return _api.CreateUser(new User()
+            //{
+            //    Email = email,
+            //    FirstName = firstname,
+            //    LastName = lastname,
+            //    Number = phoneNumber,
+            //    Role = _userTypes[userType]
+            //});
             return _api.CreateUser(email, password, confirmPassword, firstname, lastname, _userTypes[userType], phoneNumber);
         }
     }

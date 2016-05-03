@@ -4,8 +4,6 @@ using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using TrafficControl.BLL;
-using TrafficControl.GUI.Adapters;
 
 namespace TrafficControl.GUI.Home
 {

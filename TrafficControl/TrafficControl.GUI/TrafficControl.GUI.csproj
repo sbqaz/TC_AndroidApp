@@ -111,6 +111,10 @@
     <Compile Include="LogIn\ILogInPresenter.cs" />
     <Compile Include="LogIn\ILogInView.cs" />
     <Compile Include="MapActivity.cs" />
+    <Compile Include="Map\IMapPresenter.cs" />
+    <Compile Include="Map\IMapView.cs" />
+    <Compile Include="Map\MapMarkerFactory.cs" />
+    <Compile Include="Map\MapPresenter.cs" />
     <Compile Include="MenuActivity.cs" />
     <Compile Include="Menu\IMenuPresenter.cs" />
     <Compile Include="Menu\IMenuView.cs" />
@@ -192,12 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Logo2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TrafficControl.BLL\TrafficControl.BLL.csproj">
-      <Project>{19e30977-2b8c-4c24-87bb-dfea0e19b483}</Project>
-      <Name>TrafficControl.BLL</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\colors.xml">
@@ -1099,6 +1097,12 @@
       <Visible>False</Visible>
       <Version>29.0.0.1</Version>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrafficControl.BLL\TrafficControl.BLL.csproj">
+      <Project>{19e30977-2b8c-4c24-87bb-dfea0e19b483}</Project>
+      <Name>TrafficControl.BLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

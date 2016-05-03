@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using Android.App;
 using Android.OS;
 using Android.Views;

@@ -13,7 +13,7 @@ namespace TrafficControl.BLL.CreateUser
 
         public bool ChangePassword(string oldPw, string newPw)
         {
-            return _tcApi.ChangePassword(oldPw, newPw);
+            return _tcApi.ChangePassword(oldPw, newPw, newPw);
         }
     }
 }

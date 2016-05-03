@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using TrafficControl.BLL.CreateUser;
-using TrafficControl.BLL.Home;
 
 namespace TrafficControl.GUI.CreateUser
 {

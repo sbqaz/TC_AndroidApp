@@ -1,5 +1,4 @@
 ﻿using Android.Views;
-using Android.Widget;
 
 namespace TrafficControl.GUI.Menu
 {

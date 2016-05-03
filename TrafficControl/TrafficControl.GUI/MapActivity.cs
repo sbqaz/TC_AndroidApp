@@ -1,23 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
-using Android.Widget;
+using TrafficControl.BLL;
+using TrafficControl.GUI.Map;
 
 namespace TrafficControl.GUI
 {
     [Activity(Label = "Kort")]
-    public class MapActivity : Activity, IOnMapReadyCallback
+    public class MapActivity : Activity, IOnMapReadyCallback, IMapView
     {
         private MapFragment _myMapFragment;
+        private MapMarkerFactory _mapMarkerFactory;
+        private GoogleMap _googleMap;
+        private IMapPresenter _presenter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -31,7 +28,8 @@ namespace TrafficControl.GUI
                 tx.Add(Resource.Id.MapContentFrame, _myMapFragment);
                 tx.Commit();
             }
-
+            _mapMarkerFactory = new MapMarkerFactory(Resources);
+            _presenter = new MapPresenter(this, ModelFactory.Instance.CreateMapModel());
             _myMapFragment.GetMapAsync(this);
 
             ActionBar.SetDisplayHomeAsUpEnabled(true);
@@ -51,15 +49,33 @@ namespace TrafficControl.GUI
         {
             MapsInitializer.Initialize(this);
 
-            var location = new LatLng(56.460444, 10.037139);
+            _googleMap = googleMap;
+
+            if (_googleMap != null)
+            {
+                _presenter.MapReady();
+            }
+        }
+
+        public void SetCameraDefaultPosition()
+        {
+            var location = new LatLng(56.460444, 10.037139); //Randers
             var builder = CameraPosition.InvokeBuilder();
             builder.Target(location);
             builder.Zoom(14);
             var cameraPosition = builder.Build();
             var cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
+            
+            _googleMap.MoveCamera(cameraUpdate);
+        }
 
-            if (googleMap != null)
-                googleMap.MoveCamera(cameraUpdate);
+        public void AddMapMarker(double latitude, double longitude, string markerType)
+        {
+            //TODO Change title to installation name/ID
+            _googleMap.AddMarker(new MarkerOptions()
+                    .SetPosition(new LatLng(latitude, longitude))
+                    .SetTitle("Traffic Control")  
+                    .SetIcon(BitmapDescriptorFactory.FromBitmap(_mapMarkerFactory.GetMapMarker(markerType))));
         }
     }
 }

@@ -2,7 +2,6 @@ using Android.Content;
 using Android.OS;
 using Android.Preferences;
 using Android.Views;
-using Android.Widget;
 using TrafficControl.BLL;
 
 namespace TrafficControl.GUI.Settings

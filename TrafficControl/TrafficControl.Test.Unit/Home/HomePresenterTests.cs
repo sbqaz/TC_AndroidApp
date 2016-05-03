@@ -4,7 +4,6 @@ using NSubstitute;
 using NUnit.Framework;
 using TrafficControl.BLL;
 using TrafficControl.BLL.Home;
-using TrafficControl.GUI;
 using TrafficControl.GUI.Home;
 
 namespace TrafficControl.Test.Unit.Home

@@ -2,7 +2,6 @@ using System;
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Preferences;
 using Android.Views;
 using Android.Widget;
 using TrafficControl.BLL;

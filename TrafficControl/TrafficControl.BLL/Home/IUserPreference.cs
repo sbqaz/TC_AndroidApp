@@ -1,6 +1,4 @@
-﻿using Java.Lang;
-
-namespace TrafficControl.BLL.Home
+﻿namespace TrafficControl.BLL.Home
 {
     public interface IUserPreference
     {
