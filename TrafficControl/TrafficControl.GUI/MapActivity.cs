@@ -1,20 +1,27 @@
+using System;
+using System.Collections.Generic;
 using Android.App;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.OS;
 using Android.Views;
+using Android.Widget;
 using TrafficControl.BLL;
+using TrafficControl.DAL.RestSharp.Types;
+using TrafficControl.GUI.Adapters;
 using TrafficControl.GUI.Map;
 
 namespace TrafficControl.GUI
 {
     [Activity(Label = "Kort")]
-    public class MapActivity : Activity, IOnMapReadyCallback, IMapView
+    public class MapActivity : Activity, IOnMapReadyCallback, GoogleMap.IOnInfoWindowClickListener, IMapView
     {
         private MapFragment _myMapFragment;
         private MapMarkerFactory _mapMarkerFactory;
         private GoogleMap _googleMap;
         private IMapPresenter _presenter;
+        private string[] _mapMarkerStrings = new[] { "Green", "Yellow", "Red" };
+        private Dictionary<string, Installation> _installations;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,6 +35,9 @@ namespace TrafficControl.GUI
                 tx.Add(Resource.Id.MapContentFrame, _myMapFragment);
                 tx.Commit();
             }
+
+            _installations = new Dictionary<string, Installation>();
+
             _mapMarkerFactory = new MapMarkerFactory(Resources);
             _presenter = new MapPresenter(this, ModelFactory.Instance.CreateMapModel());
             _myMapFragment.GetMapAsync(this);
@@ -53,6 +63,8 @@ namespace TrafficControl.GUI
 
             if (_googleMap != null)
             {
+                _googleMap.SetInfoWindowAdapter(new MapMarkerAdapter(LayoutInflater, _installations));
+                _googleMap.SetOnInfoWindowClickListener(this);
                 _presenter.MapReady();
             }
         }
@@ -69,13 +81,21 @@ namespace TrafficControl.GUI
             _googleMap.MoveCamera(cameraUpdate);
         }
 
-        public void AddMapMarker(double latitude, double longitude, string markerType)
+        public void AddMapMarker(Installation installation)
         {
-            //TODO Change title to installation name/ID
+            _installations.Add(installation.Id.ToString(), installation);
+
             _googleMap.AddMarker(new MarkerOptions()
-                    .SetPosition(new LatLng(latitude, longitude))
-                    .SetTitle("Traffic Control")  
-                    .SetIcon(BitmapDescriptorFactory.FromBitmap(_mapMarkerFactory.GetMapMarker(markerType))));
+                    .SetPosition(new LatLng(installation.Position.Latitude, installation.Position.Longtitude))
+                    .SetTitle(installation.Address)
+                    .SetSnippet(installation.Id.ToString())
+                    .SetIcon(BitmapDescriptorFactory.FromBitmap(_mapMarkerFactory.GetMapMarker(_mapMarkerStrings[installation.Status])))
+                    );
+        }
+
+        public void OnInfoWindowClick(Marker marker)
+        {
+            Toast.MakeText(this, marker.Title, ToastLength.Short).Show();
         }
     }
 }

@@ -81,12 +81,12 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"TrafficControl.GUI.dll",
 		"TrafficControl.BLL.dll",
+		"TrafficControl.DAL.RestSharp.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.GooglePlayServices.Base.dll",
 		"Xamarin.GooglePlayServices.Basement.dll",
 		"Xamarin.GooglePlayServices.Maps.dll",
 		"System.ServiceModel.Internals.dll",
-		"TrafficControl.DAL.RestSharp.dll",
 		"RestSharp.dll",
 		"Newtonsoft.Json.dll",
 	};

@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\CaseAdapter.cs" />
+    <Compile Include="Adapters\MapMarkerAdapter.cs" />
     <Compile Include="CreateCaseActivity.cs" />
     <Compile Include="CreateCase\CreateCasePresenter.cs" />
     <Compile Include="CreateCase\ICreateCasePresenter.cs" />
@@ -1099,6 +1100,10 @@
     </XamarinComponentReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\TC_DAL\TrafficControl.DAL.RestSharp\TrafficControl.DAL.RestSharp.csproj">
+      <Project>{99424c50-f132-4de5-a9b1-919cfea3f26b}</Project>
+      <Name>TrafficControl.DAL.RestSharp</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TrafficControl.BLL\TrafficControl.BLL.csproj">
       <Project>{19e30977-2b8c-4c24-87bb-dfea0e19b483}</Project>
       <Name>TrafficControl.BLL</Name>

@@ -66,6 +66,10 @@ TrafficControl.GUI.Adapters.CaseAdapter, TrafficControl.GUI;md5a6bfb5449d3e1765a
 TrafficControl.GUI.Adapters.CaseAdapter, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a6bfb5449d3e1765a3a283db63184fd7.CaseAdapter
 TrafficControl.GUI.Adapters.CaseAdapter;md5a6bfb5449d3e1765a3a283db63184fd7.CaseAdapter
 trafficcontrol.gui.adapters.CaseAdapter;md5a6bfb5449d3e1765a3a283db63184fd7.CaseAdapter
+TrafficControl.GUI.Adapters.MapMarkerAdapter, TrafficControl.GUI;md5a6bfb5449d3e1765a3a283db63184fd7.MapMarkerAdapter
+TrafficControl.GUI.Adapters.MapMarkerAdapter, TrafficControl.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a6bfb5449d3e1765a3a283db63184fd7.MapMarkerAdapter
+TrafficControl.GUI.Adapters.MapMarkerAdapter;md5a6bfb5449d3e1765a3a283db63184fd7.MapMarkerAdapter
+trafficcontrol.gui.adapters.MapMarkerAdapter;md5a6bfb5449d3e1765a3a283db63184fd7.MapMarkerAdapter
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager+IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor

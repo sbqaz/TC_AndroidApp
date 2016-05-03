@@ -16,7 +16,11 @@ namespace TrafficControl.GUI.Map
         public void MapReady()
         {
             _view.SetCameraDefaultPosition();
-            _view.AddMapMarker(56.460444, 10.037139, "Green");
+
+            foreach (var installation in _model.Installations)
+            {
+                _view.AddMapMarker(installation);
+            }
         }
     }
 }

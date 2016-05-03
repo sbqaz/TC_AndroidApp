@@ -26,7 +26,7 @@ namespace TrafficControl.BLL
 
         private ModelFactory()
         {
-            _tcApi = new TCApi();
+            _tcApi = new TCAPIdummy();
             _logInModel = new LogInModel(_tcApi);
             _homeModel = new HomeModel(_tcApi);
             _userPreference = new UserPreference(_tcApi);
@@ -34,7 +34,7 @@ namespace TrafficControl.BLL
             _createUserModel = new CreateUserModel(_tcApi);
             _createCaseModel = new CreateCaseModel(_tcApi);
             _changePasswordModel = new ChangePasswordModel(_tcApi);
-            _mapModel = new MapModel();
+            _mapModel = new MapModel(_tcApi);
         }
 
         public static ModelFactory Instance

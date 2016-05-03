@@ -14,7 +14,6 @@ namespace TrafficControl.BLL.Home
         private readonly List<Case> _myCases;
 
         private ITCApi _api;
-        private User _currentUser;
 
         public List<Case> Cases
         {
