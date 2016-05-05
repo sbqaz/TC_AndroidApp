@@ -4,6 +4,7 @@ using Android.Views;
 using Android.Widget;
 using Java.Lang;
 using TrafficControl.BLL;
+using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.GUI.Adapters
 {
@@ -36,26 +37,26 @@ namespace TrafficControl.GUI.Adapters
             var caseId = view.FindViewById<TextView>(Resource.Id.case_id);
             var caseTime = view.FindViewById<TextView>(Resource.Id.case_time);
             var caseIcon = view.FindViewById<ImageView>(Resource.Id.CaseIcon);
-            caseName.Text = _cases[position].Name;
+            caseName.Text = _cases[position].Worker;
             caseId.Text = string.Format("ID: {0}", _cases[position].Id);
-            caseTime.Text = "Oprettet: " + _cases[position].TimeStamp.ToString("dd-MMM-yyyy ddd");
+            caseTime.Text = "Oprettet: " + _cases[position].Time;//.ToString("dd-MMM-yyyy ddd");
             caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.ForeGround));
             caseId.SetTextColor(_activity.Resources.GetColor(Android.Resource.Color.DarkerGray));
             caseTime.SetTextColor(_activity.Resources.GetColor(Android.Resource.Color.DarkerGray));
 
-            switch (_cases[position].State)
+            switch (_cases[position].Status)
             {
-                case Case.States.Closed:
+                case 0:
                     //caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseClosed));
                     caseIcon.SetImageResource(Resource.Drawable.TCLogoGreen);
                     break;
-                case Case.States.Open:
+                case 1:
                     //caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseOpen));
-                    caseIcon.SetImageResource(Resource.Drawable.TCLogoRed);
-                    break;
-                case Case.States.Taken:
-                    //caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseTaken));
                     caseIcon.SetImageResource(Resource.Drawable.TCLogoYellow);
+                    break;
+                case 2:
+                    //caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseTaken));
+                    caseIcon.SetImageResource(Resource.Drawable.TCLogoRed);
                     break;
             }
 

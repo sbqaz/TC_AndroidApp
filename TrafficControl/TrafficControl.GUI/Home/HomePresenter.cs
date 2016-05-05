@@ -4,6 +4,7 @@ using Android.Widget;
 using TrafficControl.BLL;
 using TrafficControl.BLL.Home;
 using TrafficControl.BLL.Observer;
+using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.GUI.Home
 {
@@ -17,6 +18,7 @@ namespace TrafficControl.GUI.Home
             _homeView = homeView;
             _homeModel = homeModel;
             
+            //_homeModel.Run();
             _homeModel.Attach(this);
         }
 
@@ -35,16 +37,19 @@ namespace TrafficControl.GUI.Home
             return _homeModel.MyCases;
         }
 
-        //Move to view?
-        public void CaseItemClicked(Activity activity, object sender, AdapterView.ItemClickEventArgs e)
+        public void FetchMyCases()
         {
-            string text = string.Format("Casename: {0}\n" +
-                                        "Case Id: {1}", GetCases()[e.Position].Name, GetCases()[e.Position].Id);
-            
-            new AlertDialog.Builder(activity).SetPositiveButton("Ok", (msender, args) => { })
-                                                            .SetMessage(text)
-                                                            .SetTitle("Case")
-                                                            .Show();
+            _homeModel.FetchMyCases();
+        }
+
+        public void FetchCases()
+        {
+            _homeModel.FetchCases();
+        }
+
+        public void OnPause()
+        {
+            _homeModel.Detach(this);
         }
 
         public void Update(IHomeModel subject)

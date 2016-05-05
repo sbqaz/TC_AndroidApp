@@ -1,3 +1,4 @@
+using Android.App;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
@@ -15,23 +16,42 @@ namespace TrafficControl.GUI.Home
         {
             var view = base.OnCreateView(inflater, container, savedInstanceState);
 
-            _presenter = new HomePresenter(this, ModelFactory.Instance.CreateHomeModel());
+            if (savedInstanceState == null)
+            {
+                _presenter = new HomePresenter(this, ModelFactory.Instance.CreateHomeModel());
+            }
+
             _caseAdapter = new CaseAdapter(base.ContextActivity, _presenter.GetCases());
-            
+
             CaseView.Adapter = _caseAdapter;
             CaseView.ItemClick += OnCaseItemClicked;
+
+            _presenter.FetchCases();
 
             return view;
         }
 
+        public override void OnPause()
+        {
+            base.OnPause();
+            _presenter.OnPause();
+        }
+
         private void OnCaseItemClicked(object sender, AdapterView.ItemClickEventArgs e)
         {
-            _presenter.CaseItemClicked(base.ContextActivity, sender, e);
+            string text = string.Format("Casename: {0}\n" +
+                                        "Case Id: {1}", _presenter.GetCases()[e.Position].Worker, _presenter.GetCases()[e.Position].Id);
+
+            new AlertDialog.Builder(ContextActivity).SetPositiveButton("Ok", (msender, args) => { })
+                                                            .SetMessage(text)
+                                                            .SetTitle("Case")
+                                                            .Show();
         }
 
         public void UpdateCaseView()
         {
-            base.ContextActivity.RunOnUiThread(() => _caseAdapter.NotifyDataSetChanged());
+            if(_caseAdapter != null)
+                base.ContextActivity.RunOnUiThread(() => _caseAdapter.NotifyDataSetChanged());
         }
     }
 }

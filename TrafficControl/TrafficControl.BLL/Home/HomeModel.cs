@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using TrafficControl.BLL.Observer;
 using TrafficControl.DAL.RestSharp;
 using TrafficControl.DAL.RestSharp.Types;
@@ -10,8 +12,8 @@ namespace TrafficControl.BLL.Home
 {
     public class HomeModel : Subject<IHomeModel>, IHomeModel
     {
-        private readonly List<Case> _cases;
-        private readonly List<Case> _myCases;
+        private List<Case> _cases;
+        private List<Case> _myCases;
 
         private ITCApi _api;
 
@@ -22,7 +24,24 @@ namespace TrafficControl.BLL.Home
 
         public List<Case> MyCases
         {
-            get { return _myCases; }
+            get { return _api.GetMyCases().ToList(); }
+        }
+
+        public void FetchCases()
+        {
+            _cases = _api.GetMyCases().ToList();
+            Notify(this);
+        }
+
+        public void FetchMyCases()
+        {
+            _myCases = _api.GetMyCases().ToList();
+            Notify(this);
+        }
+
+        public void Run()
+        {
+            ThreadPool.QueueUserWorkItem(o => CaseHandler());
         }
 
         public HomeModel(ITCApi api) : base()
@@ -30,7 +49,16 @@ namespace TrafficControl.BLL.Home
             _api = api;
             _cases = new List<Case>();
             _myCases = new List<Case>();
-            ThreadPool.QueueUserWorkItem(o => SlowMethod());
+        }
+
+        private Task CaseHandler()
+        {
+            for (;;)
+            {
+                _myCases = _api.GetMyCases().ToList();
+                Notify(this);
+                Thread.Sleep(10000);
+            }
         }
 
         //For TESTING
@@ -38,14 +66,14 @@ namespace TrafficControl.BLL.Home
         {
             for (int i = 0; i < 50; i++)
             {
-                Thread.Sleep(3000);
-                string tmp = RandomString(3) + " - " + RandomString(3);
-                var tmpID = random.Next(1000) + 2500;
-                var newCase = new Case(tmp, tmpID, RandomDay(), (Case.States) (i%3));
-                Cases.Add(newCase);
-                if(i == 0 || newCase.Id % 2 == 0 && newCase.State == Case.States.Open)
-                    MyCases.Add(newCase);
-                Notify(this);
+                //Thread.Sleep(3000);
+                //string tmp = RandomString(3) + " - " + RandomString(3);
+                //var tmpID = random.Next(1000) + 2500;
+                //var newCase = new TESTCase(tmp, tmpID, RandomDay(), (TESTCase.States)(i % 3));
+                //Cases.Add(newCase);
+                //if (i == 0 || newCase.Id % 2 == 0 && newCase.State == TESTCase.States.Open)
+                //    MyCases.Add(newCase);
+                //Notify(this);
             }
         }
 

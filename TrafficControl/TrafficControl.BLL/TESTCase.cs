@@ -2,7 +2,7 @@
 
 namespace TrafficControl.BLL
 {
-    public class Case
+    public class TESTCase
     {
         public enum States
         {
@@ -11,7 +11,7 @@ namespace TrafficControl.BLL
             Taken
         }
 
-        public Case(string name, long id, DateTime timeStamp, States state)
+        public TESTCase(string name, long id, DateTime timeStamp, States state)
         {
             Name = name;
             Id = id;
