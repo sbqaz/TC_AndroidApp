@@ -44,7 +44,7 @@ namespace TrafficControl.GUI.Adapters
             caseId.SetTextColor(_activity.Resources.GetColor(Android.Resource.Color.DarkerGray));
             caseTime.SetTextColor(_activity.Resources.GetColor(Android.Resource.Color.DarkerGray));
 
-            switch (_cases[position].Status)
+            switch ((int)_cases[position].Status)
             {
                 case 0:
                     //caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseClosed));

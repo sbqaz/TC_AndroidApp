@@ -13,10 +13,10 @@ D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblie
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\Xamarin.GooglePlayServices.Maps.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\System.Runtime.Serialization.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\System.ServiceModel.Internals.dll
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\RestSharp.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\Newtonsoft.Json.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\System.Numerics.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\System.Data.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\System.Transactions.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\Mono.Data.Tds.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\Mono.Security.dll
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\assemblies\RestSharp.dll
