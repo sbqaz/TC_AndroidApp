@@ -53,7 +53,8 @@ namespace TrafficControl.GUI
                     e.FragmentTransaction.Remove(fragment);
                 e.FragmentTransaction.Add(Resource.Id.ContentFrame, view);
             };
-            tab.TabUnselected += delegate (object sender, ActionBar.TabEventArgs e) {
+            tab.TabUnselected += delegate (object sender, ActionBar.TabEventArgs e) 
+            {
                 e.FragmentTransaction.Remove(view);
             };
 

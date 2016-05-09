@@ -87,7 +87,7 @@ namespace TrafficControl.GUI
 
             _googleMap.AddMarker(new MarkerOptions()
                     .SetPosition(new LatLng(installation.Position.Latitude, installation.Position.Longtitude))
-                    .SetTitle(installation.Address)
+                    .SetTitle(installation.Name)
                     .SetSnippet(installation.Id.ToString())
                     .SetIcon(BitmapDescriptorFactory.FromBitmap(_mapMarkerFactory.GetMapMarker(_mapMarkerStrings[installation.Status])))
                     );

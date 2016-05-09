@@ -30,7 +30,7 @@ namespace TrafficControl.GUI.Adapters
             var installationId = _view.FindViewById<TextView>(Resource.Id.case_id);
             var installationTime = _view.FindViewById<TextView>(Resource.Id.case_time);
             var installationIcon = _view.FindViewById<ImageView>(Resource.Id.CaseIcon);
-            installationName.Text = tmpInstallation.Address;
+            installationName.Text = tmpInstallation.Name;
             installationId.Text = string.Format("ID: {0}", tmpInstallation.Id);
             installationTime.Text = tmpInstallation.Name;
             

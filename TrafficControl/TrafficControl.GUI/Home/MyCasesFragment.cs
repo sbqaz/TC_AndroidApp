@@ -16,31 +16,13 @@ namespace TrafficControl.GUI.Home
         {
             var view = base.OnCreateView(inflater, container, savedInstanceState);
 
-            if (savedInstanceState == null)
-            {
-                _presenter = new HomePresenter(this, ModelFactory.Instance.CreateHomeModel());
-            }
-
+            _presenter = new HomePresenter(this, ModelFactory.Instance.CreateHomeModel());
             _caseAdapter = new CaseAdapter(base.ContextActivity, _presenter.GetMyCases());
 
             CaseView.Adapter = _caseAdapter;
             CaseView.ItemClick += OnCaseItemClicked;
-
-            _presenter.FetchMyCases();
-
+            
             return view;
-        }
-
-        public override void OnResume()
-        {
-            base.OnResume();
-            _presenter.FetchMyCases();
-        }
-
-        public override void OnPause()
-        {
-            base.OnPause();
-            _presenter.OnPause();
         }
 
         private void OnCaseItemClicked(object sender, AdapterView.ItemClickEventArgs e)
@@ -54,10 +36,10 @@ namespace TrafficControl.GUI.Home
                                                             .Show();
         }
 
-        public void UpdateCaseView()
-        {
-            if(_caseAdapter != null)
-                base.ContextActivity.RunOnUiThread(() => _caseAdapter.NotifyDataSetChanged());
-        }
+        //public void UpdateCaseView()
+        //{
+        //    if(_caseAdapter != null)
+        //        base.ContextActivity.RunOnUiThread(() => _caseAdapter.NotifyDataSetChanged());
+        //}
     }
 }

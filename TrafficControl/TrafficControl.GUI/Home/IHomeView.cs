@@ -2,6 +2,6 @@
 {
     public interface IHomeView
     {
-        void UpdateCaseView();
+        //void UpdateCaseView();
     }
 }

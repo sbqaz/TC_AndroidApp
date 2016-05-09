@@ -414,8 +414,8 @@ D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\Xamarin.A
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\Xamarin.GooglePlayServices.Base.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\Xamarin.GooglePlayServices.Basement.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\Xamarin.GooglePlayServices.Maps.dll
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\Newtonsoft.Json.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\RestSharp.dll
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\Newtonsoft.Json.dll
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.RestSharp.pdb
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.pdb
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.csprojResolveAssemblyReference.cache

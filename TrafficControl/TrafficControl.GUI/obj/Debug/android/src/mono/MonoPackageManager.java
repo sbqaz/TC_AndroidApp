@@ -87,8 +87,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.Basement.dll",
 		"Xamarin.GooglePlayServices.Maps.dll",
 		"System.ServiceModel.Internals.dll",
-		"Newtonsoft.Json.dll",
 		"RestSharp.dll",
+		"Newtonsoft.Json.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

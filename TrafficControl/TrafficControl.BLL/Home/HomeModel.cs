@@ -10,7 +10,7 @@ using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.BLL.Home
 {
-    public class HomeModel : Subject<IHomeModel>, IHomeModel
+    public class HomeModel : IHomeModel
     {
         private List<Case> _cases;
         private List<Case> _myCases;
@@ -19,46 +19,19 @@ namespace TrafficControl.BLL.Home
 
         public List<Case> Cases
         {
-            get { return _cases; }
+            get { return _api.GetCases().ToList(); }
         }
 
         public List<Case> MyCases
         {
             get { return _api.GetMyCases().ToList(); }
-        }
-
-        public void FetchCases()
-        {
-            _cases = _api.GetMyCases().ToList();
-            Notify(this);
-        }
-
-        public void FetchMyCases()
-        {
-            _myCases = _api.GetMyCases().ToList();
-            Notify(this);
-        }
-
-        public void Run()
-        {
-            ThreadPool.QueueUserWorkItem(o => CaseHandler());
-        }
+        } 
 
         public HomeModel(ITCApi api) : base()
         {
             _api = api;
             _cases = new List<Case>();
             _myCases = new List<Case>();
-        }
-
-        private Task CaseHandler()
-        {
-            for (;;)
-            {
-                _myCases = _api.GetMyCases().ToList();
-                Notify(this);
-                Thread.Sleep(10000);
-            }
         }
 
         //For TESTING

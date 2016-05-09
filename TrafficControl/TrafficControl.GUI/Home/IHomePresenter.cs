@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Android.App;
 using Android.Widget;
 using TrafficControl.BLL;
@@ -10,9 +11,7 @@ namespace TrafficControl.GUI.Home
     {
         void OnDestroy();
         List<Case> GetCases();
+        Task<List<Case>> GetCasesAsync();
         List<Case> GetMyCases();
-        void FetchMyCases();
-        void FetchCases();
-        void OnPause();
     }
 }

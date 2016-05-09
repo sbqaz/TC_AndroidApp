@@ -5,13 +5,9 @@ using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.BLL.Home
 {
-    public interface IHomeModel : ISubject<IHomeModel>
+    public interface IHomeModel
     {
-        List<Case> Cases { get; } 
+        List<Case> Cases { get; }
         List<Case> MyCases { get; }
-        void FetchCases();
-        void FetchMyCases();
-
-        void Run();
     }
 }

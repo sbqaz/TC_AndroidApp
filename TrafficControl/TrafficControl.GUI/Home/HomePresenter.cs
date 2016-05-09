@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Android.App;
 using Android.Widget;
 using TrafficControl.BLL;
@@ -8,7 +9,7 @@ using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.GUI.Home
 {
-    public class HomePresenter : IHomePresenter, IObserver<IHomeModel>
+    public class HomePresenter : IHomePresenter
     {
         private IHomeView _homeView;
         private IHomeModel _homeModel;
@@ -17,9 +18,6 @@ namespace TrafficControl.GUI.Home
         {
             _homeView = homeView;
             _homeModel = homeModel;
-            
-            //_homeModel.Run();
-            _homeModel.Attach(this);
         }
 
         public void OnDestroy()
@@ -32,30 +30,15 @@ namespace TrafficControl.GUI.Home
             return _homeModel.Cases;
         }
 
+        public async Task<List<Case>> GetCasesAsync()
+        {
+            var retval = await Task.Factory.StartNew(() => _homeModel.Cases);
+            return retval;
+        }
+
         public List<Case> GetMyCases()
         {
             return _homeModel.MyCases;
-        }
-
-        public void FetchMyCases()
-        {
-            _homeModel.FetchMyCases();
-        }
-
-        public void FetchCases()
-        {
-            _homeModel.FetchCases();
-        }
-
-        public void OnPause()
-        {
-            _homeModel.Detach(this);
-        }
-
-        public void Update(IHomeModel subject)
-        {
-            if (_homeView != null)
-                _homeView.UpdateCaseView();
         }
     }
 }
