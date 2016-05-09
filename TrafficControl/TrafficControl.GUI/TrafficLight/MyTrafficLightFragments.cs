@@ -3,8 +3,9 @@ using Android.Views;
 using Android.Widget;
 using TrafficControl.BLL;
 using TrafficControl.GUI.Adapters;
+using TrafficControl.GUI.Lyskryds;
 
-namespace TrafficControl.GUI.Lyskryds
+namespace TrafficControl.GUI.TrafficLight
 {
     public class MyTrafficLightFragment : TrafficLightFragment, ITrafficLightOverviewView
     {
