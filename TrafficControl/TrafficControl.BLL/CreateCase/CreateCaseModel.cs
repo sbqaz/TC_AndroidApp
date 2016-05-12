@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Android.Renderscripts;
 using TrafficControl.DAL.RestSharp;
+using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.BLL.CreateCase
 {
@@ -8,8 +10,23 @@ namespace TrafficControl.BLL.CreateCase
     {
         private ITCApi _api;
 
-        public List<string> Installations { get; private set; }
+        public Dictionary<string, long> Installations { get; private set; }
+
         public List<string> Informers { get; private set; }
+        public void FetchData()
+        {
+            Installations = new Dictionary<string, long>();
+            var installations = _api.GetInstallations();
+            foreach (var i in installations)
+            {
+                Installations.Add(i.Name, i.Id);
+            }
+
+            //To API call?
+            string[] informerStrings = { "Politiet", "Borger", "Kommunen" };
+            Informers = informerStrings.ToList();
+        }
+
         public bool CreateCase(string installation, string informer, string errorDescription)
         {
             //return _api.CreateCase(??);
@@ -19,14 +36,6 @@ namespace TrafficControl.BLL.CreateCase
         public CreateCaseModel(ITCApi api)
         {
             _api = api;
-
-            //To API call?
-            string[] installationStrings = { "C", "C++", "Java", "C#", "PHP", "JavaScript", "jQuery", "AJAX", "JSON" };
-            Installations = installationStrings.ToList();
-            
-            //To API call?
-            string[] informerStrings = { "Politiet", "Borger", "Kommunen" };
-            Informers = informerStrings.ToList();
         }
     }
 }

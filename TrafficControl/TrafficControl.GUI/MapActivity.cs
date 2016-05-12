@@ -28,16 +28,18 @@ namespace TrafficControl.GUI
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Map);
 
+            _myMapFragment = MapFragment.NewInstance();
+
             if (savedInstanceState == null)
             {
-                _myMapFragment = MapFragment.NewInstance();
                 FragmentTransaction tx = FragmentManager.BeginTransaction();
                 tx.Add(Resource.Id.MapContentFrame, _myMapFragment);
                 tx.Commit();
+                
             }
 
             _installations = new Dictionary<string, Installation>();
-
+            
             _mapMarkerFactory = new MapMarkerFactory(Resources);
             _presenter = new MapPresenter(this, ModelFactory.Instance.CreateMapModel());
             _myMapFragment.GetMapAsync(this);

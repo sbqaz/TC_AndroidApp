@@ -37,9 +37,9 @@ namespace TrafficControl.GUI.Adapters
             var caseId = view.FindViewById<TextView>(Resource.Id.case_id);
             var caseTime = view.FindViewById<TextView>(Resource.Id.case_time);
             var caseIcon = view.FindViewById<ImageView>(Resource.Id.CaseIcon);
-            caseName.Text = _cases[position].Worker;
-            caseId.Text = string.Format("ID: {0}", _cases[position].Id);
-            caseTime.Text = "Oprettet: " + _cases[position].Time;//.ToString("dd-MMM-yyyy ddd");
+            caseName.Text = _cases[position].Installation.Name;
+            caseId.Text = string.Format("Fejlbeskrivelse: {0}", _cases[position].ErrorDescription);
+            caseTime.Text = string.Format("Oprettet: {0}", _cases[position].Time != null ? _cases[position].Time.Value.ToString("dd-MMM-yyyy ddd") : "n/a");//"Oprettet: " + _cases[position].Time.ToString("dd-MMM-yyyy ddd");
             caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.ForeGround));
             caseId.SetTextColor(_activity.Resources.GetColor(Android.Resource.Color.DarkerGray));
             caseTime.SetTextColor(_activity.Resources.GetColor(Android.Resource.Color.DarkerGray));

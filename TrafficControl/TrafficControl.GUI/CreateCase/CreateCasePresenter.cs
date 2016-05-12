@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using TrafficControl.BLL.CreateCase;
 
@@ -13,6 +14,7 @@ namespace TrafficControl.GUI.CreateCase
         {
             _view = view;
             _model = model;
+            _model.FetchData();
         }
         
         public List<string> GetInformers()
@@ -22,7 +24,7 @@ namespace TrafficControl.GUI.CreateCase
 
         public List<string> GetInstallations()
         {
-            return _model.Installations;
+            return _model.Installations.Keys.ToList();
         }
 
         public async Task CreateCase(string installation, string informer, string errorDescription)
