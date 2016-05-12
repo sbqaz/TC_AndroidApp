@@ -437,6 +437,7 @@ E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\changepassword.xml
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\createcase.xml
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\map.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\mapitem.xml
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable\icon.png
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawable\logo2.png
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\values\colors.xml
@@ -738,7 +739,8 @@ E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawab
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\values\styles_trafficcontrolgreen.xml
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\R.cs.flag
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\uploadflags.txt
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\viewcase.xml
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.RestSharp.dll.mdb
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\mapitem.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.mdb

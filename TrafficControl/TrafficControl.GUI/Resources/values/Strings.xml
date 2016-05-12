@@ -18,4 +18,6 @@
     <item>Montør</item>
     <item>Randers Kommune</item>
   </string-array>
+
+  <string name="PASS_CASE_ID">CASE_ID</string>
 </resources>

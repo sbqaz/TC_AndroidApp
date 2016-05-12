@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
@@ -27,19 +28,15 @@ namespace TrafficControl.GUI.Home
 
         private void OnCaseItemClicked(object sender, AdapterView.ItemClickEventArgs e)
         {
-            string text = string.Format("Casename: {0}\n" +
-                                        "Case Id: {1}", _presenter.GetMyCases()[e.Position].Worker, _presenter.GetMyCases()[e.Position].Id);
-
-            new AlertDialog.Builder(ContextActivity).SetPositiveButton("Ok", (msender, args) => { })
-                                                            .SetMessage(text)
-                                                            .SetTitle("Case")
-                                                            .Show();
+            if (GetType() != typeof(CaseActivity))
+            {
+                var nextActivity = new Intent(Activity, typeof(CaseActivity));
+                var bundle = new Bundle();
+                bundle.PutLong(GetString(Resource.String.PASS_CASE_ID), _presenter.GetCases()[e.Position].Id);
+                nextActivity.AddFlags(ActivityFlags.ReorderToFront);
+                nextActivity.PutExtras(bundle);
+                StartActivity(nextActivity);
+            }
         }
-
-        //public void UpdateCaseView()
-        //{
-        //    if(_caseAdapter != null)
-        //        base.ContextActivity.RunOnUiThread(() => _caseAdapter.NotifyDataSetChanged());
-        //}
     }
 }

@@ -884,14 +884,14 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a002d
 			public const int MapContentFrame = 2131361837;
 			
-			// aapt resource value: 0x7f0a0036
-			public const int Menu_About = 2131361846;
-			
 			// aapt resource value: 0x7f0a0037
-			public const int Menu_LogOut = 2131361847;
+			public const int Menu_About = 2131361847;
 			
-			// aapt resource value: 0x7f0a0035
-			public const int Menu_Options = 2131361845;
+			// aapt resource value: 0x7f0a0038
+			public const int Menu_LogOut = 2131361848;
+			
+			// aapt resource value: 0x7f0a0036
+			public const int Menu_Options = 2131361846;
 			
 			// aapt resource value: 0x7f0a002b
 			public const int MyButton = 2131361835;
@@ -995,6 +995,9 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a0004
 			public const int terrain = 2131361796;
 			
+			// aapt resource value: 0x7f0a0035
+			public const int testCaseText = 2131361845;
+			
 			// aapt resource value: 0x7f0a0009
 			public const int wide = 2131361801;
 			
@@ -1075,6 +1078,9 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f03000f
 			public const int UserTypeSpinnerItem = 2130903055;
 			
+			// aapt resource value: 0x7f030010
+			public const int ViewCase = 2130903056;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -1112,6 +1118,9 @@ namespace TrafficControl.GUI
 			
 			// aapt resource value: 0x7f04001f
 			public const int Hello = 2130968607;
+			
+			// aapt resource value: 0x7f04002d
+			public const int PASS_CASE_ID = 2130968621;
 			
 			// aapt resource value: 0x7f040001
 			public const int auth_google_play_services_client_facebook_display_name = 2130968577;

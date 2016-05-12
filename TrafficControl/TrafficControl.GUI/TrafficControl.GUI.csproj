@@ -89,6 +89,7 @@
   <ItemGroup>
     <Compile Include="Adapters\CaseAdapter.cs" />
     <Compile Include="Adapters\MapMarkerAdapter.cs" />
+    <Compile Include="CaseActivity.cs" />
     <Compile Include="CreateCaseActivity.cs" />
     <Compile Include="CreateCase\CreateCasePresenter.cs" />
     <Compile Include="CreateCase\ICreateCasePresenter.cs" />
@@ -187,6 +188,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\MapItem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ViewCase.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
