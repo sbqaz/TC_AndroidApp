@@ -25,27 +25,13 @@ namespace TrafficControl.GUI.Adapters
         {
             var tmpInstallation = _installations[marker.Snippet];
 
-            _view = _inflater.Inflate(Resource.Layout.CaseItem, null);
-            var installationName = _view.FindViewById<TextView>(Resource.Id.case_name);
-            var installationId = _view.FindViewById<TextView>(Resource.Id.case_id);
-            var installationTime = _view.FindViewById<TextView>(Resource.Id.case_time);
-            var installationIcon = _view.FindViewById<ImageView>(Resource.Id.CaseIcon);
+            _view = _inflater.Inflate(Resource.Layout.MapItem, null);
+            var installationName = _view.FindViewById<TextView>(Resource.Id.item_name);
+            var installationLatitude = _view.FindViewById<TextView>(Resource.Id.item_latitude);
+            var installationLongitude = _view.FindViewById<TextView>(Resource.Id.item_longitude);
             installationName.Text = tmpInstallation.Name;
-            installationId.Text = string.Format("ID: {0}", tmpInstallation.Id);
-            installationTime.Text = tmpInstallation.Name;
-            
-            switch (tmpInstallation.Status)
-            {
-                case 0:
-                    installationIcon.SetImageResource(Resource.Drawable.TCLogoGreen);
-                    break;
-                case 1:
-                    installationIcon.SetImageResource(Resource.Drawable.TCLogoYellow);
-                    break;
-                case 2:
-                    installationIcon.SetImageResource(Resource.Drawable.TCLogoRed);
-                    break;
-            }
+            installationLatitude.Text = string.Format("Breddegrad: {0}", tmpInstallation.Position.Latitude);
+            installationLongitude.Text = string.Format("Længdegrad: {0}", tmpInstallation.Position.Longtitude);
 
             return _view;
         }

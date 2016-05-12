@@ -30,24 +30,21 @@ namespace TrafficControl.GUI
 
             _myMapFragment = MapFragment.NewInstance();
 
-            if (savedInstanceState == null)
-            {
-                FragmentTransaction tx = FragmentManager.BeginTransaction();
-                tx.Add(Resource.Id.MapContentFrame, _myMapFragment);
-                tx.Commit();
-                
-            }
+            FragmentTransaction tx = FragmentManager.BeginTransaction();
+            tx.Add(Resource.Id.MapContentFrame, _myMapFragment);
+            tx.Commit();
 
             _installations = new Dictionary<string, Installation>();
             
             _mapMarkerFactory = new MapMarkerFactory(Resources);
             _presenter = new MapPresenter(this, ModelFactory.Instance.CreateMapModel());
+            
             _myMapFragment.GetMapAsync(this);
 
             ActionBar.SetDisplayHomeAsUpEnabled(true);
             ActionBar.SetHomeButtonEnabled(true);
         }
-
+        
         public override bool OnMenuItemSelected(int featureId, IMenuItem item)
         {
             if (item.ItemId == Android.Resource.Id.Home)

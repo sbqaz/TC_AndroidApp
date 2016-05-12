@@ -845,8 +845,8 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a001d
 			public const int ConfirmPasswordCreate = 2131361821;
 			
-			// aapt resource value: 0x7f0a002e
-			public const int ContentFrame = 2131361838;
+			// aapt resource value: 0x7f0a0031
+			public const int ContentFrame = 2131361841;
 			
 			// aapt resource value: 0x7f0a0012
 			public const int CreateCaseBtn = 2131361810;
@@ -884,14 +884,14 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a002d
 			public const int MapContentFrame = 2131361837;
 			
-			// aapt resource value: 0x7f0a0033
-			public const int Menu_About = 2131361843;
+			// aapt resource value: 0x7f0a0036
+			public const int Menu_About = 2131361846;
 			
-			// aapt resource value: 0x7f0a0034
-			public const int Menu_LogOut = 2131361844;
+			// aapt resource value: 0x7f0a0037
+			public const int Menu_LogOut = 2131361847;
 			
-			// aapt resource value: 0x7f0a0032
-			public const int Menu_Options = 2131361842;
+			// aapt resource value: 0x7f0a0035
+			public const int Menu_Options = 2131361845;
 			
 			// aapt resource value: 0x7f0a002b
 			public const int MyButton = 2131361835;
@@ -911,8 +911,8 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a0029
 			public const int PasswordInput = 2131361833;
 			
-			// aapt resource value: 0x7f0a0031
-			public const int SettingsContentFrame = 2131361841;
+			// aapt resource value: 0x7f0a0034
+			public const int SettingsContentFrame = 2131361844;
 			
 			// aapt resource value: 0x7f0a0021
 			public const int UserTypeSpinner = 2131361825;
@@ -956,6 +956,15 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a0007
 			public const int icon_only = 2131361799;
 			
+			// aapt resource value: 0x7f0a002f
+			public const int item_latitude = 2131361839;
+			
+			// aapt resource value: 0x7f0a0030
+			public const int item_longitude = 2131361840;
+			
+			// aapt resource value: 0x7f0a002e
+			public const int item_name = 2131361838;
+			
 			// aapt resource value: 0x7f0a000c
 			public const int light = 2131361804;
 			
@@ -968,11 +977,11 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a0002
 			public const int normal = 2131361794;
 			
-			// aapt resource value: 0x7f0a002f
-			public const int preference_first_line = 2131361839;
+			// aapt resource value: 0x7f0a0032
+			public const int preference_first_line = 2131361842;
 			
-			// aapt resource value: 0x7f0a0030
-			public const int preference_value = 2131361840;
+			// aapt resource value: 0x7f0a0033
+			public const int preference_value = 2131361843;
 			
 			// aapt resource value: 0x7f0a002a
 			public const int rememberMeChkBox = 2131361834;
@@ -1043,25 +1052,28 @@ namespace TrafficControl.GUI
 			public const int Map = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int MenuActivityLayout = 2130903048;
+			public const int MapItem = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int preference_with_value = 2130903049;
+			public const int MenuActivityLayout = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int Settings = 2130903050;
+			public const int preference_with_value = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int SettingsFragment = 2130903051;
+			public const int Settings = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int SideMenuItem = 2130903052;
+			public const int SettingsFragment = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int UserTypeDropDownItem = 2130903053;
+			public const int SideMenuItem = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int UserTypeSpinnerItem = 2130903054;
+			public const int UserTypeDropDownItem = 2130903054;
+			
+			// aapt resource value: 0x7f03000f
+			public const int UserTypeSpinnerItem = 2130903055;
 			
 			static Layout()
 			{
