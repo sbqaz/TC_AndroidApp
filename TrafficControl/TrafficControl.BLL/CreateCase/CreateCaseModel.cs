@@ -23,14 +23,32 @@ namespace TrafficControl.BLL.CreateCase
             }
 
             //To API call?
-            string[] informerStrings = { "Politiet", "Borger", "Kommunen" };
+            string[] informerStrings = { "Politiet", "Kommunen", "Borger", "Montør" };
             Informers = informerStrings.ToList();
         }
 
         public bool CreateCase(string installation, string informer, string errorDescription)
         {
             //return _api.CreateCase(??);
-            return true;
+            ObserverSelection informerSelection = ObserverSelection.Undefined;
+            if (informer == Informers[0])
+            {
+                informerSelection = ObserverSelection.Police;
+            }
+            else if (informer == Informers[1])
+            {
+                informerSelection = ObserverSelection.User;
+            }
+            else if (informer == Informers[2])
+            {
+                informerSelection = ObserverSelection.ThirdPart;
+            }
+            else if (informer == Informers[3])
+            {
+                informerSelection = ObserverSelection.Own;
+            }
+
+            return _api.CreateCase((int)Installations[installation], informerSelection, errorDescription);
         }
 
         public CreateCaseModel(ITCApi api)
