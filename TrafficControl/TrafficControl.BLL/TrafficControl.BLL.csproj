@@ -59,6 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cases\CaseModel.cs" />
+    <Compile Include="Cases\ICaseModel.cs" />
     <Compile Include="TESTCase.cs" />
     <Compile Include="CreateCase\CreateCaseModel.cs" />
     <Compile Include="CreateCase\ICreateCaseModel.cs" />

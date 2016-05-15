@@ -3,7 +3,6 @@ using Android.App;
 using Android.Views;
 using Android.Widget;
 using Java.Lang;
-using TrafficControl.BLL;
 using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.GUI.Adapters

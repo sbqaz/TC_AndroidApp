@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Android.Content.Res;
+﻿using System.Collections.Generic;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.Views;

@@ -1,4 +1,5 @@
 ﻿using System;
+using TrafficControl.BLL.Cases;
 using TrafficControl.BLL.CreateCase;
 using TrafficControl.BLL.CreateUser;
 using TrafficControl.BLL.Home;
@@ -22,7 +23,8 @@ namespace TrafficControl.BLL
         private readonly ICreateUserModel _createUserModel;
         private readonly IChangePasswordModel _changePasswordModel;
         private readonly ICreateCaseModel _createCaseModel;
-        private IMapModel _mapModel;
+        private readonly IMapModel _mapModel;
+        private readonly ICaseModel _caseModel;
 
         private ModelFactory()
         {
@@ -33,6 +35,7 @@ namespace TrafficControl.BLL
             _settingsModel = new SettingsModel();
             _createUserModel = new CreateUserModel(_tcApi);
             _createCaseModel = new CreateCaseModel(_tcApi);
+            _caseModel = new CaseModel(_tcApi);
             _changePasswordModel = new ChangePasswordModel(_tcApi);
             _mapModel = new MapModel(_tcApi);
         }
@@ -92,6 +95,11 @@ namespace TrafficControl.BLL
         public IMapModel CreateMapModel()
         {
             return _mapModel;
+        }
+
+        public ICaseModel CreateCaseModel()
+        {
+            return _caseModel;
         }
     }
 }

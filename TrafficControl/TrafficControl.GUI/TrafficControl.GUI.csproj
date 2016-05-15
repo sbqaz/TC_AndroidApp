@@ -90,6 +90,9 @@
     <Compile Include="Adapters\CaseAdapter.cs" />
     <Compile Include="Adapters\MapMarkerAdapter.cs" />
     <Compile Include="CaseActivity.cs" />
+    <Compile Include="Cases\CasePresenter.cs" />
+    <Compile Include="Cases\ICasePresenter.cs" />
+    <Compile Include="Cases\ICaseView.cs" />
     <Compile Include="CreateCaseActivity.cs" />
     <Compile Include="CreateCase\CreateCasePresenter.cs" />
     <Compile Include="CreateCase\ICreateCasePresenter.cs" />

@@ -1,10 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Android.App;
-using Android.Widget;
-using TrafficControl.BLL;
 using TrafficControl.BLL.Home;
-using TrafficControl.BLL.Observer;
 using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.GUI.Home
