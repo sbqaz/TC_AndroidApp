@@ -48,7 +48,7 @@ namespace TrafficControl.BLL.CreateCase
                 informerSelection = ObserverSelection.Own;
             }
 
-            return _api.CreateCase((int)Installations[installation], informerSelection, errorDescription);
+            return _api.CreateCase(Installations[installation], informerSelection, errorDescription);
         }
 
         public CreateCaseModel(ITCApi api)

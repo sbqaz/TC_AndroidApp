@@ -12,7 +12,6 @@ namespace TrafficControl.GUI
     [Activity(Label = "CaseActivity")]
     public class CaseActivity : Activity, ICaseView
     {
-        private Case _currentCase; //TODO To Presenter
         private ICasePresenter _presenter;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -38,13 +37,13 @@ namespace TrafficControl.GUI
                 worker.Text = _presenter.CurrentCase.Worker;
 
                 TextView status = FindViewById<TextView>(Resource.Id.viewcase_status);
-                status.Text = _presenter.CurrentCase.Status.ToString();
+                status.Text = _presenter.CaseStatusToString(_presenter.CurrentCase.Status);
 
                 TextView informer = FindViewById<TextView>(Resource.Id.viewcase_informer);
-                informer.Text = _presenter.CurrentCase.Observer.ToString();
+                informer.Text = _presenter.CaseObserverToString(_presenter.CurrentCase.Observer);
 
                 TextView time = FindViewById<TextView>(Resource.Id.viewcase_time);
-                time.Text = _presenter.CurrentCase.Time.ToString();
+                time.Text = _presenter.CurrentCase.Time != null ? _presenter.CurrentCase.Time.Value.ToString("dd-MMM-yyyy ddd HH:mm.ss") : "n/a";
 
                 TextView errorDescription = FindViewById<TextView>(Resource.Id.viewcase_errorDescription);
                 errorDescription.Text = _presenter.CurrentCase.ErrorDescription;

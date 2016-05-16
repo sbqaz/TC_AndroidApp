@@ -14,7 +14,7 @@ namespace TrafficControl.BLL.Cases
 
         public Case GetCase(long caseId)
         {
-            return _api.GetCase((int)caseId);
+            return _api.GetCase(caseId);
         }
     }
 }

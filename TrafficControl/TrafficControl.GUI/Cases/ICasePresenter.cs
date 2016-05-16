@@ -1,3 +1,4 @@
+using TrafficControl.DAL.RestSharp;
 using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.GUI.Cases
@@ -6,5 +7,7 @@ namespace TrafficControl.GUI.Cases
     {
         Case CurrentCase { get; }
         void SetCurrentCase(long caseId);
+        string CaseStatusToString(CaseStatus status);
+        string CaseObserverToString(ObserverSelection observer);
     }
 }
