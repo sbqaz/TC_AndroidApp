@@ -1,7 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</LinearLayout>
+    android:layout_height="match_parent"
+    android:background="@color/WhiteStrHansen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Installation: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+            <TextView
+                android:text="test"
+                android:id="@+id/viewcase_installation_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Montør: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+            <TextView
+                android:text="test"
+                android:id="@+id/viewcase_worker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Status: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+            <TextView
+                android:text="test"
+                android:id="@+id/viewcase_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Anmeldt af: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+            <TextView
+                android:text="test"
+                android:id="@+id/viewcase_informer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Tidspunkt: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+            <TextView
+                android:text="test"
+                android:id="@+id/viewcase_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Fejl: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+            <TextView
+                android:text="test"
+                android:id="@+id/viewcase_errorDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Fejl rettet: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+            <TextView
+                android:text="test"
+                android:id="@+id/viewcase_repairMade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Kommentar: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+            <TextView
+                android:text="test"
+                android:id="@+id/viewcase_userComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ForeGround"
+                android:padding="10sp"
+                android:layout_gravity="left" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:text="Tag sag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/ColorStrHansen3"
+                android:textColor="@color/WhiteStrHansen"
+                android:layout_margin="16dp"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

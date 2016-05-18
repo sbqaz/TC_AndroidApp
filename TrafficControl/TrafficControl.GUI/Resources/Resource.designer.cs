@@ -884,14 +884,14 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a002d
 			public const int MapContentFrame = 2131361837;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int Menu_About = 2131361854;
-			
 			// aapt resource value: 0x7f0a003f
-			public const int Menu_LogOut = 2131361855;
+			public const int Menu_About = 2131361855;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int Menu_Options = 2131361853;
+			// aapt resource value: 0x7f0a0040
+			public const int Menu_LogOut = 2131361856;
+			
+			// aapt resource value: 0x7f0a003e
+			public const int Menu_Options = 2131361854;
 			
 			// aapt resource value: 0x7f0a002b
 			public const int MyButton = 2131361835;
@@ -994,6 +994,9 @@ namespace TrafficControl.GUI
 			
 			// aapt resource value: 0x7f0a0004
 			public const int terrain = 2131361796;
+			
+			// aapt resource value: 0x7f0a003d
+			public const int viewcase_claim_btn = 2131361853;
 			
 			// aapt resource value: 0x7f0a003a
 			public const int viewcase_errorDescription = 2131361850;

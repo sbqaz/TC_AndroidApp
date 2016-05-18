@@ -1,3 +1,4 @@
+using System;
 using TrafficControl.BLL.Cases;
 using TrafficControl.DAL.RestSharp;
 using TrafficControl.DAL.RestSharp.Types;
@@ -71,6 +72,26 @@ namespace TrafficControl.GUI.Cases
                 retval = "Ikke defineret";
             }
             return retval;
+        }
+
+        public void SetContentView(Case @case)
+        {
+            if (@case == null) return;
+            switch (@case.Status)
+            {
+                case CaseStatus.Created:
+                    _view.SetContentViewCreated();
+                    break;
+                case CaseStatus.Started:
+                    _view.SetContentViewStarted();
+                    break;
+                case CaseStatus.Pending:
+                    _view.SetContentViewPending();
+                    break;
+                case CaseStatus.Done:
+                    _view.SetContentViewDone();
+                    break;
+            }
         }
     }
 }

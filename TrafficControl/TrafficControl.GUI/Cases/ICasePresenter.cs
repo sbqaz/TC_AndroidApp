@@ -9,5 +9,6 @@ namespace TrafficControl.GUI.Cases
         void SetCurrentCase(long caseId);
         string CaseStatusToString(CaseStatus status);
         string CaseObserverToString(ObserverSelection observer);
+        void SetContentView(Case @case);
     }
 }

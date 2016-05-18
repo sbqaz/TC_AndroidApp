@@ -204,17 +204,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/viewcase_claim_btn"
                 android:text="Tag sag"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/ColorStrHansen3"
-                android:textColor="@color/WhiteStrHansen"
-                android:layout_margin="16dp"
-                android:layout_columnSpan="2"
-                android:layout_gravity="center" />
-            <Button
-                android:text="Noget andet"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

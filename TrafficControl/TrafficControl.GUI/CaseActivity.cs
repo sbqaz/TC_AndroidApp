@@ -17,16 +17,33 @@ namespace TrafficControl.GUI
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.ViewCaseCreated);
             
             _presenter = new CasePresenter(this, ModelFactory.Instance.CreateCaseModel());
-
+            
             if (this.Intent.Extras != null)
             {
                 var caseId = this.Intent.Extras.GetLong(GetString(Resource.String.PASS_CASE_ID));
 
                 _presenter.SetCurrentCase(caseId);
+                _presenter.SetContentView(_presenter.CurrentCase);
             }
+            
+            ActionBar.SetDisplayHomeAsUpEnabled(true);
+            ActionBar.SetHomeButtonEnabled(true);
+        }
+
+        public override bool OnMenuItemSelected(int featureId, IMenuItem item)
+        {
+            if (item.ItemId == Android.Resource.Id.Home)
+            {
+                Finish();
+            }
+            return base.OnMenuItemSelected(featureId, item);
+        }
+
+        public void SetContentViewCreated()
+        {
+            SetContentView(Resource.Layout.ViewCaseCreated);
 
             if (_presenter.CurrentCase != null)
             {
@@ -54,19 +71,21 @@ namespace TrafficControl.GUI
                 TextView userComment = FindViewById<TextView>(Resource.Id.viewcase_userComment);
                 userComment.Text = _presenter.CurrentCase.UserComment;
             }
-            
-
-            ActionBar.SetDisplayHomeAsUpEnabled(true);
-            ActionBar.SetHomeButtonEnabled(true);
         }
 
-        public override bool OnMenuItemSelected(int featureId, IMenuItem item)
+        public void SetContentViewStarted()
         {
-            if (item.ItemId == Android.Resource.Id.Home)
-            {
-                Finish();
-            }
-            return base.OnMenuItemSelected(featureId, item);
+            throw new System.NotImplementedException();
+        }
+
+        public void SetContentViewPending()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void SetContentViewDone()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
