@@ -17,7 +17,7 @@ namespace TrafficControl.GUI
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.ViewCase);
+            SetContentView(Resource.Layout.ViewCaseCreated);
             
             _presenter = new CasePresenter(this, ModelFactory.Instance.CreateCaseModel());
 

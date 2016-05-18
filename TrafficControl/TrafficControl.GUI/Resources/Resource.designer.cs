@@ -1100,7 +1100,10 @@ namespace TrafficControl.GUI
 			public const int UserTypeSpinnerItem = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int ViewCase = 2130903056;
+			public const int ViewCaseCreated = 2130903056;
+			
+			// aapt resource value: 0x7f030011
+			public const int ViewCaseStarted = 2130903057;
 			
 			static Layout()
 			{

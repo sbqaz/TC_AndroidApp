@@ -193,7 +193,10 @@
     <AndroidResource Include="Resources\layout\MapItem.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ViewCase.axml">
+    <AndroidResource Include="Resources\layout\ViewCaseCreated.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ViewCaseStarted.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

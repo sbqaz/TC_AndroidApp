@@ -397,6 +397,12 @@ D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawa
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\values\styles_trafficcontrolgreen.xml
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\R.cs.flag
 D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\uploadflags.txt
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\mapitem.xml
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\viewcase.xml
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.RestSharp.dll.mdb
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.dll.mdb
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll.mdb
+D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.config
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.pdb
@@ -737,14 +743,9 @@ E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\drawab
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\values\styles_trafficcontrolgreen.xml
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\R.cs.flag
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\uploadflags.txt
-E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\viewcase.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\viewcasecreated.xml
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\viewcasestarted.xml
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.RestSharp.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\mapitem.xml
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\viewcase.xml
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.RestSharp.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll.mdb
-D:\PRJ4 Repo\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.mdb

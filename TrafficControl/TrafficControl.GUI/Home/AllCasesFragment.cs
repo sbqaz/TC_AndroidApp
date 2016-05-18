@@ -25,6 +25,12 @@ namespace TrafficControl.GUI.Home
             return view;
         }
 
+        public override void OnResume()
+        {
+            base.OnResume();
+            _caseAdapter.NotifyDataSetChanged();
+        }
+
         private void OnCaseItemClicked(object sender, AdapterView.ItemClickEventArgs e)
         {
             if (GetType() != typeof(CaseActivity))
