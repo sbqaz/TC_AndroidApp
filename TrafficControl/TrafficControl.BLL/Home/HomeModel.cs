@@ -28,7 +28,7 @@ namespace TrafficControl.BLL.Home
         {
             get
             {
-                var orderedCases = _api.GetCases().OrderBy(c => _orderMap[c.Status]);
+                var orderedCases = _api.GetCases().OrderBy(c => _orderMap[c.Status]).ThenByDescending(c => c.Time);
                 _cases = orderedCases.ToList();
                 return _cases;
             }
@@ -38,7 +38,7 @@ namespace TrafficControl.BLL.Home
         {
             get
             {
-                var orderedMyCases = _api.GetMyCases().OrderBy(c => _orderMap[c.Status]);
+                var orderedMyCases = _api.GetMyCases().OrderBy(c => _orderMap[c.Status]).ThenByDescending(c => c.Time);
                 _myCases = orderedMyCases.ToList();
                 return _myCases;
             }
