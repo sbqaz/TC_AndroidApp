@@ -15,5 +15,7 @@ namespace TrafficControl.GUI.Cases
         void CaseFinished();
         void CaseNotSetPending();
         void CaseSetPending();
+        void CaseNotSaved();
+        void CaseSaved();
     }
 }

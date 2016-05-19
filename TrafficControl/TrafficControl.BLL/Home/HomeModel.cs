@@ -14,17 +14,34 @@ namespace TrafficControl.BLL.Home
     {
         private List<Case> _cases;
         private List<Case> _myCases;
+        private Dictionary<CaseStatus, int> _orderMap = new Dictionary<CaseStatus, int>()
+        {
+            {CaseStatus.Created, 0 },
+            {CaseStatus.Pending, 1 },
+            {CaseStatus.Started, 2 },
+            {CaseStatus.Done, 3 }
+        };
 
         private ITCApi _api;
 
         public List<Case> Cases
         {
-            get { return _api.GetCases().ToList(); }
+            get
+            {
+                var orderedCases = _api.GetCases().OrderBy(c => _orderMap[c.Status]);
+                _cases = orderedCases.ToList();
+                return _cases;
+            }
         }
 
         public List<Case> MyCases
         {
-            get { return _api.GetMyCases().ToList(); }
+            get
+            {
+                var orderedMyCases = _api.GetMyCases().OrderBy(c => _orderMap[c.Status]);
+                _myCases = orderedMyCases.ToList();
+                return _myCases;
+            }
         } 
 
         public HomeModel(ITCApi api) : base()

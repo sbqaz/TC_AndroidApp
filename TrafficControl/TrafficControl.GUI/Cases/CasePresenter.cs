@@ -120,7 +120,6 @@ namespace TrafficControl.GUI.Cases
 
         public void FinishCase(string repairMade, string userComment)
         {
-            CurrentCase.Worker = "";
             CurrentCase.Status = CaseStatus.Done;
             CurrentCase.MadeRepair = repairMade;
             CurrentCase.UserComment = userComment;
@@ -151,6 +150,21 @@ namespace TrafficControl.GUI.Cases
             else
             {
                 _view.CaseSetPending();
+            }
+        }
+
+        public void SaveUserComment(string userComment)
+        {
+            CurrentCase.UserComment = userComment;
+
+            var result = _model.UpdateCase(CurrentCase);
+            if (!result)
+            {
+                _view.CaseNotSaved();
+            }
+            else
+            {
+                _view.CaseSaved();
             }
         }
     }

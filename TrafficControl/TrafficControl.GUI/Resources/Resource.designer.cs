@@ -887,14 +887,14 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a002d
 			public const int MapContentFrame = 2131361837;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int Menu_About = 2131361875;
+			// aapt resource value: 0x7f0a005c
+			public const int Menu_About = 2131361884;
 			
-			// aapt resource value: 0x7f0a0054
-			public const int Menu_LogOut = 2131361876;
+			// aapt resource value: 0x7f0a005d
+			public const int Menu_LogOut = 2131361885;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int Menu_Options = 2131361874;
+			// aapt resource value: 0x7f0a005b
+			public const int Menu_Options = 2131361883;
 			
 			// aapt resource value: 0x7f0a002b
 			public const int MyButton = 2131361835;
@@ -1025,65 +1025,92 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a0036
 			public const int viewcase_worker = 2131361846;
 			
-			// aapt resource value: 0x7f0a0046
-			public const int viewcasepending_claim_btn = 2131361862;
-			
 			// aapt resource value: 0x7f0a0043
-			public const int viewcasepending_errorDescription = 2131361859;
+			public const int viewcasedone_errorDescription = 2131361859;
 			
 			// aapt resource value: 0x7f0a0041
-			public const int viewcasepending_informer = 2131361857;
+			public const int viewcasedone_informer = 2131361857;
 			
 			// aapt resource value: 0x7f0a003e
-			public const int viewcasepending_installation_name = 2131361854;
+			public const int viewcasedone_installation_name = 2131361854;
 			
 			// aapt resource value: 0x7f0a0044
-			public const int viewcasepending_repairMade = 2131361860;
+			public const int viewcasedone_repairMade = 2131361860;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int viewcasepending_save_btn = 2131361863;
+			// aapt resource value: 0x7f0a0046
+			public const int viewcasedone_save_btn = 2131361862;
 			
 			// aapt resource value: 0x7f0a0040
-			public const int viewcasepending_status = 2131361856;
+			public const int viewcasedone_status = 2131361856;
 			
 			// aapt resource value: 0x7f0a0042
-			public const int viewcasepending_time = 2131361858;
+			public const int viewcasedone_time = 2131361858;
 			
 			// aapt resource value: 0x7f0a0045
-			public const int viewcasepending_userComment = 2131361861;
+			public const int viewcasedone_userComment = 2131361861;
 			
 			// aapt resource value: 0x7f0a003f
-			public const int viewcasepending_worker = 2131361855;
-			
-			// aapt resource value: 0x7f0a004d
-			public const int viewcasestarted_errorDescription = 2131361869;
-			
-			// aapt resource value: 0x7f0a0050
-			public const int viewcasestarted_finish_btn = 2131361872;
-			
-			// aapt resource value: 0x7f0a004b
-			public const int viewcasestarted_informer = 2131361867;
-			
-			// aapt resource value: 0x7f0a0048
-			public const int viewcasestarted_installation_name = 2131361864;
-			
-			// aapt resource value: 0x7f0a0051
-			public const int viewcasestarted_pending_btn = 2131361873;
-			
-			// aapt resource value: 0x7f0a004e
-			public const int viewcasestarted_repairMade = 2131361870;
-			
-			// aapt resource value: 0x7f0a004a
-			public const int viewcasestarted_status = 2131361866;
-			
-			// aapt resource value: 0x7f0a004c
-			public const int viewcasestarted_time = 2131361868;
+			public const int viewcasedone_worker = 2131361855;
 			
 			// aapt resource value: 0x7f0a004f
-			public const int viewcasestarted_userComment = 2131361871;
+			public const int viewcasepending_claim_btn = 2131361871;
+			
+			// aapt resource value: 0x7f0a004c
+			public const int viewcasepending_errorDescription = 2131361868;
+			
+			// aapt resource value: 0x7f0a004a
+			public const int viewcasepending_informer = 2131361866;
+			
+			// aapt resource value: 0x7f0a0047
+			public const int viewcasepending_installation_name = 2131361863;
+			
+			// aapt resource value: 0x7f0a004d
+			public const int viewcasepending_repairMade = 2131361869;
+			
+			// aapt resource value: 0x7f0a0050
+			public const int viewcasepending_save_btn = 2131361872;
 			
 			// aapt resource value: 0x7f0a0049
-			public const int viewcasestarted_worker = 2131361865;
+			public const int viewcasepending_status = 2131361865;
+			
+			// aapt resource value: 0x7f0a004b
+			public const int viewcasepending_time = 2131361867;
+			
+			// aapt resource value: 0x7f0a004e
+			public const int viewcasepending_userComment = 2131361870;
+			
+			// aapt resource value: 0x7f0a0048
+			public const int viewcasepending_worker = 2131361864;
+			
+			// aapt resource value: 0x7f0a0056
+			public const int viewcasestarted_errorDescription = 2131361878;
+			
+			// aapt resource value: 0x7f0a0059
+			public const int viewcasestarted_finish_btn = 2131361881;
+			
+			// aapt resource value: 0x7f0a0054
+			public const int viewcasestarted_informer = 2131361876;
+			
+			// aapt resource value: 0x7f0a0051
+			public const int viewcasestarted_installation_name = 2131361873;
+			
+			// aapt resource value: 0x7f0a005a
+			public const int viewcasestarted_pending_btn = 2131361882;
+			
+			// aapt resource value: 0x7f0a0057
+			public const int viewcasestarted_repairMade = 2131361879;
+			
+			// aapt resource value: 0x7f0a0053
+			public const int viewcasestarted_status = 2131361875;
+			
+			// aapt resource value: 0x7f0a0055
+			public const int viewcasestarted_time = 2131361877;
+			
+			// aapt resource value: 0x7f0a0058
+			public const int viewcasestarted_userComment = 2131361880;
+			
+			// aapt resource value: 0x7f0a0052
+			public const int viewcasestarted_worker = 2131361874;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int wide = 2131361801;
@@ -1169,10 +1196,13 @@ namespace TrafficControl.GUI
 			public const int ViewCaseCreated = 2130903056;
 			
 			// aapt resource value: 0x7f030011
-			public const int ViewCasePending = 2130903057;
+			public const int ViewCaseDone = 2130903057;
 			
 			// aapt resource value: 0x7f030012
-			public const int ViewCaseStarted = 2130903058;
+			public const int ViewCasePending = 2130903058;
+			
+			// aapt resource value: 0x7f030013
+			public const int ViewCaseStarted = 2130903059;
 			
 			static Layout()
 			{

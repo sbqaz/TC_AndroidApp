@@ -1,8 +1,11 @@
+using System.Collections.Generic;
+using System.Linq;
 using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
 using TrafficControl.BLL;
+using TrafficControl.DAL.RestSharp;
 using TrafficControl.GUI.Adapters;
 
 namespace TrafficControl.GUI.Home
@@ -17,10 +20,6 @@ namespace TrafficControl.GUI.Home
             var view = base.OnCreateView(inflater, container, savedInstanceState);
 
             _presenter = new HomePresenter(this, ModelFactory.Instance.CreateHomeModel());
-            _caseAdapter = new CaseAdapter(base.ContextActivity, _presenter.GetCases());
-
-            CaseView.Adapter = _caseAdapter;
-            CaseView.ItemClick += OnCaseItemClicked;
             
             return view;
         }
@@ -28,7 +27,11 @@ namespace TrafficControl.GUI.Home
         public override void OnResume()
         {
             base.OnResume();
-            _caseAdapter.NotifyDataSetChanged();
+
+            _caseAdapter = new CaseAdapter(base.ContextActivity, _presenter.GetCases().ToList());
+
+            CaseView.Adapter = _caseAdapter;
+            CaseView.ItemClick += OnCaseItemClicked;
         }
 
         private void OnCaseItemClicked(object sender, AdapterView.ItemClickEventArgs e)

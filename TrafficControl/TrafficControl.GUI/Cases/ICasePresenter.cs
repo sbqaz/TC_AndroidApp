@@ -14,5 +14,6 @@ namespace TrafficControl.GUI.Cases
         Task ClaimCase();
         void FinishCase(string repairMade, string userComment);
         void PendingCase(string repairMade, string userComment);
+        void SaveUserComment(string userComment);
     }
 }

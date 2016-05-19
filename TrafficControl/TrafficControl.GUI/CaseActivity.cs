@@ -143,13 +143,76 @@ namespace TrafficControl.GUI
 
             if (_presenter.CurrentCase != null)
             {
-                
+                TextView installationName = FindViewById<TextView>(Resource.Id.viewcasepending_installation_name);
+                installationName.Text = _presenter.CurrentCase.Installation.Name;
+
+                TextView worker = FindViewById<TextView>(Resource.Id.viewcasepending_worker);
+                worker.Text = _presenter.CurrentCase.Worker;
+
+                TextView status = FindViewById<TextView>(Resource.Id.viewcasepending_status);
+                status.Text = _presenter.CaseStatusToString(_presenter.CurrentCase.Status);
+
+                TextView informer = FindViewById<TextView>(Resource.Id.viewcasepending_informer);
+                informer.Text = _presenter.CaseObserverToString(_presenter.CurrentCase.Observer);
+
+                TextView time = FindViewById<TextView>(Resource.Id.viewcasepending_time);
+                time.Text = _presenter.CurrentCase.Time != null ? _presenter.CurrentCase.Time.Value.ToString("dd-MMM-yyyy ddd HH:mm.ss") : "n/a";
+
+                TextView errorDescription = FindViewById<TextView>(Resource.Id.viewcasepending_errorDescription);
+                errorDescription.Text = _presenter.CurrentCase.ErrorDescription;
+
+                TextView repairMade = FindViewById<TextView>(Resource.Id.viewcasepending_repairMade);
+                repairMade.Text = _presenter.CurrentCase.MadeRepair;
+
+                _userComment = FindViewById<EditText>(Resource.Id.viewcasepending_userComment);
+                _userComment.Text = _presenter.CurrentCase.UserComment;
+
+                Button claimCase = FindViewById<Button>(Resource.Id.viewcasepending_claim_btn);
+                claimCase.Click += OnClaimCaseClicked;
+
+                Button saveCase = FindViewById<Button>(Resource.Id.viewcasepending_save_btn);
+                saveCase.Click += OnSaveCaseClicked;
             }
+        }
+
+        private void OnSaveCaseClicked(object sender, EventArgs e)
+        {
+            _presenter.SaveUserComment(_userComment.Text);
         }
 
         public void SetContentViewDone()
         {
-            throw new System.NotImplementedException();
+            SetContentView(Resource.Layout.ViewCaseDone);
+
+            if (_presenter.CurrentCase != null)
+            {
+                TextView installationName = FindViewById<TextView>(Resource.Id.viewcasedone_installation_name);
+                installationName.Text = _presenter.CurrentCase.Installation.Name;
+
+                TextView worker = FindViewById<TextView>(Resource.Id.viewcasedone_worker);
+                worker.Text = _presenter.CurrentCase.Worker;
+
+                TextView status = FindViewById<TextView>(Resource.Id.viewcasedone_status);
+                status.Text = _presenter.CaseStatusToString(_presenter.CurrentCase.Status);
+
+                TextView informer = FindViewById<TextView>(Resource.Id.viewcasedone_informer);
+                informer.Text = _presenter.CaseObserverToString(_presenter.CurrentCase.Observer);
+
+                TextView time = FindViewById<TextView>(Resource.Id.viewcasedone_time);
+                time.Text = _presenter.CurrentCase.Time != null ? _presenter.CurrentCase.Time.Value.ToString("dd-MMM-yyyy ddd HH:mm.ss") : "n/a";
+
+                TextView errorDescription = FindViewById<TextView>(Resource.Id.viewcasedone_errorDescription);
+                errorDescription.Text = _presenter.CurrentCase.ErrorDescription;
+
+                TextView repairMade = FindViewById<TextView>(Resource.Id.viewcasedone_repairMade);
+                repairMade.Text = _presenter.CurrentCase.MadeRepair;
+
+                _userComment = FindViewById<EditText>(Resource.Id.viewcasedone_userComment);
+                _userComment.Text = _presenter.CurrentCase.UserComment;
+
+                Button saveCase = FindViewById<Button>(Resource.Id.viewcasedone_save_btn);
+                saveCase.Click += OnSaveCaseClicked;
+            }
         }
 
         public void NoCurrentCase()
@@ -203,6 +266,19 @@ namespace TrafficControl.GUI
         public void CaseSetPending()
         {
             string toast = "Sag sat til afventer";
+            Toast.MakeText(this, toast, ToastLength.Short).Show();
+            Finish();
+        }
+
+        public void CaseNotSaved()
+        {
+            string toast = "Sagen kunne ikke gemmes";
+            Toast.MakeText(this, toast, ToastLength.Short).Show();
+        }
+
+        public void CaseSaved()
+        {
+            string toast = "Sag gemt";
             Toast.MakeText(this, toast, ToastLength.Short).Show();
             Finish();
         }
