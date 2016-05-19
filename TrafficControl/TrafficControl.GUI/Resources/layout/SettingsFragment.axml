@@ -33,23 +33,4 @@
             android:key="@string/settings_notify_sms"
             android:title="Sms notifikation" />
     </TrafficControl.GUI.Settings.SettingsPreferenceCategory>
-    <TrafficControl.GUI.Settings.SettingsPreferenceCategory
-        android:title="Sager"
-        android:key="category_cases">
-        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
-            android:key="first_case_preference"
-            android:title="Title"
-            android:summary="Summary"
-            android:defaultValue="true" />
-        <TrafficControl.GUI.Settings.SettingsCheckBoxPreference
-            android:key="second_case_preference"
-            android:title="Title"
-            android:summary="Summary"
-            android:defaultValue="true" />
-        <TrafficControl.GUI.Settings.SettingsPreference
-            android:key="third_case_preference"
-            android:title="Title"
-            android:summary="Summary"
-            android:defaultValue="true" />
-    </TrafficControl.GUI.Settings.SettingsPreferenceCategory>
 </PreferenceScreen>
