@@ -189,8 +189,8 @@
     <AndroidResource Include="Resources\layout\Map.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\SortCasesDropDownItem.axml" />
-    <AndroidResource Include="Resources\layout\SortCasesSpinner.axml" />
+    <AndroidResource Include="Resources\layout\SortTrafficLightDropDownItem.axml" />
+    <AndroidResource Include="Resources\layout\SortTrafficLightSpinner.axml" />
     <AndroidResource Include="Resources\layout\TrafficLightFragments.axml" />
     <AndroidResource Include="Resources\layout\TrafficLightItem.axml" />
     <AndroidResource Include="Resources\layout\TrafficLights.axml" />

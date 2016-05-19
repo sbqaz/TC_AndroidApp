@@ -918,10 +918,10 @@ namespace TrafficControl.GUI
 			public const int SettingsContentFrame = 2131361841;
 			
 			// aapt resource value: 0x7f0a0038
-			public const int SortCasesBtn = 2131361848;
+			public const int SortTrafficLightBtn = 2131361848;
 			
 			// aapt resource value: 0x7f0a0037
-			public const int SortCasesSpinner = 2131361847;
+			public const int SortTrafficLightSpinner = 2131361847;
 			
 			// aapt resource value: 0x7f0a0039
 			public const int TrafficLightContentFrame = 2131361849;
@@ -1085,10 +1085,10 @@ namespace TrafficControl.GUI
 			public const int SideMenuItem = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int SortCasesDropDownItem = 2130903053;
+			public const int SortTrafficLightDropDownItem = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int SortCasesSpinner = 2130903054;
+			public const int SortTrafficLightSpinner = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
 			public const int TrafficLightFragments = 2130903055;

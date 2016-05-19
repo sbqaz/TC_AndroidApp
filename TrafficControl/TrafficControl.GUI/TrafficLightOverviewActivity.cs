@@ -29,17 +29,17 @@ namespace TrafficControl.GUI
                 base.OnCreate(savedInstanceState);
                 SetContentView(Resource.Layout.TrafficLights);
 
-                _sortCases = FindViewById<Button>(Resource.Id.SortCasesBtn);
+                _sortCases = FindViewById<Button>(Resource.Id.SortTrafficLightBtn);
                 _presenter = new TrafficLightOverviewPresenter(this, ModelFactory.Instance.CreateLyskrydsModel());
 
-                _sortCases.Click += SortCasesOnClick;
+                _sortCases.Click += SortTrafficLightOnClick;
 
-            _userTypeSpinner = FindViewById<Spinner>(Resource.Id.SortCasesSpinner);
+            _userTypeSpinner = FindViewById<Spinner>(Resource.Id.SortTrafficLightSpinner);
                 _userTypeSpinner.ItemSelected += spinner_ItemSelected;
                 var adapter = ArrayAdapter.CreateFromResource(
-                    this, Resource.Array.SortCases, Resource.Layout.SortCasesSpinner);
+                    this, Resource.Array.SortCases, Resource.Layout.SortTrafficLightSpinner);
 
-            adapter.SetDropDownViewResource(Resource.Layout.SortCasesDropDownItem);
+            adapter.SetDropDownViewResource(Resource.Layout.SortTrafficLightDropDownItem);
             _userTypeSpinner.Adapter = adapter;
 
             if (savedInstanceState == null)
@@ -55,7 +55,7 @@ namespace TrafficControl.GUI
 
         }
 
-        private void SortCasesOnClick(object sender, EventArgs e)
+        private void SortTrafficLightOnClick(object sender, EventArgs e)
         {
             throw new NotImplementedException();
         }

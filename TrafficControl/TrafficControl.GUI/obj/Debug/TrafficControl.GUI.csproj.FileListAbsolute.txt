@@ -1077,12 +1077,12 @@ C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\Traffi
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\values\styles_trafficcontrolgreen.xml
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\R.cs.flag
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\uploadflags.txt
-C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\sortcasesdropdownitem.xml
-C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\sortcasesspinner.xml
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\trafficlightfragments.xml
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\trafficlightitem.xml
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\trafficlights.xml
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\values\casestrings.xml
+C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\sorttrafficlightdropdownitem.xml
+C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\sorttrafficlightspinner.xml
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.dll.mdb
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll.mdb
 C:\Users\MortenSand\Documents\IKT\4.Semester\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.mdb
