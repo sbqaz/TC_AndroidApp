@@ -139,7 +139,12 @@ namespace TrafficControl.GUI
 
         public void SetContentViewPending()
         {
-            throw new System.NotImplementedException();
+            SetContentView(Resource.Layout.ViewCasePending);
+
+            if (_presenter.CurrentCase != null)
+            {
+                
+            }
         }
 
         public void SetContentViewDone()
