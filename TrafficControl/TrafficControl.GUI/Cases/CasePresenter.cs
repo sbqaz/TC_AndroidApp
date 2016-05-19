@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using TrafficControl.BLL.Cases;
 using TrafficControl.DAL.RestSharp;
 using TrafficControl.DAL.RestSharp.Types;
@@ -91,6 +92,65 @@ namespace TrafficControl.GUI.Cases
                 case CaseStatus.Done:
                     _view.SetContentViewDone();
                     break;
+            }
+        }
+
+        public async Task ClaimCase()
+        {
+            if (CurrentCase != null)
+            {
+                _view.ShowProgressDialog();
+                bool result = await Task.Factory.StartNew(() => _model.ClaimCase(CurrentCase.Id));
+                if (!result)
+                {
+                    _view.HideProgressDialog();
+                    _view.CaseNotClaimed();
+                }
+                else
+                {
+                    _view.HideProgressDialog();
+                    _view.CaseClaimed();
+                }
+            }
+            else
+            {
+                _view.NoCurrentCase();
+            }
+        }
+
+        public void FinishCase(string repairMade, string userComment)
+        {
+            CurrentCase.Worker = "";
+            CurrentCase.Status = CaseStatus.Done;
+            CurrentCase.MadeRepair = repairMade;
+            CurrentCase.UserComment = userComment;
+
+            var result = _model.UpdateCase(CurrentCase);
+            if (!result)
+            {
+                _view.CaseNotFinished();
+            }
+            else
+            {
+                _view.CaseFinished();
+            }
+        }
+
+        public void PendingCase(string repairMade, string userComment)
+        {
+            CurrentCase.Worker = "";
+            CurrentCase.Status = CaseStatus.Pending;
+            CurrentCase.MadeRepair = repairMade;
+            CurrentCase.UserComment = userComment;
+
+            var result = _model.UpdateCase(CurrentCase);
+            if (!result)
+            {
+                _view.CaseNotSetPending();
+            }
+            else
+            {
+                _view.CaseSetPending();
             }
         }
     }

@@ -37,7 +37,7 @@ namespace TrafficControl.GUI.Home
             {
                 var nextActivity = new Intent(Activity, typeof(CaseActivity));
                 var bundle = new Bundle();
-                bundle.PutLong(GetString(Resource.String.PASS_CASE_ID), _presenter.GetCases()[e.Position].Id);
+                bundle.PutLong(GetString(Resource.String.PASS_CASE_ID), _presenter.GetMyCases()[e.Position].Id);
                 nextActivity.AddFlags(ActivityFlags.ReorderToFront);
                 nextActivity.PutExtras(bundle);
                 StartActivity(nextActivity);

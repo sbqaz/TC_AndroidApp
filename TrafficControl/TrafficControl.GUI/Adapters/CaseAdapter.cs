@@ -43,19 +43,19 @@ namespace TrafficControl.GUI.Adapters
             caseId.SetTextColor(_activity.Resources.GetColor(Android.Resource.Color.DarkerGray));
             caseTime.SetTextColor(_activity.Resources.GetColor(Android.Resource.Color.DarkerGray));
 
-            switch ((int)_cases[position].Installation.Status)
+            switch ((int)_cases[position].Status)
             {
                 case 0:
-                    //caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseClosed));
-                    caseIcon.SetImageResource(Resource.Drawable.TCLogoGreen);
+                    caseIcon.SetImageResource(Resource.Drawable.TCLogoRed);
                     break;
                 case 1:
-                    //caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseOpen));
                     caseIcon.SetImageResource(Resource.Drawable.TCLogoYellow);
                     break;
                 case 2:
-                    //caseName.SetTextColor(_activity.Resources.GetColor(Resource.Color.CaseTaken));
-                    caseIcon.SetImageResource(Resource.Drawable.TCLogoRed);
+                    caseIcon.SetImageResource(Resource.Drawable.TCLogoGreen);
+                    break;
+                case 3:
+                    caseIcon.SetImageResource(Resource.Drawable.TCLogoRedYellow);
                     break;
             }
 

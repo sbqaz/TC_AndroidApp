@@ -22,7 +22,7 @@
                 android:layout_gravity="left" />
             <TextView
                 android:text="test"
-                android:id="@+id/viewcase_installation_name"
+                android:id="@+id/viewcasestarted_installation_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
@@ -46,7 +46,7 @@
                 android:layout_gravity="left" />
             <TextView
                 android:text="test"
-                android:id="@+id/viewcase_worker"
+                android:id="@+id/viewcasestarted_worker"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
@@ -70,7 +70,7 @@
                 android:layout_gravity="left" />
             <TextView
                 android:text="test"
-                android:id="@+id/viewcase_status"
+                android:id="@+id/viewcasestarted_status"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
@@ -94,7 +94,7 @@
                 android:layout_gravity="left" />
             <TextView
                 android:text="test"
-                android:id="@+id/viewcase_informer"
+                android:id="@+id/viewcasestarted_informer"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
@@ -118,7 +118,7 @@
                 android:layout_gravity="left" />
             <TextView
                 android:text="test"
-                android:id="@+id/viewcase_time"
+                android:id="@+id/viewcasestarted_time"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
@@ -142,7 +142,7 @@
                 android:layout_gravity="left" />
             <TextView
                 android:text="test"
-                android:id="@+id/viewcase_errorDescription"
+                android:id="@+id/viewcasestarted_errorDescription"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
@@ -164,16 +164,17 @@
                 android:textColor="@color/ForeGround"
                 android:padding="10sp"
                 android:layout_gravity="left" />
-            <TextView
-                android:text="test"
-                android:id="@+id/viewcase_repairMade"
+            <EditText
+                android:id="@+id/viewcasestarted_repairMade"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/ForeGround"
+                android:textCursorDrawable="@null"
                 android:padding="10sp"
-                android:layout_gravity="left" />
+                android:layout_gravity="left"
+                android:singleLine="true"
+                android:imeOptions="actionNext" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -188,23 +189,36 @@
                 android:textColor="@color/ForeGround"
                 android:padding="10sp"
                 android:layout_gravity="left" />
-            <TextView
-                android:text="test"
-                android:id="@+id/viewcase_userComment"
+            <EditText
+                android:id="@+id/viewcasestarted_userComment"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/ForeGround"
+                android:textCursorDrawable="@null"
                 android:padding="10sp"
-                android:layout_gravity="left" />
+                android:layout_gravity="left"
+                android:singleLine="true"
+                android:imeOptions="actionDone" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
-                android:text="Tag sag"
+                android:id="@+id/viewcasestarted_finish_btn"
+                android:text="Færdiggør sag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/ColorStrHansen3"
+                android:textColor="@color/WhiteStrHansen"
+                android:layout_margin="16dp"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center" />
+            <Button
+                android:id="@+id/viewcasestarted_pending_btn"
+                android:text="Sag afventer"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

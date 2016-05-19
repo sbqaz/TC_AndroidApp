@@ -16,5 +16,15 @@ namespace TrafficControl.BLL.Cases
         {
             return _api.GetCase(caseId);
         }
+
+        public bool ClaimCase(long id)
+        {
+            return _api.ClaimCase(id);
+        }
+
+        public bool UpdateCase(Case @case)
+        {
+            return _api.UpdateCase(@case);
+        }
     }
 }
