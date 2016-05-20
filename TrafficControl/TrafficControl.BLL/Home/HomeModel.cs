@@ -52,42 +52,42 @@ namespace TrafficControl.BLL.Home
         }
 
         //For TESTING
-        private void SlowMethod()
-        {
-            for (int i = 0; i < 50; i++)
-            {
-                //Thread.Sleep(3000);
-                //string tmp = RandomString(3) + " - " + RandomString(3);
-                //var tmpID = random.Next(1000) + 2500;
-                //var newCase = new TESTCase(tmp, tmpID, RandomDay(), (TESTCase.States)(i % 3));
-                //Cases.Add(newCase);
-                //if (i == 0 || newCase.Id % 2 == 0 && newCase.State == TESTCase.States.Open)
-                //    MyCases.Add(newCase);
-                //Notify(this);
-            }
-        }
+        //private void SlowMethod()
+        //{
+        //    for (int i = 0; i < 50; i++)
+        //    {
+        //        //Thread.Sleep(3000);
+        //        //string tmp = RandomString(3) + " - " + RandomString(3);
+        //        //var tmpID = random.Next(1000) + 2500;
+        //        //var newCase = new TESTCase(tmp, tmpID, RandomDay(), (TESTCase.States)(i % 3));
+        //        //Cases.Add(newCase);
+        //        //if (i == 0 || newCase.Id % 2 == 0 && newCase.State == TESTCase.States.Open)
+        //        //    MyCases.Add(newCase);
+        //        //Notify(this);
+        //    }
+        //}
 
-        //RANDOM string generator for TESTING
-        private static Random random = new Random((int)DateTime.Now.Ticks);
-        private string RandomString(int size)
-        {
-            StringBuilder builder = new StringBuilder();
-            char ch;
-            for (int i = 0; i < size; i++)
-            {
-                ch = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65)));
-                builder.Append(ch);
-            }
+        ////RANDOM string generator for TESTING
+        //private static Random random = new Random((int)DateTime.Now.Ticks);
+        //private string RandomString(int size)
+        //{
+        //    StringBuilder builder = new StringBuilder();
+        //    char ch;
+        //    for (int i = 0; i < size; i++)
+        //    {
+        //        ch = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65)));
+        //        builder.Append(ch);
+        //    }
 
-            return builder.ToString();
-        }
+        //    return builder.ToString();
+        //}
 
-        //RANDOM DateTime generator for TESTING
-        private DateTime RandomDay()
-        {
-            DateTime start = new DateTime(1995, 1, 1);
-            int range = (DateTime.Today - start).Days;
-            return start.AddDays(random.Next(range));
-        }
+        ////RANDOM DateTime generator for TESTING
+        //private DateTime RandomDay()
+        //{
+        //    DateTime start = new DateTime(1995, 1, 1);
+        //    int range = (DateTime.Today - start).Days;
+        //    return start.AddDays(random.Next(range));
+        //}
     }
 }

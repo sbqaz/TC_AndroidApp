@@ -6,7 +6,7 @@ using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.BLL.CreateCase
 {
-    class CreateCaseModel : ICreateCaseModel
+    public class CreateCaseModel : ICreateCaseModel
     {
         private ITCApi _api;
 

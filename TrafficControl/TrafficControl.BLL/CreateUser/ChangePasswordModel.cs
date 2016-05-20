@@ -2,7 +2,7 @@
 
 namespace TrafficControl.BLL.CreateUser
 {
-    class ChangePasswordModel : IChangePasswordModel
+    public class ChangePasswordModel : IChangePasswordModel
     {
         private readonly ITCApi _tcApi;
 
