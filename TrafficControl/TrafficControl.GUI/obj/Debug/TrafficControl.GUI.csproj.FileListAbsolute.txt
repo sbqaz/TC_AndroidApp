@@ -751,5 +751,6 @@ E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\R.cs.flag
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\uploadflags.txt
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\res\layout\viewcasedone.xml
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.DAL.RestSharp.dll.mdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.BLL.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\obj\Debug\TrafficControl.GUI.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.GUI\bin\Debug\TrafficControl.GUI.dll.mdb

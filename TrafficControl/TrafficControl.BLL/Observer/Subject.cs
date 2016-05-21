@@ -6,7 +6,7 @@ namespace TrafficControl.BLL.Observer
     {
         private List<IObserver<T>> _observerList;
 
-        public Subject()
+        protected Subject()
         {
             _observerList = new List<IObserver<T>>();
         }
