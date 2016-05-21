@@ -3,7 +3,7 @@ using TrafficControl.BLL.CreateUser;
 
 namespace TrafficControl.GUI.CreateUser
 {
-    class ChangePasswordPresenter : IChangePasswordPresenter
+    public class ChangePasswordPresenter : IChangePasswordPresenter
     {
         private readonly IChangePasswordView _view;
         private readonly IChangePasswordModel _model;

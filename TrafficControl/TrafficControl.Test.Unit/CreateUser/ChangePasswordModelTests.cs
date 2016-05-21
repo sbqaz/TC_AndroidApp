@@ -6,7 +6,7 @@ using TrafficControl.DAL.RestSharp;
 namespace TrafficControl.Test.Unit.CreateUser
 {
     [TestFixture]
-    public class CreatePasswordModelTests
+    public class ChangePasswordModelTests
     {
         private ITCApi _fakeApi;
         private ChangePasswordModel _uut;
