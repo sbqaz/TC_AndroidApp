@@ -55,6 +55,7 @@
     <Compile Include="CreateUser\ChangePasswordModelTests.cs" />
     <Compile Include="CreateUser\ChangePasswordPresenterTests.cs" />
     <Compile Include="CreateUser\CreateUserModelTests.cs" />
+    <Compile Include="CreateUser\CreateUserPresenterTests.cs" />
     <Compile Include="Home\HomeModelTests.cs" />
     <Compile Include="Home\HomePresenterTests.cs" />
     <Compile Include="Home\UserPreferenceTests.cs" />
