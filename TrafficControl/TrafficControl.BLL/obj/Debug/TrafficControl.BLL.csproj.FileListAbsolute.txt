@@ -78,3 +78,5 @@ E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficCon
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
 E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\obj\Debug\TrafficControl.BLL.dll.mdb
+E:\IKT\PRJ4\TC_AndroidApp\TrafficControl\TrafficControl.BLL\bin\Debug\TrafficControl.BLL.dll.mdb

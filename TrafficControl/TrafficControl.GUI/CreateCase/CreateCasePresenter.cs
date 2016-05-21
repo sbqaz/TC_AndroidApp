@@ -5,7 +5,7 @@ using TrafficControl.BLL.CreateCase;
 
 namespace TrafficControl.GUI.CreateCase
 {
-    class CreateCasePresenter : ICreateCasePresenter
+    public class CreateCasePresenter : ICreateCasePresenter
     {
         private readonly ICreateCaseView _view;
         private readonly ICreateCaseModel _model;
