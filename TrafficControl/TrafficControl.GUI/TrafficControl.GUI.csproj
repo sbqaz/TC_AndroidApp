@@ -89,6 +89,7 @@
   <ItemGroup>
     <Compile Include="Adapters\CaseAdapter.cs" />
     <Compile Include="Adapters\MapMarkerAdapter.cs" />
+    <Compile Include="Adapters\TrafficLightListAdapter.cs" />
     <Compile Include="CaseActivity.cs" />
     <Compile Include="Cases\CasePresenter.cs" />
     <Compile Include="Cases\ICasePresenter.cs" />
@@ -136,6 +137,13 @@
     <Compile Include="Settings\SettingsFragment.cs" />
     <Compile Include="Settings\SettingsPreferenceCategory.cs" />
     <Compile Include="ChangePasswordActivity.cs" />
+    <Compile Include="TrafficLightOverviewActivity.cs" />
+    <Compile Include="TrafficLight\AllTrafficLightFragment.cs" />
+    <Compile Include="TrafficLight\ITrafficLightOverviewPresenter.cs" />
+    <Compile Include="TrafficLight\ITrafficLightOverviewView.cs" />
+    <Compile Include="TrafficLight\MyTrafficLightFragments.cs" />
+    <Compile Include="TrafficLight\TrafficLightFragment.cs" />
+    <Compile Include="TrafficLight\TrafficLightOverviewPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -205,6 +213,11 @@
     <AndroidResource Include="Resources\layout\ViewCaseDone.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\SortTrafficLightDropDownItem.axml" />
+    <AndroidResource Include="Resources\layout\SortTrafficLightSpinner.axml" />
+    <AndroidResource Include="Resources\layout\TrafficLightFragments.axml" />
+    <AndroidResource Include="Resources\layout\TrafficLightItem.axml" />
+    <AndroidResource Include="Resources\layout\TrafficLights.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
@@ -1130,6 +1143,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\TCLogoRedYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\caseStrings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

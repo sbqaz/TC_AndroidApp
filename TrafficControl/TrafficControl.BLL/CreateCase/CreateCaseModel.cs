@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Android.Renderscripts;
 using TrafficControl.DAL.RestSharp;
-using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.BLL.CreateCase
 {

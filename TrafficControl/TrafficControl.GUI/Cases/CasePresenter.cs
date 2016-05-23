@@ -1,4 +1,3 @@
-using System;
 using System.Threading.Tasks;
 using TrafficControl.BLL.Cases;
 using TrafficControl.DAL.RestSharp;

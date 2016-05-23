@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using TrafficControl.BLL.Observer;
 using TrafficControl.DAL.RestSharp.Types;
 
 namespace TrafficControl.BLL.Home

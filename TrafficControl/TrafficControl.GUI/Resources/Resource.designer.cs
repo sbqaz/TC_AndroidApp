@@ -191,7 +191,10 @@ namespace TrafficControl.GUI
 		{
 			
 			// aapt resource value: 0x7f070000
-			public const int UserTypes = 2131165184;
+			public const int SortCases = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int UserTypes = 2131165185;
 			
 			static Array()
 			{
@@ -887,14 +890,14 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a002d
 			public const int MapContentFrame = 2131361837;
 			
-			// aapt resource value: 0x7f0a005c
-			public const int Menu_About = 2131361884;
+			// aapt resource value: 0x7f0a0064
+			public const int Menu_About = 2131361892;
 			
-			// aapt resource value: 0x7f0a005d
-			public const int Menu_LogOut = 2131361885;
+			// aapt resource value: 0x7f0a0065
+			public const int Menu_LogOut = 2131361893;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int Menu_Options = 2131361883;
+			// aapt resource value: 0x7f0a0063
+			public const int Menu_Options = 2131361891;
 			
 			// aapt resource value: 0x7f0a002b
 			public const int MyButton = 2131361835;
@@ -916,6 +919,21 @@ namespace TrafficControl.GUI
 			
 			// aapt resource value: 0x7f0a0034
 			public const int SettingsContentFrame = 2131361844;
+			
+			// aapt resource value: 0x7f0a003b
+			public const int SortTrafficLightBtn = 2131361851;
+			
+			// aapt resource value: 0x7f0a003a
+			public const int SortTrafficLightSpinner = 2131361850;
+			
+			// aapt resource value: 0x7f0a003c
+			public const int TrafficLightContentFrame = 2131361852;
+			
+			// aapt resource value: 0x7f0a0036
+			public const int TrafficLightIcon = 2131361846;
+			
+			// aapt resource value: 0x7f0a0035
+			public const int TrafficLightListing = 2131361845;
 			
 			// aapt resource value: 0x7f0a0021
 			public const int UserTypeSpinner = 2131361825;
@@ -980,6 +998,9 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a0002
 			public const int normal = 2131361794;
 			
+			// aapt resource value: 0x7f0a0039
+			public const int number_of_active_cases = 2131361849;
+			
 			// aapt resource value: 0x7f0a0032
 			public const int preference_first_line = 2131361842;
 			
@@ -998,119 +1019,125 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f0a0004
 			public const int terrain = 2131361796;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int viewcase_claim_btn = 2131361853;
-			
-			// aapt resource value: 0x7f0a003a
-			public const int viewcase_errorDescription = 2131361850;
+			// aapt resource value: 0x7f0a0037
+			public const int trafficlight_adress = 2131361847;
 			
 			// aapt resource value: 0x7f0a0038
-			public const int viewcase_informer = 2131361848;
-			
-			// aapt resource value: 0x7f0a0035
-			public const int viewcase_installation_name = 2131361845;
-			
-			// aapt resource value: 0x7f0a003b
-			public const int viewcase_repairMade = 2131361851;
-			
-			// aapt resource value: 0x7f0a0037
-			public const int viewcase_status = 2131361847;
-			
-			// aapt resource value: 0x7f0a0039
-			public const int viewcase_time = 2131361849;
-			
-			// aapt resource value: 0x7f0a003c
-			public const int viewcase_userComment = 2131361852;
-			
-			// aapt resource value: 0x7f0a0036
-			public const int viewcase_worker = 2131361846;
-			
-			// aapt resource value: 0x7f0a0043
-			public const int viewcasedone_errorDescription = 2131361859;
-			
-			// aapt resource value: 0x7f0a0041
-			public const int viewcasedone_informer = 2131361857;
-			
-			// aapt resource value: 0x7f0a003e
-			public const int viewcasedone_installation_name = 2131361854;
-			
-			// aapt resource value: 0x7f0a0044
-			public const int viewcasedone_repairMade = 2131361860;
-			
-			// aapt resource value: 0x7f0a0046
-			public const int viewcasedone_save_btn = 2131361862;
-			
-			// aapt resource value: 0x7f0a0040
-			public const int viewcasedone_status = 2131361856;
-			
-			// aapt resource value: 0x7f0a0042
-			public const int viewcasedone_time = 2131361858;
+			public const int trafficlight_id = 2131361848;
 			
 			// aapt resource value: 0x7f0a0045
-			public const int viewcasedone_userComment = 2131361861;
+			public const int viewcase_claim_btn = 2131361861;
+			
+			// aapt resource value: 0x7f0a0042
+			public const int viewcase_errorDescription = 2131361858;
+			
+			// aapt resource value: 0x7f0a0040
+			public const int viewcase_informer = 2131361856;
+			
+			// aapt resource value: 0x7f0a003d
+			public const int viewcase_installation_name = 2131361853;
+			
+			// aapt resource value: 0x7f0a0043
+			public const int viewcase_repairMade = 2131361859;
 			
 			// aapt resource value: 0x7f0a003f
-			public const int viewcasedone_worker = 2131361855;
+			public const int viewcase_status = 2131361855;
 			
-			// aapt resource value: 0x7f0a004f
-			public const int viewcasepending_claim_btn = 2131361871;
+			// aapt resource value: 0x7f0a0041
+			public const int viewcase_time = 2131361857;
 			
-			// aapt resource value: 0x7f0a004c
-			public const int viewcasepending_errorDescription = 2131361868;
+			// aapt resource value: 0x7f0a0044
+			public const int viewcase_userComment = 2131361860;
 			
-			// aapt resource value: 0x7f0a004a
-			public const int viewcasepending_informer = 2131361866;
-			
-			// aapt resource value: 0x7f0a0047
-			public const int viewcasepending_installation_name = 2131361863;
-			
-			// aapt resource value: 0x7f0a004d
-			public const int viewcasepending_repairMade = 2131361869;
-			
-			// aapt resource value: 0x7f0a0050
-			public const int viewcasepending_save_btn = 2131361872;
-			
-			// aapt resource value: 0x7f0a0049
-			public const int viewcasepending_status = 2131361865;
+			// aapt resource value: 0x7f0a003e
+			public const int viewcase_worker = 2131361854;
 			
 			// aapt resource value: 0x7f0a004b
-			public const int viewcasepending_time = 2131361867;
+			public const int viewcasedone_errorDescription = 2131361867;
+			
+			// aapt resource value: 0x7f0a0049
+			public const int viewcasedone_informer = 2131361865;
+			
+			// aapt resource value: 0x7f0a0046
+			public const int viewcasedone_installation_name = 2131361862;
+			
+			// aapt resource value: 0x7f0a004c
+			public const int viewcasedone_repairMade = 2131361868;
 			
 			// aapt resource value: 0x7f0a004e
-			public const int viewcasepending_userComment = 2131361870;
+			public const int viewcasedone_save_btn = 2131361870;
 			
 			// aapt resource value: 0x7f0a0048
-			public const int viewcasepending_worker = 2131361864;
+			public const int viewcasedone_status = 2131361864;
 			
-			// aapt resource value: 0x7f0a0056
-			public const int viewcasestarted_errorDescription = 2131361878;
+			// aapt resource value: 0x7f0a004a
+			public const int viewcasedone_time = 2131361866;
 			
-			// aapt resource value: 0x7f0a0059
-			public const int viewcasestarted_finish_btn = 2131361881;
+			// aapt resource value: 0x7f0a004d
+			public const int viewcasedone_userComment = 2131361869;
 			
-			// aapt resource value: 0x7f0a0054
-			public const int viewcasestarted_informer = 2131361876;
-			
-			// aapt resource value: 0x7f0a0051
-			public const int viewcasestarted_installation_name = 2131361873;
-			
-			// aapt resource value: 0x7f0a005a
-			public const int viewcasestarted_pending_btn = 2131361882;
+			// aapt resource value: 0x7f0a0047
+			public const int viewcasedone_worker = 2131361863;
 			
 			// aapt resource value: 0x7f0a0057
-			public const int viewcasestarted_repairMade = 2131361879;
+			public const int viewcasepending_claim_btn = 2131361879;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int viewcasestarted_status = 2131361875;
-			
-			// aapt resource value: 0x7f0a0055
-			public const int viewcasestarted_time = 2131361877;
-			
-			// aapt resource value: 0x7f0a0058
-			public const int viewcasestarted_userComment = 2131361880;
+			// aapt resource value: 0x7f0a0054
+			public const int viewcasepending_errorDescription = 2131361876;
 			
 			// aapt resource value: 0x7f0a0052
-			public const int viewcasestarted_worker = 2131361874;
+			public const int viewcasepending_informer = 2131361874;
+			
+			// aapt resource value: 0x7f0a004f
+			public const int viewcasepending_installation_name = 2131361871;
+			
+			// aapt resource value: 0x7f0a0055
+			public const int viewcasepending_repairMade = 2131361877;
+			
+			// aapt resource value: 0x7f0a0058
+			public const int viewcasepending_save_btn = 2131361880;
+			
+			// aapt resource value: 0x7f0a0051
+			public const int viewcasepending_status = 2131361873;
+			
+			// aapt resource value: 0x7f0a0053
+			public const int viewcasepending_time = 2131361875;
+			
+			// aapt resource value: 0x7f0a0056
+			public const int viewcasepending_userComment = 2131361878;
+			
+			// aapt resource value: 0x7f0a0050
+			public const int viewcasepending_worker = 2131361872;
+			
+			// aapt resource value: 0x7f0a005e
+			public const int viewcasestarted_errorDescription = 2131361886;
+			
+			// aapt resource value: 0x7f0a0061
+			public const int viewcasestarted_finish_btn = 2131361889;
+			
+			// aapt resource value: 0x7f0a005c
+			public const int viewcasestarted_informer = 2131361884;
+			
+			// aapt resource value: 0x7f0a0059
+			public const int viewcasestarted_installation_name = 2131361881;
+			
+			// aapt resource value: 0x7f0a0062
+			public const int viewcasestarted_pending_btn = 2131361890;
+			
+			// aapt resource value: 0x7f0a005f
+			public const int viewcasestarted_repairMade = 2131361887;
+			
+			// aapt resource value: 0x7f0a005b
+			public const int viewcasestarted_status = 2131361883;
+			
+			// aapt resource value: 0x7f0a005d
+			public const int viewcasestarted_time = 2131361885;
+			
+			// aapt resource value: 0x7f0a0060
+			public const int viewcasestarted_userComment = 2131361888;
+			
+			// aapt resource value: 0x7f0a005a
+			public const int viewcasestarted_worker = 2131361882;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int wide = 2131361801;
@@ -1187,22 +1214,37 @@ namespace TrafficControl.GUI
 			public const int SideMenuItem = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int UserTypeDropDownItem = 2130903054;
+			public const int SortTrafficLightDropDownItem = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int UserTypeSpinnerItem = 2130903055;
+			public const int SortTrafficLightSpinner = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int ViewCaseCreated = 2130903056;
+			public const int TrafficLightFragments = 2130903056;
 			
 			// aapt resource value: 0x7f030011
-			public const int ViewCaseDone = 2130903057;
+			public const int TrafficLightItem = 2130903057;
 			
 			// aapt resource value: 0x7f030012
-			public const int ViewCasePending = 2130903058;
+			public const int TrafficLights = 2130903058;
 			
 			// aapt resource value: 0x7f030013
-			public const int ViewCaseStarted = 2130903059;
+			public const int UserTypeDropDownItem = 2130903059;
+			
+			// aapt resource value: 0x7f030014
+			public const int UserTypeSpinnerItem = 2130903060;
+			
+			// aapt resource value: 0x7f030015
+			public const int ViewCaseCreated = 2130903061;
+			
+			// aapt resource value: 0x7f030016
+			public const int ViewCaseDone = 2130903062;
+			
+			// aapt resource value: 0x7f030017
+			public const int ViewCasePending = 2130903063;
+			
+			// aapt resource value: 0x7f030018
+			public const int ViewCaseStarted = 2130903064;
 			
 			static Layout()
 			{
@@ -1236,14 +1278,17 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f040020
 			public const int ApplicationName = 2130968608;
 			
-			// aapt resource value: 0x7f04002a
-			public const int CreateUserType = 2130968618;
+			// aapt resource value: 0x7f04002c
+			public const int CreateUserType = 2130968620;
 			
 			// aapt resource value: 0x7f04001f
 			public const int Hello = 2130968607;
 			
-			// aapt resource value: 0x7f04002d
-			public const int PASS_CASE_ID = 2130968621;
+			// aapt resource value: 0x7f04002f
+			public const int PASS_CASE_ID = 2130968623;
+			
+			// aapt resource value: 0x7f040022
+			public const int SortCases = 2130968610;
 			
 			// aapt resource value: 0x7f040001
 			public const int auth_google_play_services_client_facebook_display_name = 2130968577;
@@ -1251,11 +1296,11 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f040000
 			public const int auth_google_play_services_client_google_display_name = 2130968576;
 			
-			// aapt resource value: 0x7f040027
-			public const int category_notifications = 2130968615;
+			// aapt resource value: 0x7f040029
+			public const int category_notifications = 2130968617;
 			
-			// aapt resource value: 0x7f040026
-			public const int category_users = 2130968614;
+			// aapt resource value: 0x7f040028
+			public const int category_users = 2130968616;
 			
 			// aapt resource value: 0x7f040018
 			public const int common_google_play_services_api_unavailable_text = 2130968600;
@@ -1344,32 +1389,35 @@ namespace TrafficControl.GUI
 			// aapt resource value: 0x7f04001e
 			public const int common_signin_button_text_long = 2130968606;
 			
-			// aapt resource value: 0x7f04002b
-			public const int login_email = 2130968619;
+			// aapt resource value: 0x7f04002d
+			public const int login_email = 2130968621;
 			
-			// aapt resource value: 0x7f04002c
-			public const int login_password = 2130968620;
-			
-			// aapt resource value: 0x7f040021
-			public const int settings_create_user = 2130968609;
-			
-			// aapt resource value: 0x7f040029
-			public const int settings_notify_email = 2130968617;
-			
-			// aapt resource value: 0x7f040028
-			public const int settings_notify_sms = 2130968616;
+			// aapt resource value: 0x7f04002e
+			public const int login_password = 2130968622;
 			
 			// aapt resource value: 0x7f040023
-			public const int settings_user_lastname = 2130968611;
+			public const int settings_create_user = 2130968611;
 			
-			// aapt resource value: 0x7f040022
-			public const int settings_user_name = 2130968610;
+			// aapt resource value: 0x7f04002b
+			public const int settings_notify_email = 2130968619;
 			
-			// aapt resource value: 0x7f040024
-			public const int settings_user_password = 2130968612;
+			// aapt resource value: 0x7f04002a
+			public const int settings_notify_sms = 2130968618;
+			
+			// aapt resource value: 0x7f040021
+			public const int settings_sort_cases = 2130968609;
 			
 			// aapt resource value: 0x7f040025
-			public const int settings_user_phonenumber = 2130968613;
+			public const int settings_user_lastname = 2130968613;
+			
+			// aapt resource value: 0x7f040024
+			public const int settings_user_name = 2130968612;
+			
+			// aapt resource value: 0x7f040026
+			public const int settings_user_password = 2130968614;
+			
+			// aapt resource value: 0x7f040027
+			public const int settings_user_phonenumber = 2130968615;
 			
 			static String()
 			{

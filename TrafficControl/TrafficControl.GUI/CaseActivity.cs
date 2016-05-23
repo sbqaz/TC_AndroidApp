@@ -4,13 +4,11 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using TrafficControl.BLL;
-using TrafficControl.DAL.RestSharp.Types;
 using TrafficControl.GUI.Cases;
-using TrafficControl.GUI.Home;
 
 namespace TrafficControl.GUI
 {
-    [Activity(Label = "CaseActivity")]
+    [Activity(Label = "Sag")]
     public class CaseActivity : Activity, ICaseView
     {
         private ICasePresenter _presenter;

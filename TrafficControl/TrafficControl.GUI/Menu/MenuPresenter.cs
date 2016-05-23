@@ -5,7 +5,7 @@ namespace TrafficControl.GUI.Menu
     public class MenuPresenter : IMenuPresenter
     {
         private readonly IMenuView _view;
-        private readonly string[] _leftMenuItems = { "Hjem", "First", "Second", "Indstillinger" };
+        private readonly string[] _leftMenuItems = { "Hjem", "Sager", "Lyskryds", "Kort", "Indstillinger" };
 
         public MenuPresenter(IMenuView view)
         {
@@ -24,9 +24,13 @@ namespace TrafficControl.GUI.Menu
                 case "Hjem":
                     _view.OnHomeClicked();
                     break;
-                case "First":
+                case "Sager":
                     break;
-                case "Second":
+                case "Lyskryds":
+                    _view.OnTrafficLightClicked();
+                    break;
+                case "Kort":
+                    _view.OnMapClicked();
                     break;
                 case "Indstillinger":
                     _view.OnSettingsClicked();
@@ -55,7 +59,7 @@ namespace TrafficControl.GUI.Menu
                 case Resource.Id.Menu_Options:
                     return _view.OnSettingsClicked();
                 case Resource.Id.Menu_About:
-                    return _view.OnAboutClicked();
+                    return true;
                 case Resource.Id.Menu_LogOut:
                     return _view.OnLogOutClicked();
             }

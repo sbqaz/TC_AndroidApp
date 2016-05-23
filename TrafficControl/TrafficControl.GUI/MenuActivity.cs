@@ -118,8 +118,19 @@ namespace TrafficControl.GUI
             }
         }
 
-        public bool OnAboutClicked()
+        public void OnTrafficLightClicked()
         {
+            if (GetType() != typeof(TrafficLightOverviewActivity))
+            {
+                var nextActivity = new Intent(this, typeof(TrafficLightOverviewActivity));
+                nextActivity.AddFlags(ActivityFlags.ReorderToFront);
+                StartActivity(nextActivity);
+            }
+        }
+
+        public bool OnMapClicked()
+        {
+            Toast.MakeText(this, "Loading map...", ToastLength.Short).Show();
             if (GetType() != typeof(MapActivity))
             {
                 var nextActivity = new Intent(this, typeof(MapActivity));

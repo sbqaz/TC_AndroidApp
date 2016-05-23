@@ -1,6 +1,4 @@
-﻿using System;
-using NUnit.Framework;
-using NUnit.Framework.Internal;
+﻿using NUnit.Framework;
 using TrafficControl.BLL;
 using TrafficControl.BLL.Cases;
 using TrafficControl.BLL.CreateCase;

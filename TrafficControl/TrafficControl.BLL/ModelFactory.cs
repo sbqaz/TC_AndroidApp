@@ -6,6 +6,7 @@ using TrafficControl.BLL.Home;
 using TrafficControl.BLL.LogIn;
 using TrafficControl.BLL.Map;
 using TrafficControl.BLL.Settings;
+using TrafficControl.BLL.TrafficLight;
 using TrafficControl.DAL.RestSharp;
 
 namespace TrafficControl.BLL
@@ -25,6 +26,7 @@ namespace TrafficControl.BLL
         private readonly ICreateCaseModel _createCaseModel;
         private readonly IMapModel _mapModel;
         private readonly ICaseModel _caseModel;
+        private ITrafficLightOverviewModel _trafficLightModel;
 
         private ModelFactory()
         {
@@ -38,6 +40,7 @@ namespace TrafficControl.BLL
             _caseModel = new CaseModel(_tcApi);
             _changePasswordModel = new ChangePasswordModel(_tcApi);
             _mapModel = new MapModel(_tcApi);
+            _trafficLightModel = new TrafficLightOverviewModel(_tcApi);
         }
 
         public static ModelFactory Instance
@@ -100,6 +103,11 @@ namespace TrafficControl.BLL
         public ICaseModel CreateCaseModel()
         {
             return _caseModel;
+        }
+
+        public ITrafficLightOverviewModel CreateLyskrydsModel()
+        {
+            return _trafficLightModel;
         }
     }
 }

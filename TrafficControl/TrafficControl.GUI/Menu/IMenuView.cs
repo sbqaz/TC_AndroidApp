@@ -5,8 +5,9 @@
         void OnHomeClicked();
         bool OnSettingsClicked();
         bool OnDrawerBtnClicked();
-        bool OnAboutClicked();
+        bool OnMapClicked();
         bool OnLogOutClicked();
         void HideLeftDrawer();
+        void OnTrafficLightClicked();
     }
 }
