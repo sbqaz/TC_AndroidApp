@@ -24,9 +24,27 @@ namespace TrafficControl.Test.Unit.Menu
         }
 
         [Test]
-        public void GetMenuItems_FourthItemIsSettings()
+        public void GetMenuItems_SecondItemIsHome()
         {
-            StringAssert.Contains("indstillinger", _uut.GetMenuItems()[3].ToLower());
+            StringAssert.Contains("sager", _uut.GetMenuItems()[1].ToLower());
+        }
+
+        [Test]
+        public void GetMenuItems_ThirdItemIsHome()
+        {
+            StringAssert.Contains("lyskryds", _uut.GetMenuItems()[2].ToLower());
+        }
+
+        [Test]
+        public void GetMenuItems_FourthItemIsHome()
+        {
+            StringAssert.Contains("kort", _uut.GetMenuItems()[3].ToLower());
+        }
+
+        [Test]
+        public void GetMenuItems_FithItemIsSettings()
+        {
+            StringAssert.Contains("indstillinger", _uut.GetMenuItems()[4].ToLower());
         }
 
         [Test]
@@ -37,9 +55,23 @@ namespace TrafficControl.Test.Unit.Menu
         }
 
         [Test]
-        public void LeftMenuItemClicked_Position3_OnSettingsClickedCalled()
+        public void LeftMenuItemClicked_Position2_OnHomeClickedCalled()
+        {
+            _uut.LeftMenuItemClicked(2);
+            _fakeView.Received().OnTrafficLightClicked();
+        }
+
+        [Test]
+        public void LeftMenuItemClicked_Position3_OnHomeClickedCalled()
         {
             _uut.LeftMenuItemClicked(3);
+            _fakeView.Received().OnMapClicked();
+        }
+
+        [Test]
+        public void LeftMenuItemClicked_Position4_OnSettingsClickedCalled()
+        {
+            _uut.LeftMenuItemClicked(4);
             _fakeView.Received().OnSettingsClicked();
         }
 

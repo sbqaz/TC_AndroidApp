@@ -23,7 +23,7 @@
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <uses-library android:name="com.google.android.maps" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-    <activity android:label="CaseActivity" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.CaseActivity" />
+    <activity android:label="Sag" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.CaseActivity" />
     <activity android:label="Opret sag" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.CreateCaseActivity" />
     <activity android:label="Opret ny bruger" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.CreateUserActivity" />
     <activity android:label="@string/ApplicationName" android:name="md56b3a59ca03fc5e073370dc85bbbcd31e.LogInActivity">
