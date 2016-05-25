@@ -16,7 +16,7 @@
   <string-array name="UserTypes">
     <item>Administrator</item>
     <item>Montør</item>
-    <item>Randers Kommune</item>
+    <item>Bruger</item>
   </string-array>
 
   <string name="PASS_CASE_ID">CASE_ID</string>
